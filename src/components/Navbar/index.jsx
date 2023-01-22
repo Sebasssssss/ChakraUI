@@ -10,27 +10,30 @@ import {
   Stack,
   Input,
   InputGroup,
-  InputLeftElement
+  InputLeftElement,
+  Link
 } from '@chakra-ui/react'
 import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
 import ToggleColorMode from '../toggleThemeButton'
-import { Form } from 'react-router-dom'
 import Footprint from '../Footprint'
 
 export default function Navbar() {
   return (
     <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
       <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-        <Box display={'inline-flex'} alignItems="center">
+        <Link
+          href="#"
+          className="group text-lg p-2 font-semibold inline-flex items-center gap-1.5 text-center tracking-tighter"
+        >
           <Footprint />
           Sebass
-        </Box>
+        </Link>
         <Flex alignItems={'center'}>
           <Stack direction={'row'} spacing={7}>
             <Box display={'inline-flex'} alignItems="center">
               <InputGroup>
-                <InputLeftElement opacity={'40%'}>
-                  <Button type="submit" className="bg-none hover:bg-none">
+                <InputLeftElement className="opacity-40">
+                  <Button type="submit" bg={'none'}>
                     <SearchIcon />
                   </Button>
                 </InputLeftElement>
@@ -40,10 +43,11 @@ export default function Navbar() {
             <ToggleColorMode />
             <Menu>
               <MenuButton
-                as={Button}
-                rounded={'7'}
-                variant={'link'}
-                border="1px"
+                bg={useColorModeValue('gray.100', 'gray.900')}
+                _hover={{
+                  backgroundColor: useColorModeValue('gray.300', 'gray.800')
+                }}
+                className="rounded-lg border px-3 bg-none"
               >
                 <HamburgerIcon />
               </MenuButton>
