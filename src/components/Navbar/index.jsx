@@ -30,11 +30,7 @@ export default function Navbar() {
             <Box display={'inline-flex'} alignItems="center">
               <InputGroup>
                 <InputLeftElement opacity={'40%'}>
-                  <Button
-                    type="submit"
-                    bg={'none'}
-                    _hover={{ background: 'none' }}
-                  >
+                  <Button type="submit" className="bg-none hover:bg-none">
                     <SearchIcon />
                   </Button>
                 </InputLeftElement>
