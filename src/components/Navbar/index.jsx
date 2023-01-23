@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box, Flex, Stack, useColorModeValue } from '@chakra-ui/react'
-import ToggleColorMode from '../toggleThemeButton'
-import Footprint from '../Footprint'
+import ToggleColorMode from '../ToggleThemeButton'
+import Footprint from '../icons/footprint'
 import SearchForm from '../SearchForm'
+import { Box, Flex, Stack, useColorModeValue } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {

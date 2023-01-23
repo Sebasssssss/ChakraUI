@@ -17,7 +17,7 @@ export default function App() {
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
-              <Route path="/page2" element={<AlternativeCards />} />
+              <Route path="/:page2" element={<AlternativeCards />} />
             </Routes>
           </AnimatePresence>
         </Container>
