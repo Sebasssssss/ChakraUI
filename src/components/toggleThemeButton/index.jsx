@@ -9,8 +9,8 @@ const ToggleColorMode = () => {
       bg={useColorModeValue('#85586f', '#f8ede3')}
       _hover={{ bg: useColorModeValue('#774f63', '#dfd3c3') }}
       textColor={useColorModeValue('#f8ede3', 'black')}
+      p={1}
       onClick={() => toggleColorMode()}
-      zIndex={10}
     >
       {colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
     </Button>

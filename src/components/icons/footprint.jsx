@@ -3,7 +3,7 @@ import { Box, useColorModeValue } from '@chakra-ui/react'
 
 export default function Footprint() {
   return (
-    <Box fill={useColorModeValue('#85586f', '#d5cea3')}>
+    <Box fill={useColorModeValue('#85586f', 'white')}>
       <svg
         className="w-5 h-5 -rotate-[25deg] group-hover:-rotate-[8deg] transition-transform"
         version="1.0"

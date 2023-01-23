@@ -7,7 +7,7 @@ export default function ListOfCards() {
       <Link to="/page2" className="w-full mb-4 text-center">
         <img
           src="https://i.pinimg.com/564x/5e/2b/6b/5e2b6b57e68519bee6c9db90eeb18089.jpg"
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-44 object-cover"
+          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-36 object-cover"
         />
         <h6 className="text-xl mt-3 font-bold">Title</h6>
         <h1 className="opacity-70">Subtitle</h1>
@@ -15,7 +15,7 @@ export default function ListOfCards() {
       <Link to="/page2" className="w-full mb-4 text-center">
         <img
           src="https://i.pinimg.com/564x/5e/2b/6b/5e2b6b57e68519bee6c9db90eeb18089.jpg"
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-44 object-cover"
+          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-36 object-cover"
         />
         <h6 className="text-xl mt-3 font-bold">Title</h6>
         <h1 className="opacity-70">Subtitle</h1>
@@ -23,7 +23,7 @@ export default function ListOfCards() {
       <Link to="/page2" className="w-full mb-4 text-center">
         <img
           src="https://i.pinimg.com/564x/5e/2b/6b/5e2b6b57e68519bee6c9db90eeb18089.jpg"
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-44 object-cover"
+          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-36 object-cover"
         />
         <h6 className="text-xl mt-3 font-bold">Title</h6>
         <h1 className="opacity-70">Subtitle</h1>
@@ -31,7 +31,7 @@ export default function ListOfCards() {
       <Link to="/page2" className="w-full mb-4 text-center">
         <img
           src="https://i.pinimg.com/564x/5e/2b/6b/5e2b6b57e68519bee6c9db90eeb18089.jpg"
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-44 object-cover"
+          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-36 object-cover"
         />
         <h6 className="text-xl mt-3 font-bold">Title</h6>
         <h1 className="opacity-70">Subtitle</h1>

@@ -1,8 +1,7 @@
 import React from 'react'
 import ToggleColorMode from '../ToggleThemeButton'
 import Footprint from '../icons/footprint'
-import SearchForm from '../SearchForm'
-import { Box, Flex, Stack, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, useColorModeValue } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
@@ -17,7 +16,7 @@ export default function Navbar() {
       zIndex={2}
     >
       <Flex
-        h={16}
+        h={14}
         alignItems={'center'}
         justifyContent={'space-between'}
         maxW={'container.md'}
@@ -31,12 +30,7 @@ export default function Navbar() {
           <Footprint />
           Sebass
         </Link>
-        <Flex alignItems={'center'}>
-          <Stack direction={'row'} spacing={7}>
-            <SearchForm />
-            <ToggleColorMode />
-          </Stack>
-        </Flex>
+        <ToggleColorMode />
       </Flex>
     </Box>
   )
