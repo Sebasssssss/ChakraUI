@@ -1,15 +1,32 @@
-import { Box, Flex, Stack, Link } from '@chakra-ui/react'
+import React from 'react'
+import { Box, Flex, Stack, useColorModeValue } from '@chakra-ui/react'
 import ToggleColorMode from '../toggleThemeButton'
 import Footprint from '../Footprint'
 import SearchForm from '../SearchForm'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <Box px={4} maxW={'3xl'} m={'auto'}>
-      <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+    <Box
+      position="fixed"
+      top={'0'}
+      as="nav"
+      w="100%"
+      bg={useColorModeValue('#ffffff40', '#14141680')}
+      css={{ backdropFilter: 'blur(10px)' }}
+      zIndex={2}
+    >
+      <Flex
+        h={16}
+        alignItems={'center'}
+        justifyContent={'space-between'}
+        maxW={'container.md'}
+        mx={'auto'}
+      >
         <Link
-          href="/"
-          className="group text-xl p-2 font-semibold inline-flex items-center gap-1.5 tracking-tighter"
+          _hover={{ textDecoration: 'none' }}
+          to="/"
+          className="group text-lg p-2 font-semibold inline-flex items-center gap-1.5 tracking-tighter font-mplus"
         >
           <Footprint />
           Sebass

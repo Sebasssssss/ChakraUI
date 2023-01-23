@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { SearchIcon } from '@chakra-ui/icons'
 import {
-  Box,
   Button,
-  FormControl,
   Input,
   InputGroup,
-  InputLeftElement
+  InputLeftElement,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { useNavigate } from 'react-router'
 
@@ -31,7 +30,11 @@ function SearchForm() {
             <SearchIcon />
           </Button>
         </InputLeftElement>
-        <Input onChange={handleChange} placeholder="Search here!" />
+        <Input
+          focusBorderColor={useColorModeValue('#85586f', '#d5cea3')}
+          onChange={handleChange}
+          placeholder="Search here!"
+        />
       </InputGroup>
     </form>
   )
