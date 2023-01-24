@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .footerDots {
+    @apply relative bg-[#f8ede3] hover:bg-[#85586f] rounded-3xl m-[6px] w-2.5 h-2.5 text-sm flex justify-center items-center flex-col shadow-lg cursor-pointer transition-all duration-200;
+  }
+
+  .footerToolTip {
+    @apply absolute top-0 opacity-0 py-1 px-2 rounded pointer-events-none transition-all;
+  }
+}
