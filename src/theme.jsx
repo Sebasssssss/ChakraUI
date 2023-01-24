@@ -10,7 +10,7 @@ const theme = {
   styles: {
     global: props => ({
       body: {
-        bg: mode('#f8ede3', '#141416')(props)
+        bg: mode('#f8ede3', '#18181b')(props)
       }
     })
   }

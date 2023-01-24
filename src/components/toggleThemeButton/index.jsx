@@ -6,8 +6,8 @@ const ToggleColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Button
-      bg={useColorModeValue('#85586f', '#f8ede3')}
-      _hover={{ bg: useColorModeValue('#774f63', '#dfd3c3') }}
+      bg={useColorModeValue('#85586f', '#FFECEF')}
+      _hover={{ bg: useColorModeValue('#774f63', '#FFCACA') }}
       textColor={useColorModeValue('#f8ede3', 'black')}
       p={1}
       onClick={() => toggleColorMode()}
