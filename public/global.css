@@ -4,7 +4,7 @@
 
 @layer components {
   .footerDots {
-    @apply relative bg-[#f8ede3] hover:bg-[#85586f] rounded-3xl m-[6px] w-2.5 h-2.5 text-sm flex justify-center items-center flex-col shadow-lg cursor-pointer transition-all duration-200;
+    @apply relative opacity-70 bg-white hover:bg-[#85586f] hover:opacity-100 rounded-3xl m-[6px] w-2.5 h-2.5 text-sm flex justify-center items-center flex-col shadow-lg cursor-pointer transition-all duration-200;
   }
 
   .footerToolTip {
