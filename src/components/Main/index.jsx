@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
@@ -15,6 +15,7 @@ export default function Main({ children }) {
       <Navbar />
       <Container maxW={'container.md'} m={'auto'} textAlign={'center'} pt={20}>
         <LazyPawda />
+        <Box h="200px" pos="absolute" left="0" top="25rem" w="full"></Box>
         {children}
       </Container>
       <Footer />

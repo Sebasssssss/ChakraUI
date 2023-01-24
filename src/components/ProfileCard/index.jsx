@@ -12,12 +12,13 @@ import Dots from '../Dots'
 export default function Profile() {
   return (
     <Box>
-      <Flex px={2} mt={5} alignItems={'center'}>
+      <Flex px={2} alignItems={'center'}>
         <Image
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample1.jpg"
+          src="https://i.pinimg.com/564x/06/6a/68/066a684447293195aeb393e40453211c.jpg"
           borderRadius={'1rem'}
-          maxW={'100%'}
-          h={'80px'}
+          w={'100px'}
+          h={'100px'}
+          objectFit="cover"
           float={'right'}
         />
         <Box pt={4} px={2}>
@@ -26,7 +27,7 @@ export default function Profile() {
       </Flex>
       <Grid
         textAlign="left"
-        bg={useColorModeValue('#dfd3c3', '#ffffff20')}
+        bg={useColorModeValue('#dfd3c3', '#121212')}
         borderRadius="0.8rem"
         column="3"
         mt="15px"
@@ -38,7 +39,7 @@ export default function Profile() {
         _before={{
           borderColor: `transparent transparent ${useColorModeValue(
             '#dfd3c3',
-            '#ffffff20'
+            '#121212'
           )} transparent`,
           borderStyle: 'solid',
           borderWidth: '0 10px 10px 10px',
@@ -61,7 +62,7 @@ export default function Profile() {
         >
           Developer
         </Text>
-        <Text letterSpacing="0.1px" fontSize="0.9rem" fontSize="13px">
+        <Text letterSpacing="0.2px" fontSize="13px">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id
           nihil, at dolorum eaque maiores quia amet sit eius libero nulla ipsam
           perferendis consectetur obcaecati fugiat, odio quas non facere dicta

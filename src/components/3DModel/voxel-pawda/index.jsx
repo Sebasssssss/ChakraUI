@@ -46,7 +46,7 @@ const VoxelPawda = () => {
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
-        20 * Math.cos(0.2 * Math.PI)
+        25 * Math.cos(0.2 * Math.PI)
       )
 
       const scale = scH * 0.005 + 4.8
