@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Grid,
+  Highlight,
   Image,
   Text,
   useColorModeValue
@@ -63,13 +64,35 @@ export default function Profile() {
           Developer
         </Text>
         <Text letterSpacing="0.2px" fontSize="13px">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id
-          nihil, at dolorum eaque maiores quia amet sit eius libero nulla ipsam
-          perferendis consectetur obcaecati fugiat, odio quas non facere dicta
-          nisi nobis accusantium! doloribus libero inventore delectus animi
-          quasi perferendis consectetur obcaecati fugiat, odio quas non facere
-          dicta nisi nobis accusantium! doloribus libero inventore delectus
-          animi quasi voluptatibus possimus excepturi,
+          <Highlight
+            query={[
+              'html',
+              'css',
+              'php',
+              'github',
+              'git',
+              'Tailwindcss',
+              'React'
+            ]}
+            styles={{
+              bg: useColorModeValue('#85586f', '#d36b00'),
+              px: '1.5',
+              py: '0.3',
+              rounded: 'sm'
+            }}
+          >
+            Yo! I'm Sebass. I'm a self taught developer who's started
+            programming by learning html, and css. After learning the basics, i
+            quickly moved to php, because i really liked it and thought it would
+            be a good language to start my developer career. Consequently, i
+            learned the basics of git and github because of how powerful can be
+            and many people recommended to me. After a while, i made a very
+            simple website to understand how to use Tailwindcss, and after using
+            it, i thought that it was a really cool tool for making websites.
+            Later on, i decided to start learning javascript, in order to
+            understand React, because i love how the code looks and how it works
+            it in almost every aspect.
+          </Highlight>
         </Text>
       </Grid>
     </Box>

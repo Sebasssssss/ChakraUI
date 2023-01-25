@@ -1,10 +1,11 @@
-import React from 'react'
-import { Box, Text, useColorModeValue } from '@chakra-ui/react'
+import React, { useRef } from 'react'
+import { Link, Text, useColorModeValue } from '@chakra-ui/react'
 
 function Dots() {
   return (
     <ul className="inline-flex list-none h-10 w-full justify-center">
-      <Box
+      <Link
+        href="https://github.com/Sebasssssss"
         bg={useColorModeValue('#18181b', '#ffecef')}
         _hover={{ bg: useColorModeValue('#85586f', '#F1EFDC') }}
         className="group footerDots"
@@ -16,8 +17,8 @@ function Dots() {
         >
           Github
         </Text>
-      </Box>
-      <Box
+      </Link>
+      <Link
         bg={useColorModeValue('#18181b', '#ffecef')}
         _hover={{ bg: useColorModeValue('#85586f', '#F1EFDC') }}
         className="group footerDots"
@@ -25,12 +26,12 @@ function Dots() {
         <Text
           bg={useColorModeValue('white', '#42032C')}
           _before={{ bg: useColorModeValue('white', '#42032C') }}
-          className="footerToolTip group-hover:opacity-100 group-hover:pointer-events-auto group-hover:-top-10 duration-[0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)] before:absolute before:content-[''] before:h-2 before:w-2 before:left-[44%] before:transtiion-all before:duration-[0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)] before:-translate-2/4 before:rotate-45 before:-bottom-[3px]"
+          className="footerToolTip group-hover:opacity-100 group-hover:pointer-events-auto group-hover:-top-10 duration-[0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)] before:absolute before:content-[''] before:h-2 before:w-2 before:left-[49%] before:transtiion-all before:duration-[0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)] before:-translate-2/4 before:rotate-45 before:-bottom-[3px]"
         >
-          Twitter
+          sebastian.rodriguez9714@gmail.com
         </Text>
-      </Box>
-      <Box
+      </Link>
+      <Link
         bg={useColorModeValue('#18181b', '#ffecef')}
         _hover={{ bg: useColorModeValue('#85586f', '#F1EFDC') }}
         className="group footerDots"
@@ -42,7 +43,7 @@ function Dots() {
         >
           Facebook
         </Text>
-      </Box>
+      </Link>
     </ul>
   )
 }

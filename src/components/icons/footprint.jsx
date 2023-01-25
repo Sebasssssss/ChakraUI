@@ -1,11 +1,12 @@
 import React from 'react'
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 export default function Footprint() {
   return (
-    <Box fill={useColorModeValue('#85586f', 'white')}>
+    <Box>
       <svg
         className="w-5 h-5 -rotate-[25deg] group-hover:-rotate-[8deg] transition-transform"
+        fill="currentColor"
         version="1.0"
         viewBox="0 0 256 256"
       >
