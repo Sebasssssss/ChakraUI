@@ -4,7 +4,7 @@ import Layout from '../Layout'
 
 export default function AlternativeCards() {
   return (
-    <Layout>
+    <Layout delay="0.2">
       <div className="grid grid-cols-1 md:grid-cols-2 mt-8 gap-4">
         <Link to="/" className="w-full mb-4 text-center">
           <img

@@ -15,7 +15,7 @@ export default function Profile() {
     <Box>
       <Flex px={2} alignItems={'center'}>
         <Image
-          src="https://i.pinimg.com/564x/06/6a/68/066a684447293195aeb393e40453211c.jpg"
+          src="https://i.pinimg.com/564x/e6/24/39/e62439ae8c9d1e1a9b6f57cf4c5fa5c2.jpg"
           borderRadius={'1rem'}
           w={'100px'}
           h={'100px'}
@@ -28,7 +28,7 @@ export default function Profile() {
       </Flex>
       <Grid
         textAlign="left"
-        bg={useColorModeValue('#dfd3c3', '#121212')}
+        bg={useColorModeValue('#dfd3c3', '#ffffff20')}
         borderRadius="0.8rem"
         column="3"
         mt="15px"
@@ -40,14 +40,14 @@ export default function Profile() {
         _before={{
           borderColor: `transparent transparent ${useColorModeValue(
             '#dfd3c3',
-            '#121212'
+            '#ffffff20'
           )} transparent`,
           borderStyle: 'solid',
           borderWidth: '0 10px 10px 10px',
           bottom: '100%',
           content: "''",
           h: '0',
-          left: '32px',
+          left: '48px',
           pos: 'absolute',
           w: '0'
         }}
@@ -63,7 +63,12 @@ export default function Profile() {
         >
           Developer
         </Text>
-        <Text letterSpacing="0.2px" fontSize="13px">
+        <Text
+          letterSpacing="0.2px"
+          fontSize="14px"
+          textIndent="1em"
+          textAlign="justify"
+        >
           <Highlight
             query={[
               'html',
@@ -74,10 +79,9 @@ export default function Profile() {
               'Tailwindcss',
               'React'
             ]}
+            fontWeight="normal"
             styles={{
-              bg: useColorModeValue('#85586f', '#d36b00'),
-              px: '1.5',
-              py: '0.3',
+              color: useColorModeValue('#85586f', '#ea047e'),
               rounded: 'sm'
             }}
           >

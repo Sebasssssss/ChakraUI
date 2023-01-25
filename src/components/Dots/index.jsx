@@ -7,7 +7,7 @@ function Dots() {
       <Link
         href="https://github.com/Sebasssssss"
         bg={useColorModeValue('#18181b', '#ffecef')}
-        _hover={{ bg: useColorModeValue('#85586f', '#F1EFDC') }}
+        _hover={{ bg: useColorModeValue('#85586f', '#42032C') }}
         className="group footerDots"
       >
         <Text
@@ -20,7 +20,7 @@ function Dots() {
       </Link>
       <Link
         bg={useColorModeValue('#18181b', '#ffecef')}
-        _hover={{ bg: useColorModeValue('#85586f', '#F1EFDC') }}
+        _hover={{ bg: useColorModeValue('#85586f', '#42032C') }}
         className="group footerDots"
       >
         <Text
@@ -33,7 +33,7 @@ function Dots() {
       </Link>
       <Link
         bg={useColorModeValue('#18181b', '#ffecef')}
-        _hover={{ bg: useColorModeValue('#85586f', '#F1EFDC') }}
+        _hover={{ bg: useColorModeValue('#85586f', '#42032C') }}
         className="group footerDots"
       >
         <Text
