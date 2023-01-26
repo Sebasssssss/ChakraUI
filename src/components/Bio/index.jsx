@@ -139,7 +139,7 @@ export default function Bio() {
         I ♥
       </Text>
       <Text textIndent="1em">
-        Music, Drawing, Photography, Chess, Movies, Sports, Machine Learning
+        Music, Drawing, Photography, Chess, Movies, Sports, Minimalism
       </Text>
     </SimpleGrid>
   )
