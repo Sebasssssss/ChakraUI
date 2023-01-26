@@ -72,31 +72,20 @@ export default function Profile() {
           textAlign="justify"
         >
           <Highlight
-            query={[
-              'html',
-              'css',
-              'php',
-              'github',
-              'git',
-              'Tailwindcss',
-              'React'
-            ]}
+            query={['frontend', 'backend', 'php', 'mysql']}
             styles={{
               color: useColorModeValue('#85586f', '#ea047e'),
               rounded: 'sm'
             }}
           >
-            Yo! I'm Sebass. I'm a self taught developer who's started
-            programming by learning html, and css. After learning the basics, i
-            quickly moved to php, because i really liked it and thought it would
-            be a good language to start my developer career. Consequently, i
-            learned the basics of git and github because of how powerful can be
-            and many people recommended to me. After a while, i made a very
-            simple website to understand how to use Tailwindcss, and after using
-            it, i thought that it was a really cool tool for making websites.
-            Later on, i decided to start learning javascript, in order to
-            understand React, because i love how the code looks and how it works
-            it in almost every aspect.
+            Sebass is a self-taught frontend developer based in Uruguay with a
+            high enthusiasm on web development and performance. He's got
+            additional knowledge on backend with php and mysql to help his way
+            through on real world projects, problems, and future ideas. He has a
+            big relish for all the process of building projects, from planning,
+            inspiring and designing all the way to solving real-life problems
+            with code. During free-time, he likes hanging out with friends and
+            and playing sports.
           </Highlight>
         </Text>
       </Grid>

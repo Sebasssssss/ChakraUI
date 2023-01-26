@@ -1,15 +1,5 @@
 import React from 'react'
-import {
-  Box,
-  Button,
-  Center,
-  Image,
-  List,
-  ListItem,
-  Tag,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Box, Button, Center, Image, useColorModeValue } from '@chakra-ui/react'
 import Layout from '../../components/Layout'
 import Profile from '../../components/ProfileCard'
 import image from '../../assets/pawdaPORT.png'
@@ -27,9 +17,9 @@ export default function Home() {
         <Image src={image} />
       </Box>
       <Button
-        bg={useColorModeValue('#85586f', '#00f5ff90')}
+        bg={useColorModeValue('#85586f', '#ea047e90')}
         textColor="#fff"
-        _hover={{ bg: useColorModeValue('#85586f', '#00b7bf') }}
+        _hover={{ bg: useColorModeValue('#85586f', '#ea047e') }}
       >
         Download CV <ChevronRightIcon />
       </Button>
