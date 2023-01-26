@@ -38,7 +38,7 @@ export default function Navbar() {
             p="2"
             rounded="sm"
             style={({ isActive }) =>
-              isActive ? { backgroundColor: '#00f5ff50' } : null
+              isActive ? { backgroundColor: '#00f5ff80' } : null
             }
           >
             Works

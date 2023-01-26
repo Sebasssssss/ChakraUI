@@ -7,6 +7,7 @@ import {
   Highlight,
   Image,
   SimpleGrid,
+  Tag,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -83,19 +84,22 @@ export default function Detail() {
             <Text>Php / Mysql / Javscript / Alpine js</Text>
           </Flex>
           <Flex alignItems="flex-start">
-            <Text
-              fontSize="xs"
-              fontWeight="bold"
-              textTransform="uppercase"
-              w="max"
-              h="max"
-              px="1"
-              mt="1"
-              rounded="sm"
-              bg={useColorModeValue('#ccc', '#ea047e50')}
-              color={useColorModeValue('#ccc', '#ea047e')}
-            >
-              learning
+            <Text>
+              <Tag
+                fontSize="xs"
+                fontWeight="bold"
+                textTransform="uppercase"
+                w="max"
+                h="max"
+                px="1"
+                size="sm"
+                mt="1"
+                rounded="sm"
+                bg={useColorModeValue('#ccc', '#ea047e50')}
+                color={useColorModeValue('#ccc', '#ea047e')}
+              >
+                learning
+              </Tag>
             </Text>
             <Text textAlign="left" textIndent="1em">
               <Highlight

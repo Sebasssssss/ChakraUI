@@ -4,10 +4,12 @@ import {
   Button,
   Center,
   Image,
+  List,
+  ListItem,
+  Tag,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import ListOfCards from '../../components/ListOfCards'
 import Layout from '../../components/Layout'
 import Profile from '../../components/ProfileCard'
 import image from '../../assets/pawdaPORT.png'
@@ -18,27 +20,20 @@ export default function Home() {
   return (
     <Layout delay="0.2">
       <Center borderRadius="lg" bg={'#ffffff20'} p={3} w="full" mb={6}>
-        Yo! I'm Sebas, a developer based in Uruguay!
+        Yo! I'm Sebass, a developer based in Uruguay!
       </Center>
       <Profile />
       <Box h="212px" w="full" overflow="hidden">
         <Image src={image} />
       </Box>
-      <Button bg={useColorModeValue('#85586f', '#ea047e')} textColor="#fff">
+      <Button
+        bg={useColorModeValue('#85586f', '#00f5ff90')}
+        textColor="#fff"
+        _hover={{ bg: useColorModeValue('#85586f', '#00b7bf') }}
+      >
         Download CV <ChevronRightIcon />
       </Button>
       <Bio />
-      <Text
-        pt="4"
-        pb="9"
-        fontSize="24"
-        fontWeight="bold"
-        className="font-mplus"
-        textColor={useColorModeValue('#85586f', '#ffecef')}
-      >
-        Projects
-      </Text>
-      <ListOfCards />
     </Layout>
   )
 }

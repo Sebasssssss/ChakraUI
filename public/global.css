@@ -10,4 +10,8 @@
   .footerToolTip {
     @apply absolute top-0 opacity-0 py-1 px-2 rounded pointer-events-none transition-all;
   }
+
+  .section-title {
+    @apply underline underline-offset-4 decoration-4;
+  }
 }
