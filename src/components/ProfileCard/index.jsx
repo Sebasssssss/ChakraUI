@@ -15,7 +15,7 @@ export default function Profile() {
     <Box>
       <Flex px={2} alignItems={'center'}>
         <Avatar
-          src="https://i.pinimg.com/236x/7d/42/e0/7d42e0e49879f662ea93b6ae14d1d068.jpg"
+          src="https://i.pinimg.com/564x/ce/d6/3a/ced63aa39b72ebe3643b263b84195388.jpg"
           borderRadius="1rem"
           w="100px"
           h="100px"
@@ -30,7 +30,7 @@ export default function Profile() {
       </Flex>
       <Grid
         textAlign="left"
-        bg={useColorModeValue('#dfd3c3', '#ffffff20')}
+        bg={useColorModeValue('#dfd3c3', '#111111')}
         borderRadius="0.8rem"
         column="3"
         mt="15px"
@@ -42,7 +42,7 @@ export default function Profile() {
         _before={{
           borderColor: `transparent transparent ${useColorModeValue(
             '#dfd3c3',
-            '#ffffff20'
+            '#111111'
           )} transparent`,
           borderStyle: 'solid',
           borderWidth: '0 10px 10px 10px',
@@ -84,8 +84,9 @@ export default function Profile() {
             his way through on real world projects, problems, and future ideas.
             He has got a high relish for all the process of building projects,
             from planning, inspiring and designing all the way to solving
-            real-life problems with code. During free-time, he likes hanging out
-            with friends and and playing sports.
+            real-life problems with code. During free-time, he loves playing
+            open world games like Dying light 2 or Elden Ring. Currently working
+            on projects and learning javascript in order to code React.
           </Highlight>
         </Text>
       </Grid>

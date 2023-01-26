@@ -73,7 +73,7 @@ export default function Bio() {
       >
         I am well-acquainted with
       </Text>
-      <List textAlign="left">
+      <List textAlign="left" px="4">
         <ListItem display="flex" alignItems="center" gap="2">
           <Tag
             fontSize="xs"
