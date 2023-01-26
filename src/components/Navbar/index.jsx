@@ -22,7 +22,7 @@ export default function Navbar() {
         maxW={'container.md'}
         mx={'auto'}
       >
-        <Flex>
+        <Flex alignItems="center">
           <Link
             _hover={{ textDecoration: 'none' }}
             to="/"
@@ -30,6 +30,9 @@ export default function Navbar() {
           >
             <Footprint />
             Sebass
+          </Link>
+          <Link to="/page2" className="p-2 bg-[#ff6d28]/70">
+            Works
           </Link>
         </Flex>
         <ToggleColorMode />

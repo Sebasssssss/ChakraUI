@@ -8,23 +8,25 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
-import Dots from '../Dots'
+import { GithubDot, EmailDot, InstagramDot } from '../Dots'
 
 export default function Profile() {
   return (
     <Box>
       <Flex px={2} alignItems={'center'}>
         <Image
-          src="https://i.pinimg.com/564x/e6/24/39/e62439ae8c9d1e1a9b6f57cf4c5fa5c2.jpg"
+          src="https://i.pinimg.com/236x/7d/42/e0/7d42e0e49879f662ea93b6ae14d1d068.jpg"
           borderRadius={'1rem'}
           w={'100px'}
           h={'100px'}
           objectFit="cover"
           float={'right'}
         />
-        <Box pt={4} px={2}>
-          <Dots />
-        </Box>
+        <Flex px={2}>
+          <GithubDot href="https://github.com/sebasssssss" />
+          <EmailDot />
+          <InstagramDot />
+        </Flex>
       </Flex>
       <Grid
         textAlign="left"
