@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Layout delay="0.2">
       <Center borderRadius="lg" bg={'#ffffff20'} p={3} w="full" mb={6}>
-        There are many benefits to a joint design and
+        Yo! I'm Sebas, a developer based in Uruguay!
       </Center>
       <Profile />
       <Box h="212px" w="full" overflow="hidden">
