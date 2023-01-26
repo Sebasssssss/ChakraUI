@@ -8,7 +8,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
-import { GithubDot, EmailDot, InstagramDot } from '../Dots'
+import Dot from '../Dots'
 
 export default function Profile() {
   return (
@@ -23,9 +23,9 @@ export default function Profile() {
           float={'right'}
         />
         <Flex px={2}>
-          <GithubDot href="https://github.com/sebasssssss" />
-          <EmailDot />
-          <InstagramDot />
+          <Dot to="https://github.com/Sebasssssss" name="Github" />
+          <Dot name="Email" />
+          <Dot name="Instagram" />
         </Flex>
       </Flex>
       <Grid
@@ -81,7 +81,6 @@ export default function Profile() {
               'Tailwindcss',
               'React'
             ]}
-            fontWeight="normal"
             styles={{
               color: useColorModeValue('#85586f', '#ea047e'),
               rounded: 'sm'

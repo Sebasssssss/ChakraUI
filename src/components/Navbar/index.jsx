@@ -31,7 +31,7 @@ export default function Navbar() {
             <Footprint />
             Sebass
           </Link>
-          <Link to="/page2" className="p-2 bg-[#ff6d28]/70">
+          <Link to="/page2" className="p-2 bg-[#00f5ff]/50">
             Works
           </Link>
         </Flex>
