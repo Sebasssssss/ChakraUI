@@ -22,18 +22,44 @@ export default function Bio() {
         Bio
       </Text>
       <Flex gap="3">
-        <Text fontWeight="bold">2003</Text>
-        <Text>Born in Montenvideo, Uruguay.</Text>
+        <Text fontWeight="semibold">2003</Text>
+        <Text>Born in Montevideo, Uruguay.</Text>
       </Flex>
       <Flex gap="3">
-        <Text fontWeight="bold">2020</Text>
-        <Text>Studied some basic programming concepts off school</Text>
-      </Flex>
-      <Flex gap="3">
-        <Text fontWeight="bold">2022</Text>
+        <Text fontWeight="semibold" whiteSpace="nowrap">
+          2021
+          <Tag mx="1" fontSize="sm">
+            DEC - MAY
+          </Tag>
+        </Text>
         <Text>
-          Completed full bootcamp course with qualification of php and mysql of
-          Talleres de informatica Uruguay.
+          Learned basic concepts of html and css to understand web code
+          structure and styling
+        </Text>
+      </Flex>
+      <Flex gap="3">
+        <Text fontWeight="semibold" whiteSpace="nowrap">
+          2022{' '}
+          <Tag mx="1" fontSize="sm">
+            MAY - OCT
+          </Tag>
+        </Text>
+        <Text>
+          Completed Web developer Php and Mysql bootcamp from Talleres de
+          Informatica Uruguay
+        </Text>
+      </Flex>
+      <Flex gap="3">
+        <Text fontWeight="semibold" whiteSpace="nowrap">
+          2022
+          <Tag mx="1" fontSize="sm">
+            JUN - To present
+          </Tag>
+        </Text>
+        <Text>
+          Began studying from official documentation and others ways. Since then
+          i've been making projects in order to improve my skills based on
+          differents challenges
         </Text>
       </Flex>
       <Text

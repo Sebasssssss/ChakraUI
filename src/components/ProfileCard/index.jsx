@@ -1,9 +1,9 @@
 import {
+  Avatar,
   Box,
   Flex,
   Grid,
   Highlight,
-  Image,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -14,13 +14,13 @@ export default function Profile() {
   return (
     <Box>
       <Flex px={2} alignItems={'center'}>
-        <Image
+        <Avatar
           src="https://i.pinimg.com/236x/7d/42/e0/7d42e0e49879f662ea93b6ae14d1d068.jpg"
-          borderRadius={'1rem'}
-          w={'100px'}
-          h={'100px'}
+          borderRadius="1rem"
+          w="100px"
+          h="100px"
           objectFit="cover"
-          float={'right'}
+          float="right"
         />
         <Flex px={2}>
           <Dot to="https://github.com/Sebasssssss" name="Github" />
