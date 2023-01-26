@@ -1,8 +1,8 @@
 import React from 'react'
 import ToggleColorMode from '../ToggleThemeButton'
 import Footprint from '../icons/footprint'
-import { Box, Flex, useColorModeValue } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Box, Flex, useColorModeValue, Link } from '@chakra-ui/react'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -24,6 +24,7 @@ export default function Navbar() {
       >
         <Flex alignItems="center">
           <Link
+            as={NavLink}
             _hover={{ textDecoration: 'none' }}
             to="/"
             className="group text-lg p-2 font-semibold inline-flex items-center gap-1.5 tracking-tighter font-mplus"
@@ -31,7 +32,15 @@ export default function Navbar() {
             <Footprint />
             Sebass
           </Link>
-          <Link to="/page2" className="p-2 bg-[#00f5ff]/50">
+          <Link
+            as={NavLink}
+            to="/page2"
+            p="2"
+            rounded="sm"
+            style={({ isActive }) =>
+              isActive ? { backgroundColor: '#00f5ff50' } : null
+            }
+          >
             Works
           </Link>
         </Flex>
