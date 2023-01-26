@@ -28,7 +28,12 @@ export default function Bio() {
       <Flex gap="3">
         <Text fontWeight="semibold" whiteSpace="nowrap">
           2021
-          <Tag mx="1" fontSize="sm">
+          <Tag
+            mx="1"
+            fontSize="sm"
+            bg={useColorModeValue('#d0b8a8', null)}
+            color={useColorModeValue('black', null)}
+          >
             DEC - MAY
           </Tag>
         </Text>
@@ -40,7 +45,12 @@ export default function Bio() {
       <Flex gap="3">
         <Text fontWeight="semibold" whiteSpace="nowrap">
           2022{' '}
-          <Tag mx="1" fontSize="sm">
+          <Tag
+            mx="1"
+            fontSize="sm"
+            bg={useColorModeValue('#d0b8a8', null)}
+            color={useColorModeValue('black', null)}
+          >
             MAY - OCT
           </Tag>
         </Text>
@@ -52,7 +62,12 @@ export default function Bio() {
       <Flex gap="3">
         <Text fontWeight="semibold" whiteSpace="nowrap">
           2022
-          <Tag mx="1" fontSize="sm">
+          <Tag
+            mx="1"
+            fontSize="sm"
+            bg={useColorModeValue('#d0b8a8', null)}
+            color={useColorModeValue('black', null)}
+          >
             JUN - To present
           </Tag>
         </Text>
@@ -69,7 +84,6 @@ export default function Bio() {
         textAlign="left"
         className="font-mplus section-title"
         textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}
-        textColor={useColorModeValue('#85586f', '#ffecef')}
       >
         I am well-acquainted with
       </Text>
@@ -85,8 +99,8 @@ export default function Bio() {
             px="1"
             mt="1"
             rounded="sm"
-            bg={useColorModeValue('#ccc', '#ea047e50')}
-            color={useColorModeValue('#ccc', '#ea047e')}
+            bg={useColorModeValue('#d0b8a8', '#ea047e50')}
+            color={useColorModeValue('black', '#ea047e')}
           >
             Language
           </Tag>
@@ -103,8 +117,8 @@ export default function Bio() {
             px="1"
             mt="1"
             rounded="sm"
-            bg={useColorModeValue('#ccc', '#ea047e50')}
-            color={useColorModeValue('#ccc', '#ea047e')}
+            bg={useColorModeValue('#d0b8a8', '#ea047e50')}
+            color={useColorModeValue('black', '#ea047e')}
           >
             framework
           </Tag>
@@ -121,8 +135,8 @@ export default function Bio() {
             px="1"
             mt="1"
             rounded="sm"
-            bg={useColorModeValue('#ccc', '#ea047e50')}
-            color={useColorModeValue('#ccc', '#ea047e')}
+            bg={useColorModeValue('#d0b8a8', '#ea047e50')}
+            color={useColorModeValue('black', '#ea047e')}
           >
             other tecs
           </Tag>

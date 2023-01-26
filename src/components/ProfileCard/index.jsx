@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   Grid,
+  Center,
   Highlight,
   Text,
   useColorModeValue
@@ -13,6 +14,9 @@ import Dot from '../Dots'
 export default function Profile() {
   return (
     <Box>
+      <Center borderRadius="lg" bg={'#ffffff20'} p={3} w="full" mb={6}>
+        Yo! I'm Sebass, a developer based in Uruguay!
+      </Center>
       <Flex px={2} alignItems={'center'}>
         <Avatar
           src="https://i.pinimg.com/564x/ce/d6/3a/ced63aa39b72ebe3643b263b84195388.jpg"
