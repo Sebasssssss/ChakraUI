@@ -37,7 +37,7 @@ export default function Bio() {
         </Text>
       </Flex>
       <Text
-        py="4"
+        pt="4"
         fontSize="20"
         fontWeight="bold"
         textAlign="left"
@@ -80,7 +80,7 @@ export default function Bio() {
             bg={useColorModeValue('#ccc', '#ea047e50')}
             color={useColorModeValue('#ccc', '#ea047e')}
           >
-            frameworks
+            framework
           </Tag>
           React / tailwindcss
         </ListItem>
