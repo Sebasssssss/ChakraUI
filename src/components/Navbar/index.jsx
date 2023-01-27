@@ -16,7 +16,7 @@ export default function Navbar() {
       zIndex={2}
     >
       <Flex
-        h={14}
+        p="1.5"
         alignItems={'center'}
         justifyContent={'space-between'}
         maxW={'container.md'}
@@ -34,11 +34,15 @@ export default function Navbar() {
           </Link>
           <Link
             as={NavLink}
-            to="/page2"
+            to="/works"
             p="2"
             rounded="sm"
             style={({ isActive }) =>
-              isActive ? { backgroundColor: '#00f5ff80' } : null
+              isActive
+                ? {
+                    backgroundColor: useColorModeValue('#00abb280', '#00f5ff90')
+                  }
+                : null
             }
           >
             Works

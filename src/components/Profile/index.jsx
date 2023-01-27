@@ -2,46 +2,41 @@ import {
   Avatar,
   Box,
   Flex,
-  Grid,
-  Center,
+  Image,
+  Button,
   Highlight,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
 import Dot from '../Dots'
+import { ArrowDownIcon } from '@chakra-ui/icons'
+import pandaLookingCV from '../../assets/pawdaPORT.png'
 
 export default function Profile() {
   return (
     <Box>
-      <Center borderRadius="lg" bg={'#ffffff20'} p={3} w="full" mb={6}>
-        Yo! I'm Sebass, a developer based in Uruguay!
-      </Center>
-      <Flex px={2} alignItems={'center'}>
+      <Flex gap="2" alignItems="center">
         <Avatar
           src="https://i.pinimg.com/564x/ce/d6/3a/ced63aa39b72ebe3643b263b84195388.jpg"
           borderRadius="1rem"
           w="100px"
           h="100px"
           objectFit="cover"
-          float="right"
         />
-        <Flex px={2}>
+        <Flex>
           <Dot to="https://github.com/Sebasssssss" name="Github" />
           <Dot name="Email" />
           <Dot name="Instagram" />
         </Flex>
       </Flex>
-      <Grid
+      <Box
         textAlign="left"
         bg={useColorModeValue('#dfd3c3', '#111111')}
         borderRadius="0.8rem"
-        column="3"
         mt="15px"
-        gap="2px"
         p="25px"
         pos="relative"
-        w="full"
         boxShadow="lg"
         _before={{
           borderColor: `transparent transparent ${useColorModeValue(
@@ -52,16 +47,15 @@ export default function Profile() {
           borderWidth: '0 10px 10px 10px',
           bottom: '100%',
           content: "''",
-          h: '0',
-          left: '48px',
-          pos: 'absolute',
-          w: '0'
+          left: '42px',
+          pos: 'absolute'
         }}
       >
         <Text fontWeight="bold" fontSize="20px" className="font-mplus">
           Sebass Rodriguez
         </Text>
         <Text
+          py="4px"
           opacity="0.7"
           letterSpacing="2px"
           fontWeight="400"
@@ -78,8 +72,7 @@ export default function Profile() {
           <Highlight
             query={['frontend', 'backend', 'php', 'mysql']}
             styles={{
-              color: useColorModeValue('#85586f', '#ea047e'),
-              rounded: 'sm'
+              color: useColorModeValue('#ff6d28', '#ea047e')
             }}
           >
             Sebass is a self-taught frontend developer based in Uruguay with
@@ -93,7 +86,20 @@ export default function Profile() {
             projects and learning javascript in order to code React.
           </Highlight>
         </Text>
-      </Grid>
+      </Box>
+      <Box>
+        <Box h="212px" w="full" overflow="hidden">
+          <Image src={pandaLookingCV} />
+        </Box>
+        <Button
+          bg={useColorModeValue('#85586f', '#ea047e90')}
+          textColor="#fff"
+          _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
+        >
+          Download CV
+          <ArrowDownIcon ml="1" />
+        </Button>
+      </Box>
     </Box>
   )
 }

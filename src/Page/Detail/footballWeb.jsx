@@ -14,13 +14,13 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 
-export default function PersonalBlog() {
+export default function FootballWeb() {
   return (
     <Layout delay="0.2">
       <Box>
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
-            <Link to="/works">
+            <Link to="/page2">
               <Text pr="2" color={useColorModeValue('#ff6d28', '#ea047e')}>
                 Works
               </Text>
@@ -33,7 +33,7 @@ export default function PersonalBlog() {
               fontWeight="bold"
               className="font-mplus"
             >
-              Personal Blog
+              Football web
             </Text>
             <Text
               fontSize="xs"
@@ -81,7 +81,7 @@ export default function PersonalBlog() {
             >
               Stack
             </Text>
-            <Text>Php / Mysql / Javscript / Tailwindcss</Text>
+            <Text>Php / Mysql / Javscript / Materializecss</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
@@ -106,9 +106,7 @@ export default function PersonalBlog() {
                 query={['tailwindcss', 'dark mode', 'javascript']}
                 styles={{ color: useColorModeValue('black', '#ea047e') }}
               >
-                In this website i learned a a lot of tricks with php that helped
-                me simplify many details, pulled a lot of tailwindcss skills,
-                and helped me understand how dark mode works with javascript!
+                In this website i learned the concepts of backend{' '}
               </Highlight>
             </Text>
           </Flex>

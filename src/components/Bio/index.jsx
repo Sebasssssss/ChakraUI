@@ -11,7 +11,7 @@ import {
 
 export default function Bio() {
   return (
-    <SimpleGrid row={4} textAlign="left" gap="5" py="5">
+    <SimpleGrid textAlign="left" gap="5" py="5">
       <Text
         fontSize="xl"
         fontWeight="bold"
@@ -44,7 +44,7 @@ export default function Bio() {
       </Flex>
       <Flex gap="3">
         <Text fontWeight="semibold" whiteSpace="nowrap">
-          2022{' '}
+          2022
           <Tag
             mx="1"
             fontSize="sm"
