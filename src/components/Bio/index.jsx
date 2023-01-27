@@ -39,7 +39,7 @@ export default function Bio() {
         </Text>
         <Text>
           Learned basic concepts of html and css to understand web code
-          structure and styling
+          structure and styling.
         </Text>
       </Flex>
       <Flex gap="3">
@@ -56,7 +56,7 @@ export default function Bio() {
         </Text>
         <Text>
           Completed Web developer Php and Mysql bootcamp from Talleres de
-          Informatica Uruguay
+          Informatica Uruguay.
         </Text>
       </Flex>
       <Flex gap="3">
@@ -74,7 +74,7 @@ export default function Bio() {
         <Text>
           Began studying from official documentation and others ways. Since then
           i've been making projects in order to improve my skills based on
-          differents challenges
+          differents challenges.
         </Text>
       </Flex>
       <Text
@@ -140,7 +140,7 @@ export default function Bio() {
           >
             other tecs
           </Tag>
-          Git / Mysql
+          Html / Css / Git / Npm / Mysql
         </ListItem>
       </List>
       <Text
@@ -153,7 +153,7 @@ export default function Bio() {
         I ♥
       </Text>
       <Text textIndent="1em">
-        Music, Drawing, Photography, Chess, Movies, Sports, Minimalism
+        Music, Drawing, Photography, Chess, Movies, Sports, Minimalism.
       </Text>
     </SimpleGrid>
   )
