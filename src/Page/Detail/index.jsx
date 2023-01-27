@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import { Link } from 'react-router-dom'
+import { Link as ReactLink } from 'react-router-dom'
 import {
   Box,
   Flex,
+  Link,
   Highlight,
   Image,
   SimpleGrid,
@@ -20,10 +21,14 @@ export default function PersonalBlog() {
       <Box>
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
-            <Link to="/works">
-              <Text pr="2" color={useColorModeValue('#ff6d28', '#ea047e')}>
-                Works
-              </Text>
+            <Link
+              as={ReactLink}
+              to="/works"
+              pr="2"
+              fontWeight="semibold"
+              color={useColorModeValue('#ff6d28', '#ea047e')}
+            >
+              Works
             </Link>
             <ChevronRightIcon />
             <Text
@@ -67,7 +72,6 @@ export default function PersonalBlog() {
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
-          <Box></Box>
           <Flex alignItems="center" gap="2">
             <Text
               fontSize="xs"

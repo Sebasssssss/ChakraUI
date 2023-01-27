@@ -56,14 +56,13 @@ export default function FootballWeb() {
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
           <Highlight
-            query={['php', 'backend']}
+            query={['php', 'backend', 'cron']}
             styles={{ color: useColorModeValue('black', '#ea047e') }}
           >
-            Website completely based on Takuya Matsuyama's WhatIUse web! I tried
-            to replicate the web Takuya's did because I really like how it look
-            almost in every aspect and because I have not seen a similar web
-            like this one before. In this case, I've made it completely in Php,
-            with a backend included!
+            ⚽ Football Website with backend included! This is my first full
+            website in php. It includes a cron that its porpuse is to
+            automatically when open, install the data base with example
+            information, ready to use the web!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
@@ -106,7 +105,9 @@ export default function FootballWeb() {
                 query={['tailwindcss', 'dark mode', 'javascript']}
                 styles={{ color: useColorModeValue('black', '#ea047e') }}
               >
-                In this website i learned the concepts of backend{' '}
+                In this website i learned a lot in terms of how backend works,
+                how to use databases, get the data from database and display it
+                on the web and a lot more!
               </Highlight>
             </Text>
           </Flex>
