@@ -107,14 +107,9 @@ export default function PersonalBlog() {
               </Tag>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              <Highlight
-                query={['tailwindcss', 'dark mode', 'javascript!']}
-                styles={{ color: useColorModeValue('black', '#ea047e') }}
-              >
-                In this website i learned a a lot of tricks with php that helped
-                me simplify many details, pulled a lot of tailwindcss skills,
-                and helped me understand how dark mode works with javascript!
-              </Highlight>
+              In this website i learned a a lot of tricks with php that helped
+              me simplify many details, pulled a lot of tailwindcss skills, and
+              helped me understand how dark mode works with javascript!
             </Text>
           </Flex>
         </SimpleGrid>

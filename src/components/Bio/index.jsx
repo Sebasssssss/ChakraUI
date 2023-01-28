@@ -34,7 +34,7 @@ export default function Bio() {
             bg={useColorModeValue('#d0b8a8', null)}
             color={useColorModeValue('black', null)}
           >
-            DEC - MAY
+            DEC
           </Tag>
         </Text>
         <Text>

@@ -63,7 +63,7 @@ export default function GiffyApp() {
           >
             Web app where you'll be able to search for wherever gif or sticker
             you want. You can sort them by ranking or look for the most popular
-            ones. If you feel like looking whats the most search things by the
+            ones. If you feel like looking whats the most search things by
             people, you can do it too by heading up to the footer section!
           </Highlight>
         </Text>

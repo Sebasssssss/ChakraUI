@@ -86,7 +86,7 @@ export default function Profile() {
               got a high relish for all the process of building projects, from
               planning, inspiring and designing all the way to solving real-life
               problems with code. During free-time, he loves playing open world
-              games like Dying light 2 or Elden Ring. Currently working on
+              games like Dying light 2 or Elden Ring. He is currently working on
               projects and learning javascript in order to code React.
             </Highlight>
           </Text>
