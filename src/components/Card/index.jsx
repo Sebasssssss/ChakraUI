@@ -8,7 +8,12 @@ export default function Card({
   subtitle = 'Card'
 }) {
   return (
-    <Link textDecorationLine="none" as={ReactLink} to={`/work/${id}`}>
+    <Link
+      textDecorationLine="none"
+      as={ReactLink}
+      to={`/work/${id}`}
+      _hover={{ textDecorationLine: 'none' }}
+    >
       <Image
         src={thumbnail}
         alt={title}
