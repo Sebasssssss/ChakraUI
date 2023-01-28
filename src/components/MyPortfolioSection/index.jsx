@@ -1,5 +1,10 @@
 import React from 'react'
-import { Button, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import {
+  Button,
+  Heading,
+  SimpleGrid,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
 import Card from '../Card'
@@ -8,7 +13,17 @@ import thumbnail1 from '../../assets/giffy.png'
 export default function MyPortfolioSection() {
   return (
     <>
-      <SimpleGrid columns={{ base: 1, md: 2 }} gap="6" my="4">
+      <Heading
+        textAlign="left"
+        fontSize="xl"
+        mt="4"
+        fontWeight="bold"
+        textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}
+        className="section-title"
+      >
+        Popular posts
+      </Heading>
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap="6" my="8">
         <Card
           id="personalBlog"
           title="Personal Blog"
@@ -30,7 +45,7 @@ export default function MyPortfolioSection() {
         as={ReactLink}
         to="/works"
       >
-        Popular posts <ChevronRightIcon />
+        See more <ChevronRightIcon />
       </Button>
     </>
   )

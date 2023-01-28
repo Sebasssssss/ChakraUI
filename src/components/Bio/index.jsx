@@ -6,13 +6,14 @@ import {
   useColorModeValue,
   Tag,
   List,
-  ListItem
+  ListItem,
+  Heading
 } from '@chakra-ui/react'
 
 export default function Bio() {
   return (
     <SimpleGrid textAlign="left" gap="5" py="5">
-      <Text
+      <Heading
         fontSize="xl"
         fontWeight="bold"
         my="4"
@@ -20,7 +21,7 @@ export default function Bio() {
         className="section-title"
       >
         Bio
-      </Text>
+      </Heading>
       <Flex gap="3">
         <Text fontWeight="semibold">2003</Text>
         <Text>Born in Montevideo, Uruguay.</Text>
@@ -77,16 +78,16 @@ export default function Bio() {
           differents challenges.
         </Text>
       </Flex>
-      <Text
+      <Heading
         pt="4"
-        fontSize="20"
+        fontSize="xl"
         fontWeight="bold"
         textAlign="left"
         className="font-mplus section-title"
         textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}
       >
         I am well-acquainted with
-      </Text>
+      </Heading>
       <List textAlign="left" px="4">
         <ListItem display="flex" alignItems="center" gap="2">
           <Tag
@@ -143,7 +144,7 @@ export default function Bio() {
           Html / Css / Git / Npm / Mysql
         </ListItem>
       </List>
-      <Text
+      <Heading
         alignItems="center"
         fontSize="2xl"
         fontWeight="bold"
@@ -151,7 +152,7 @@ export default function Bio() {
         className="section-title"
       >
         I ♥
-      </Text>
+      </Heading>
       <Text textIndent="1em">
         Music, Drawing, Photography, Chess, Movies, Sports, Minimalism.
       </Text>
