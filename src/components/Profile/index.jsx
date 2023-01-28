@@ -75,7 +75,14 @@ export default function Profile() {
             textAlign="justify"
           >
             <Highlight
-              query={['frontend', 'backend', 'php', 'mysql']}
+              query={[
+                'frontend',
+                'backend',
+                'php',
+                'mysql',
+                'javascript',
+                'React'
+              ]}
               styles={{
                 color: useColorModeValue('#ff6d28', '#ea047e')
               }}
