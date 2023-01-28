@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
+import { Button, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
 import Card from '../Card'

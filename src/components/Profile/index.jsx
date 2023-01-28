@@ -13,14 +13,15 @@ import Dot from '../Dots'
 import { ArrowDownIcon } from '@chakra-ui/icons'
 import pandaLookingCV from '../../assets/pawdaPORT.png'
 import Section from '../Section'
+import avatar from '../../assets/avatar.jpg'
 
 export default function Profile() {
   return (
     <Box>
       <Section>
         <Flex gap="2" alignItems="center">
-          <Avatar
-            src="https://i.pinimg.com/564x/ce/d6/3a/ced63aa39b72ebe3643b263b84195388.jpg"
+          <Image
+            src={avatar}
             borderRadius="1rem"
             w="100px"
             h="100px"
