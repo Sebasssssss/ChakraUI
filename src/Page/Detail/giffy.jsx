@@ -15,7 +15,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 
-export default function PersonalBlog() {
+export default function GiffyApp() {
   return (
     <Layout delay="0.2">
       <Box>
@@ -25,10 +25,9 @@ export default function PersonalBlog() {
               as={ReactLink}
               to="/works"
               pr="2"
-              fontWeight="semibold"
               color={useColorModeValue('#ff6d28', '#ea047e')}
             >
-              Works
+              <Text>Works</Text>
             </Link>
             <ChevronRightIcon />
             <Text
@@ -38,7 +37,7 @@ export default function PersonalBlog() {
               fontWeight="bold"
               className="font-mplus"
             >
-              Personal Blog
+              Giffy App
             </Text>
             <Text
               fontSize="xs"
@@ -53,10 +52,7 @@ export default function PersonalBlog() {
             </Text>
           </Flex>
           <Box textAlign="right">
-            <Dot
-              to="https://github.com/Sebasssssss/PersonalBlog-PHP-Takuya-WhatIUse"
-              name="Source"
-            />
+            <Dot to="https://github.com/Sebasssssss/Giffy.app" name="Source" />
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
@@ -64,11 +60,10 @@ export default function PersonalBlog() {
             query={['php', 'backend']}
             styles={{ color: useColorModeValue('black', '#ea047e') }}
           >
-            Website completely based on Takuya Matsuyama's WhatIUse web! I tried
-            to replicate the web Takuya's did because I really like how it look
-            almost in every aspect and because I have not seen a similar web
-            like this one before. In this case, I've made it completely in Php,
-            with a backend included!
+            Web app where you'll be able to search for wherever gif or sticker
+            you want. You can sort them by ranking or look for the more popular
+            ones. If you feel like looking whats the most search things by the
+            people, you can do it too by heading up to the footer section!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
@@ -85,7 +80,29 @@ export default function PersonalBlog() {
             >
               Stack
             </Text>
-            <Text>Php / Mysql / Javscript / Tailwindcss</Text>
+            <Text>Javscript / Tailwindcss</Text>
+          </Flex>
+          <Flex alignItems="flex-start">
+            <Text>
+              <Tag
+                fontSize="xs"
+                fontWeight="bold"
+                textTransform="uppercase"
+                w="max"
+                h="max"
+                px="1"
+                size="sm"
+                mt="1"
+                rounded="sm"
+                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
+                color={useColorModeValue('#ff6d28', '#ea047e')}
+              >
+                libraries
+              </Tag>
+            </Text>
+            <Text textAlign="left" textIndent="1em">
+              React / Wouter / Intersection-ovbserver / just-debounce-it
+            </Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
@@ -110,9 +127,9 @@ export default function PersonalBlog() {
                 query={['tailwindcss', 'dark mode', 'javascript']}
                 styles={{ color: useColorModeValue('black', '#ea047e') }}
               >
-                In this website i learned a a lot of tricks with php that helped
-                me simplify many details, pulled a lot of tailwindcss skills,
-                and helped me understand how dark mode works with javascript!
+                With this web app i learned and understand a lot of how
+                Javascript and React works. Learned how to do simples fetch of
+                api's data and a lot of react hooks.
               </Highlight>
             </Text>
           </Flex>

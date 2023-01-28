@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import { Link } from 'react-router-dom'
+import { Link as ReactLink } from 'react-router-dom'
 import {
   Box,
   Flex,
+  Link,
   Highlight,
   Image,
   SimpleGrid,
@@ -20,10 +21,13 @@ export default function FootballWeb() {
       <Box>
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
-            <Link to="/page2">
-              <Text pr="2" color={useColorModeValue('#ff6d28', '#ea047e')}>
-                Works
-              </Text>
+            <Link
+              as={ReactLink}
+              to="/works"
+              pr="2"
+              color={useColorModeValue('#ff6d28', '#ea047e')}
+            >
+              <Text>Works</Text>
             </Link>
             <ChevronRightIcon />
             <Text
@@ -49,7 +53,7 @@ export default function FootballWeb() {
           </Flex>
           <Box textAlign="right">
             <Dot
-              to="https://github.com/Sebasssssss/PersonalBlog-PHP-Takuya-WhatIUse"
+              to="https://github.com/Sebasssssss/Football-Wbsite-Frontend-Backend"
               name="Source"
             />
           </Box>
@@ -59,10 +63,10 @@ export default function FootballWeb() {
             query={['php', 'backend', 'cron']}
             styles={{ color: useColorModeValue('black', '#ea047e') }}
           >
-            ⚽ Football Website with backend included! This is my first full
-            website in php. It includes a cron that its porpuse is to
-            automatically when open, install the data base with example
-            information, ready to use the web!
+            Football Website with backend included! This is my first full
+            website in php. It includes a cron that it's porpuse is to
+            automatically, when it is open, install the data base with simple
+            example information, and ready to use the web!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
@@ -80,7 +84,29 @@ export default function FootballWeb() {
             >
               Stack
             </Text>
-            <Text>Php / Mysql / Javscript / Materializecss</Text>
+            <Text>Php / Mysql / Javscript </Text>
+          </Flex>
+          <Flex alignItems="flex-start">
+            <Text>
+              <Tag
+                fontSize="xs"
+                fontWeight="bold"
+                textTransform="uppercase"
+                w="max"
+                h="max"
+                px="1"
+                size="sm"
+                mt="1"
+                rounded="sm"
+                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
+                color={useColorModeValue('#ff6d28', '#ea047e')}
+              >
+                libraries
+              </Tag>
+            </Text>
+            <Text textAlign="left" textIndent="1em">
+              Materializecss
+            </Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>

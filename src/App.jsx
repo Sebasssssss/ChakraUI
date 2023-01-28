@@ -7,8 +7,9 @@ import { Route, Routes, useLocation } from 'react-router'
 import { AnimatePresence } from 'framer-motion'
 import '../public/fonts.css'
 import '../public/global.css'
-import PersonalBlog from './Page/Detail'
+import PersonalBlog from './Page/Detail/personalBlog'
 import FootballWeb from './Page/Detail/footballWeb'
+import GiffyApp from './Page/Detail/giffy'
 
 export default function App() {
   const location = useLocation()
@@ -20,8 +21,9 @@ export default function App() {
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
               <Route path="/works" element={<Works />} />
-              <Route path="/Detail/personalBlog" element={<PersonalBlog />} />
-              <Route path="/Detail/footballWeb" element={<FootballWeb />} />
+              <Route path="/work/personalBlog" element={<PersonalBlog />} />
+              <Route path="/work/footballWeb" element={<FootballWeb />} />
+              <Route path="/work/giffyapp" element={<GiffyApp />} />
             </Routes>
           </AnimatePresence>
         </Container>
