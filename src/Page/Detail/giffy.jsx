@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
+import thumbnail from '../../assets/giffy.png'
 
 export default function GiffyApp() {
   return (
@@ -27,7 +28,7 @@ export default function GiffyApp() {
               pr="2"
               color={useColorModeValue('#ff6d28', '#ea047e')}
             >
-              <Text>Works</Text>
+              <Text fontWeight="semibold">Works</Text>
             </Link>
             <ChevronRightIcon />
             <Text
@@ -57,11 +58,11 @@ export default function GiffyApp() {
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
           <Highlight
-            query={['php', 'backend']}
+            query={['most', 'search', 'popular']}
             styles={{ color: useColorModeValue('black', '#ea047e') }}
           >
             Web app where you'll be able to search for wherever gif or sticker
-            you want. You can sort them by ranking or look for the more popular
+            you want. You can sort them by ranking or look for the most popular
             ones. If you feel like looking whats the most search things by the
             people, you can do it too by heading up to the footer section!
           </Highlight>
@@ -123,19 +124,14 @@ export default function GiffyApp() {
               </Tag>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              <Highlight
-                query={['tailwindcss', 'dark mode', 'javascript']}
-                styles={{ color: useColorModeValue('black', '#ea047e') }}
-              >
-                With this web app i learned and understand a lot of how
-                Javascript and React works. Learned how to do simples fetch of
-                api's data and a lot of react hooks.
-              </Highlight>
+              With this web app i learned and understand a lot of how Javascript
+              and React works. Learned how to do simples fetch of api's data and
+              a lot of react hooks.
             </Text>
           </Flex>
         </SimpleGrid>
         <Image
-          src="https://wallpaperaccess.com/full/138728.jpg"
+          src={thumbnail}
           className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-72 object-cover"
         />
       </Box>

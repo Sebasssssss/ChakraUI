@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
+import thumbnail from '../../assets/personalblog.png'
 
 export default function PersonalBlog() {
   return (
@@ -27,7 +28,7 @@ export default function PersonalBlog() {
               pr="2"
               color={useColorModeValue('#ff6d28', '#ea047e')}
             >
-              <Text>Works</Text>
+              <Text fontWeight="semibold">Works</Text>
             </Link>
             <ChevronRightIcon />
             <Text
@@ -107,7 +108,7 @@ export default function PersonalBlog() {
             </Text>
             <Text textAlign="left" textIndent="1em">
               <Highlight
-                query={['tailwindcss', 'dark mode', 'javascript']}
+                query={['tailwindcss', 'dark mode', 'javascript!']}
                 styles={{ color: useColorModeValue('black', '#ea047e') }}
               >
                 In this website i learned a a lot of tricks with php that helped
@@ -118,7 +119,7 @@ export default function PersonalBlog() {
           </Flex>
         </SimpleGrid>
         <Image
-          src="https://wallpaperaccess.com/full/138728.jpg"
+          src={thumbnail}
           className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-72 object-cover"
         />
       </Box>

@@ -3,6 +3,8 @@ import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import Card from '../../components/Card'
+import thumbnail1 from '../../assets/giffy.png'
+import thumbnail2 from '../../assets/football.png'
 
 export default function Works() {
   return (
@@ -20,21 +22,21 @@ export default function Works() {
         <SimpleGrid columns={{ base: 1, md: 2 }} gap="6">
           <Card
             id="personalBlog"
-            title="Goku"
-            subtitle="Example"
-            thumbnail="https://i.pinimg.com/564x/ba/01/53/ba0153e8eeb70803363fac68e84a266d.jpg"
+            title="Personal Blog"
+            subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
+            thumbnail="https://user-images.githubusercontent.com/105828786/201495026-037ba440-a51c-4746-9bcd-cbcca07ef417.png"
           />
           <Card
             id="footballWeb"
-            title="Goku"
-            subtitle="Example"
-            thumbnail="https://i.pinimg.com/564x/d5/13/96/d51396e503335e73b94f6e3ebb9ec1ba.jpg"
+            title="Manchester United web"
+            subtitle="Web about Manchester United football team with backend"
+            thumbnail={thumbnail2}
           />
           <Card
             id="giffyapp"
-            title="Giffy"
-            subtitle="React Website"
-            thumbnail="https://i.pinimg.com/564x/d5/13/96/d51396e503335e73b94f6e3ebb9ec1ba.jpg"
+            title="Giffy App"
+            subtitle="Gifs web app created with Giphy's API"
+            thumbnail={thumbnail1}
           />
         </SimpleGrid>
       </Section>

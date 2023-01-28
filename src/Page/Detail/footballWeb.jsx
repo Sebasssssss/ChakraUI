@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
+import thumbnail2 from '../../assets/football.png'
 
 export default function FootballWeb() {
   return (
@@ -27,7 +28,7 @@ export default function FootballWeb() {
               pr="2"
               color={useColorModeValue('#ff6d28', '#ea047e')}
             >
-              <Text>Works</Text>
+              <Text fontWeight="semibold">Works</Text>
             </Link>
             <ChevronRightIcon />
             <Text
@@ -139,7 +140,7 @@ export default function FootballWeb() {
           </Flex>
         </SimpleGrid>
         <Image
-          src="https://wallpaperaccess.com/full/138728.jpg"
+          src={thumbnail2}
           className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-72 object-cover"
         />
       </Box>

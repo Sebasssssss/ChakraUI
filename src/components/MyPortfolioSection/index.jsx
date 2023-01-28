@@ -1,44 +1,28 @@
 import React from 'react'
-import {
-  Box,
-  Button,
-  Image,
-  Link,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Button, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
+import Card from '../Card'
+import thumbnail1 from '../../assets/giffy.png'
 
 export default function MyPortfolioSection() {
   return (
     <>
-      <Box className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-6">
-        <Link
-          as={ReactLink}
-          to="/Detail/personalBlog"
-          className="w-full mb-4 text-center"
-        >
-          <Image
-            src="https://i.pinimg.com/564x/cc/c7/b7/ccc7b72e8d2ff092eccff8d52eb1af7c.jpg"
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-36 object-cover"
-          />
-          <Text className="text-md mt-3 font-mplus font-bold">Title</Text>
-          <Text className="text-sm opacity-70">Subtitle</Text>
-        </Link>
-        <Link
-          as={ReactLink}
-          to="/Detail/footballWeb"
-          className="w-full mb-4 text-center"
-        >
-          <Image
-            src="https://i.pinimg.com/564x/b1/7f/f0/b17ff0a32d55ec4adb61c1b51459a396.jpg"
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-36 object-cover"
-          />
-          <Text className="text-md mt-3 font-mplus font-bold">Title</Text>
-          <Text className="text-sm opacity-70">Subtitle</Text>
-        </Link>
-      </Box>
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap="6" my="4">
+        <Card
+          id="personalBlog"
+          title="Personal Blog"
+          subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
+          thumbnail="https://user-images.githubusercontent.com/105828786/201495026-037ba440-a51c-4746-9bcd-cbcca07ef417.png"
+        />
+
+        <Card
+          id="giffyapp"
+          title="Giffy App"
+          subtitle="Gifs web app created with Giphy's API"
+          thumbnail={thumbnail1}
+        />
+      </SimpleGrid>
       <Button
         bg={useColorModeValue('#85586f', '#ea047e90')}
         textColor="#fff"
