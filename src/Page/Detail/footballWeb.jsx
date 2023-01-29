@@ -141,7 +141,7 @@ export default function FootballWeb() {
         </SimpleGrid>
         <Image
           src={thumbnail2}
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-72 object-cover"
+          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
         />
       </Box>
     </Layout>

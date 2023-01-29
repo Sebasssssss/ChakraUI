@@ -19,7 +19,6 @@ export default function Card({
         alt={title}
         w="full"
         rounded="xl"
-        h="36"
         objectFit="cover"
       />
       <Text fontSize="md" mt="2" fontWeight="bold" className="font-mplus">

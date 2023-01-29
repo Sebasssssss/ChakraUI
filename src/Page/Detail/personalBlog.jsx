@@ -115,7 +115,7 @@ export default function PersonalBlog() {
         </SimpleGrid>
         <Image
           src={thumbnail}
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-72 object-cover"
+          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-max object-cover"
         />
       </Box>
     </Layout>

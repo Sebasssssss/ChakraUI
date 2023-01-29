@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Box,
   Flex,
   Image,
@@ -28,9 +27,13 @@ export default function Profile() {
             objectFit="cover"
           />
           <Flex>
-            <Dot to="https://github.com/Sebasssssss" name="Github" />
-            <Dot name="Email" />
-            <Dot name="Instagram" />
+            <Dot to="https://github.com/Sebasssssss" title="Github" />
+            <Dot
+              title="Email"
+              canCopy={true}
+              toCopy="sebastian.rodriguez9714@gmail.com"
+            />
+            <Dot title="Instagram" />
           </Flex>
         </Flex>
       </Section>
