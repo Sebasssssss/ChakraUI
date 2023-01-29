@@ -28,7 +28,7 @@ export default function Navbar() {
             as={NavLink}
             _hover={{ textDecoration: 'none' }}
             to="/"
-            className="group text-lg p-2 font-semibold inline-flex items-center gap-1.5 tracking-tighter font-mplus"
+            className="group text-lg p-2 font-semibold inline-flex font-mplus items-center gap-1.5 tracking-tighter"
           >
             <Footprint />
             Sebass

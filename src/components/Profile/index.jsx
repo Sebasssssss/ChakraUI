@@ -111,7 +111,9 @@ export default function Profile() {
             textColor="#fff"
             _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
           >
-            Download CV
+            <a href="../../assets/avatar.jpg" download="hola.jpg">
+              Download CV
+            </a>
             <ArrowDownIcon ml="1" />
           </Button>
         </Box>

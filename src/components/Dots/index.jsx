@@ -8,6 +8,9 @@ function Dot({ to, title = 'Source', toCopy = 'Example', canCopy = false }) {
     if (canCopy) {
       navigator.clipboard.writeText(toCopy)
       setCopy(true)
+      setTimeout(() => {
+        setCopy(false)
+      }, 2000)
     }
     null
   }, [canCopy])
