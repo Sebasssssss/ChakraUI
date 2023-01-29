@@ -15,6 +15,8 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 import thumbnail from '../../assets/giffy.png'
+import thumbnail2 from '../../assets/giffy2.png'
+import thumbnail3 from '../../assets/giffy3.png'
 
 export default function GiffyApp() {
   return (
@@ -53,7 +55,7 @@ export default function GiffyApp() {
             </Text>
           </Flex>
           <Box textAlign="right">
-            <Dot to="https://github.com/Sebasssssss/Giffy.app" name="Source" />
+            <Dot to="https://github.com/Sebasssssss/Giffy.app" />
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
@@ -126,14 +128,27 @@ export default function GiffyApp() {
             <Text textAlign="left" textIndent="1em">
               With this web app i learned and understand a lot of how Javascript
               and React works. Learned how to do simples fetch of api's data and
-              a lot of react hooks.
+              many react hooks.
             </Text>
           </Flex>
         </SimpleGrid>
-        <Image
-          src={thumbnail}
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
-        />
+        <SimpleGrid gap="6">
+          <Image
+            alt="MainImage"
+            src={thumbnail}
+            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+          />
+          <Image
+            alt="MainImage"
+            src={thumbnail2}
+            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+          />
+          <Image
+            alt="MainImage"
+            src={thumbnail3}
+            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+          />
+        </SimpleGrid>
       </Box>
     </Layout>
   )

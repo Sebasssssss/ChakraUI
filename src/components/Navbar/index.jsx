@@ -3,6 +3,7 @@ import ToggleColorMode from '../ToggleThemeButton'
 import Footprint from '../icons/footprint'
 import { Box, Flex, useColorModeValue, Link } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
+import { IoLogoGithub } from 'react-icons/io5'
 
 export default function Navbar() {
   return (
@@ -46,6 +47,17 @@ export default function Navbar() {
             }
           >
             Works
+          </Link>
+          <Link
+            href="https://github.com/Sebasssssss/Portfolio"
+            p="2"
+            rounded="sm"
+            display="inline-flex"
+            gap="1"
+            alignItems="center"
+            isExternal
+          >
+            <IoLogoGithub /> Source
           </Link>
         </Flex>
         <ToggleColorMode />

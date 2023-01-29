@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react'
 import { Link, Text, useColorModeValue } from '@chakra-ui/react'
 
-function Dot({ to, title = 'Dot!', toCopy = 'Example', canCopy = false }) {
+function Dot({ to, title = 'Source', toCopy = 'Example', canCopy = false }) {
   const [copy, setCopy] = useState(false)
 
   const copyText = useCallback(() => {

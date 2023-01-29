@@ -14,7 +14,11 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '../../assets/personalblog.png'
+import thumbnail1 from '../../assets/personalblog.png'
+import thumbnail2 from '../../assets/personalblog2.png'
+import thumbnail3 from '../../assets/personalblog3.png'
+import thumbnail4 from '../../assets/personalblog4.png'
+import thumbnail5 from '../../assets/personalblog5.png'
 
 export default function PersonalBlog() {
   return (
@@ -53,10 +57,7 @@ export default function PersonalBlog() {
             </Text>
           </Flex>
           <Box textAlign="right">
-            <Dot
-              to="https://github.com/Sebasssssss/PersonalBlog-PHP-Takuya-WhatIUse"
-              name="Source"
-            />
+            <Dot to="https://github.com/Sebasssssss/PersonalBlog-PHP-Takuya-WhatIUse" />
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
@@ -113,10 +114,43 @@ export default function PersonalBlog() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <Image
-          src={thumbnail}
-          className="w-full border border-slate-300 dark:border-slate-700 rounded-xl h-max object-cover"
-        />
+        <SimpleGrid gap="6">
+          <Image
+            src={thumbnail1}
+            alt="MainImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+          <Image
+            src={thumbnail2}
+            alt="secondImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+          <Image
+            src={thumbnail3}
+            alt="thirdImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+          <Image
+            src={thumbnail4}
+            alt="forthImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+          <Image
+            src={thumbnail5}
+            alt="fifthImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+        </SimpleGrid>
       </Box>
     </Layout>
   )
