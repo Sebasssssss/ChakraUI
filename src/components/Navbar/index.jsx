@@ -23,7 +23,7 @@ export default function Navbar() {
         maxW={'container.md'}
         mx={'auto'}
       >
-        <Flex alignItems="center">
+        <Flex alignItems="center" gap="4">
           <Link
             as={NavLink}
             _hover={{ textDecoration: 'none' }}
@@ -33,32 +33,37 @@ export default function Navbar() {
             <Footprint />
             Sebass
           </Link>
-          <Link
-            as={NavLink}
-            to="/works"
-            p="2"
-            rounded="sm"
-            style={({ isActive }) =>
-              isActive
-                ? {
-                    backgroundColor: useColorModeValue('#00abb280', '#00f5ff90')
-                  }
-                : null
-            }
-          >
-            Works
-          </Link>
-          <Link
-            href="https://github.com/Sebasssssss/Portfolio"
-            p="2"
-            rounded="sm"
-            display="inline-flex"
-            gap="1"
-            alignItems="center"
-            isExternal
-          >
-            <IoLogoGithub /> Source
-          </Link>
+          <Flex gap="4">
+            <Link
+              as={NavLink}
+              to="/works"
+              p="2"
+              rounded="sm"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      backgroundColor: useColorModeValue(
+                        '#00abb280',
+                        '#00f5ff90'
+                      )
+                    }
+                  : null
+              }
+            >
+              Works
+            </Link>
+            <Link
+              href="https://github.com/Sebasssssss/Portfolio"
+              p="2"
+              rounded="sm"
+              display="inline-flex"
+              gap="1"
+              alignItems="center"
+              isExternal
+            >
+              <IoLogoGithub /> Source
+            </Link>
+          </Flex>
         </Flex>
         <ToggleColorMode />
       </Flex>
