@@ -68,7 +68,7 @@ export default function FootballWeb() {
           >
             Manchester United web concept with backend included! This is my
             first full website in php. It includes a cron that it's porpuse is
-            to automatically install the data base with simple example
+            to automatically install the database with simple example
             information, and ready to use the web!
           </Highlight>
         </Text>
