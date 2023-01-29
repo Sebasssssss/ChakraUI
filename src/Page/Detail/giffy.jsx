@@ -104,7 +104,7 @@ export default function GiffyApp() {
               </Tag>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              React / Wouter / Intersection-ovbserver / just-debounce-it
+              React / Wouter / Intersection-observer / just-debounce-it
             </Text>
           </Flex>
           <Flex alignItems="flex-start">
@@ -127,8 +127,16 @@ export default function GiffyApp() {
             </Text>
             <Text textAlign="left" textIndent="1em">
               With this web app i learned and understand a lot of how Javascript
-              and React works. Learned how to do simples fetch of api's data and
-              many react hooks.
+              and React works. Learned how to do simples fetch of api's data,
+              many react hooks and how to deploy a web with{' '}
+              <Link
+                href="https://vercel.com/"
+                isExternal
+                color={useColorModeValue('#ff6d28', '#ea047e')}
+              >
+                Vercel
+              </Link>
+              .
             </Text>
           </Flex>
         </SimpleGrid>

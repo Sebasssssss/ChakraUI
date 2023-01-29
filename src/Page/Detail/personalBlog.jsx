@@ -66,10 +66,10 @@ export default function PersonalBlog() {
             styles={{ color: useColorModeValue('black', '#ea047e') }}
           >
             Website completely based on Takuya Matsuyama's WhatIUse web! I tried
-            to replicate the web Takuya's did because I really like how it look
-            almost in every aspect and because I have not seen a similar web
-            like this one before. In this case, I've made it completely in Php,
-            with a backend included!
+            to replicate the web Takuya's did because I really like how it
+            looked in almost every aspect and because I have not seen a similar
+            web like this one before. In this case, I've made it completely in
+            Php, with a backend included!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
@@ -109,8 +109,8 @@ export default function PersonalBlog() {
             </Text>
             <Text textAlign="left" textIndent="1em">
               In this website i learned a a lot of tricks with php that helped
-              me simplify many details, pulled a lot of tailwindcss skills, and
-              helped me understand how dark mode works with javascript!
+              me simplify many details, pulled a lot of tailwindcss skills,
+              helped me understand how dark mode and responsive works!
             </Text>
           </Flex>
         </SimpleGrid>

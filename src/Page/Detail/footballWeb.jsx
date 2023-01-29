@@ -66,10 +66,10 @@ export default function FootballWeb() {
             query={['php', 'backend', 'cron']}
             styles={{ color: useColorModeValue('black', '#ea047e') }}
           >
-            Football Website with backend included! This is my first full
-            website in php. It includes a cron that it's porpuse is to
-            automatically, when it is open, install the data base with simple
-            example information, and ready to use the web!
+            Manchester United web concept with backend included! This is my
+            first full website in php. It includes a cron that it's porpuse is
+            to automatically install the data base with simple example
+            information, and ready to use the web!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
