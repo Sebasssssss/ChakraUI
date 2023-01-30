@@ -53,6 +53,24 @@ export default function Navbar() {
               Works
             </Link>
             <Link
+              as={NavLink}
+              to="/contact"
+              p="2"
+              rounded="sm"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      backgroundColor: useColorModeValue(
+                        '#00abb280',
+                        '#00f5ff90'
+                      )
+                    }
+                  : null
+              }
+            >
+              Contact
+            </Link>
+            <Link
               href="https://github.com/Sebasssssss/Portfolio"
               p="2"
               rounded="sm"

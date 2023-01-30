@@ -6,6 +6,7 @@ import Home from '../../Page/Home'
 import Works from '../../Page/Works'
 import { AnimatePresence } from 'framer-motion'
 import { Routes, Route, useLocation } from 'react-router'
+import Contact from '../../Page/Contact'
 
 export default function Router() {
   const location = useLocation()
@@ -15,6 +16,7 @@ export default function Router() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/work/personalBlog" element={<PersonalBlog />} />
           <Route path="/work/footballWeb" element={<FootballWeb />} />
           <Route path="/work/giffyapp" element={<GiffyApp />} />
