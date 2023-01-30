@@ -10,86 +10,90 @@ import {
   Box,
   Button,
   useColorModeValue,
-  SimpleGrid
+  FormControl,
+  FormLabel
 } from '@chakra-ui/react'
+import { Helmet } from 'react-helmet'
 
 export default function Contact() {
   return (
-    <Layout delay="0.2">
-      <Section>
-        <SimpleGrid gap="2" my="8">
-          <Text className="font-mplus" fontWeight="semibold" fontSize="24px">
-            Contact me!
-          </Text>
-          <Text>
+    <>
+      <Helmet>
+        <title>Contact | Homepage</title>
+      </Helmet>
+      <Layout delay="0.2">
+        <Text fontSize="xl" mb="4" fontWeight="bold" className="font-mplus">
+          Contact
+        </Text>
+        <Section>
+          <Text my="4">
             Feel free to contact me anytime you want, i will be pleased to
             answer you. Send me a message down here 😁
           </Text>
-        </SimpleGrid>
-      </Section>
-      <Section delay={0.2}>
-        <Card
-          shadow="xl"
-          w="max"
-          mx="auto"
-          bg={useColorModeValue('#dfd3c3', '#111b')}
-          _before={{
-            borderColor: `transparent transparent ${useColorModeValue(
-              '#dfd3c3',
-              '#111b'
-            )} transparent`,
-            borderStyle: 'solid',
-            borderWidth: '0 10px 10px 10px',
-            bottom: '100%',
-            content: "''",
-            left: '45%',
-            pos: 'absolute'
-          }}
-        >
-          <CardBody
-            display="flex"
-            flexDirection="column"
-            gap="6"
-            alignItems="center"
-            py="10"
+        </Section>
+        <Section delay={0.2}>
+          <Card
+            shadow="xl"
+            w="max"
+            mx="auto"
+            rounded="1rem"
+            bg={useColorModeValue('#dfd3c3', '#111b')}
           >
-            <Box display="inline-flex" justifyContent="space-between" w="full">
-              <Input
-                placeholder="Name"
-                w="32"
-                borderColor={useColorModeValue('#16161b', null)}
-                focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
-              />
-              <Input
-                placeholder="Last Name"
-                w="32"
-                borderColor={useColorModeValue('#16161b', null)}
-                focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
-              />
-            </Box>
-            <Input
-              placeholder="email"
-              w="72"
-              borderColor={useColorModeValue('#16161b', null)}
-              focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
-            />
-            <Textarea
-              placeholder="Message..."
-              w="72"
-              resize="none"
-              borderColor={useColorModeValue('#16161b', null)}
-              focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
-            />
-            <Button
-              type="submit"
-              bg={useColorModeValue('#ab718e', null)}
-              _hover={{ bg: useColorModeValue('#f6a2cc', null) }}
-            >
-              Send!
-            </Button>
-          </CardBody>
-        </Card>
-      </Section>
-    </Layout>
+            <CardBody>
+              <FormControl
+                display="flex"
+                flexDirection="column"
+                gap="4"
+                alignItems="center"
+              >
+                <Box
+                  display="inline-flex"
+                  justifyContent="space-between"
+                  w="full"
+                >
+                  <Box>
+                    <FormLabel>Name</FormLabel>
+                    <Input
+                      w="32"
+                      borderColor={useColorModeValue('#16161b', null)}
+                      focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                    />
+                  </Box>
+                  <Box>
+                    <FormLabel>Last Name</FormLabel>
+                    <Input
+                      w="32"
+                      borderColor={useColorModeValue('#16161b', null)}
+                      focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                    />
+                  </Box>
+                </Box>
+                <Box>
+                  <FormLabel>Email</FormLabel>
+                  <Input
+                    type="email"
+                    w="72"
+                    borderColor={useColorModeValue('#16161b', null)}
+                    focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                  />
+                </Box>
+                <Box>
+                  <FormLabel>Message</FormLabel>
+                  <Textarea
+                    w="72"
+                    resize="none"
+                    borderColor={useColorModeValue('#16161b', null)}
+                    focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                  />
+                </Box>
+                <Button type="submit" colorScheme="teal">
+                  Send!
+                </Button>
+              </FormControl>
+            </CardBody>
+          </Card>
+        </Section>
+      </Layout>
+    </>
   )
 }
