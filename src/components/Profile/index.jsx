@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Image,
+  Link,
   Button,
   Highlight,
   Text,
@@ -111,9 +112,9 @@ export default function Profile() {
             textColor="#fff"
             _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
           >
-            <a href="../../assets/avatar.jpg" download="hola.jpg">
+            <Link as="a" href={avatar} download>
               Download CV
-            </a>
+            </Link>
             <ArrowDownIcon ml="1" />
           </Button>
         </Box>
