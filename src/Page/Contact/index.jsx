@@ -84,7 +84,11 @@ export default function Contact() {
                     focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
                   />
                 </Box>
-                <Button type="submit" colorScheme="teal">
+                <Button
+                  type="submit"
+                  colorScheme="pink"
+                  _hover={{ boxShadow: '0 0 0 5px #ea047e5f' }}
+                >
                   Send!
                 </Button>
               </FormControl>
