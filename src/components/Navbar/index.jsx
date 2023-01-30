@@ -1,9 +1,32 @@
 import React from 'react'
 import ToggleColorMode from '../ToggleThemeButton'
 import Footprint from '../icons/footprint'
-import { Box, Flex, useColorModeValue, Link } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  useColorModeValue,
+  Link,
+  Menu,
+  MenuItem,
+  MenuButton,
+  MenuList,
+  IconButton
+} from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 import { IoLogoGithub } from 'react-icons/io5'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import { Link as ReactLink } from 'react-router-dom'
+
+const MenuLink = (props, to) => (
+  <Link
+    as={ReactLink}
+    display="inline-flex"
+    alignItems="center"
+    gap="1"
+    to={to}
+    {...props}
+  />
+)
 
 export default function Navbar() {
   return (
@@ -33,7 +56,7 @@ export default function Navbar() {
             <Footprint />
             Sebass
           </Link>
-          <Flex gap="4">
+          <Box gap="4" display={{ base: 'none', md: 'flex' }}>
             <Link
               as={NavLink}
               to="/works"
@@ -81,9 +104,34 @@ export default function Navbar() {
             >
               <IoLogoGithub /> Source
             </Link>
-          </Flex>
+          </Box>
         </Flex>
-        <ToggleColorMode />
+        <Flex gap="3">
+          <ToggleColorMode />
+          <Box display={{ base: 'inline-block', md: 'none' }}>
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                aria-label="Options"
+                icon={<HamburgerIcon />}
+                bg="transparent"
+                border="1px"
+                borderColor="#334155"
+              />
+              <MenuList>
+                <MenuItem as={MenuLink} to="/works">
+                  Works
+                </MenuItem>
+                <MenuItem as={MenuLink} to="/contact">
+                  Contact
+                </MenuItem>
+                <MenuItem as={MenuLink} to="https://github.com/Sebasssssss">
+                  <IoLogoGithub /> Source
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Flex>
       </Flex>
     </Box>
   )

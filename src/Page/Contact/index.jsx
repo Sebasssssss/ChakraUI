@@ -22,7 +22,13 @@ export default function Contact() {
         <title>Contact | Homepage</title>
       </Helmet>
       <Layout delay="0.2">
-        <Text fontSize="xl" mb="4" fontWeight="bold" className="font-mplus">
+        <Text
+          fontSize="xl"
+          mb="4"
+          mt="8"
+          fontWeight="bold"
+          className="font-mplus"
+        >
           Contact
         </Text>
         <Section>
@@ -32,13 +38,7 @@ export default function Contact() {
           </Text>
         </Section>
         <Section delay={0.2}>
-          <Card
-            shadow="xl"
-            w="max"
-            mx="auto"
-            rounded="1rem"
-            bg={useColorModeValue('#dfd3c3', '#111b')}
-          >
+          <Card w="full" bg="transparent" shadow="none">
             <CardBody>
               <FormControl
                 display="flex"
@@ -54,7 +54,7 @@ export default function Contact() {
                   <Box>
                     <FormLabel>Name</FormLabel>
                     <Input
-                      w="32"
+                      w="52"
                       borderColor={useColorModeValue('#16161b', null)}
                       focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
                     />
@@ -62,25 +62,23 @@ export default function Contact() {
                   <Box>
                     <FormLabel>Last Name</FormLabel>
                     <Input
-                      w="32"
+                      w="52"
                       borderColor={useColorModeValue('#16161b', null)}
                       focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
                     />
                   </Box>
                 </Box>
-                <Box>
+                <Box w="full">
                   <FormLabel>Email</FormLabel>
                   <Input
                     type="email"
-                    w="72"
                     borderColor={useColorModeValue('#16161b', null)}
                     focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
                   />
                 </Box>
-                <Box>
+                <Box w="full">
                   <FormLabel>Message</FormLabel>
                   <Textarea
-                    w="72"
                     resize="none"
                     borderColor={useColorModeValue('#16161b', null)}
                     focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
