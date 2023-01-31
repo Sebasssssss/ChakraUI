@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import Card from '../../components/Card'
+import thumbnail from '../../assets/personalBlog.png'
 import thumbnail1 from '../../assets/giffy.png'
 import thumbnail2 from '../../assets/football.png'
 import { Helmet } from 'react-helmet-async'
@@ -29,7 +30,7 @@ export default function Works() {
               id="personalBlog"
               title="Personal Blog"
               subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
-              thumbnail="https://user-images.githubusercontent.com/105828786/201495026-037ba440-a51c-4746-9bcd-cbcca07ef417.png"
+              thumbnail={thumbnail}
             />
             <Card
               id="footballWeb"

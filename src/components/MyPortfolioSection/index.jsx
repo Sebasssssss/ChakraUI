@@ -8,7 +8,8 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
 import Card from '../Card'
-import thumbnail1 from '../../assets/giffy.png'
+import thumbnail1 from '../../assets/personalBlog.png'
+import thumbnail2 from '../../assets/giffy.png'
 
 export default function MyPortfolioSection() {
   return (
@@ -28,14 +29,14 @@ export default function MyPortfolioSection() {
           id="personalBlog"
           title="Personal Blog"
           subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
-          thumbnail="https://user-images.githubusercontent.com/105828786/201495026-037ba440-a51c-4746-9bcd-cbcca07ef417.png"
+          thumbnail={thumbnail1}
         />
 
         <Card
           id="giffyapp"
           title="Giffy App"
           subtitle="Gifs web app created with Giphy's API"
-          thumbnail={thumbnail1}
+          thumbnail={thumbnail2}
         />
       </SimpleGrid>
       <Button
