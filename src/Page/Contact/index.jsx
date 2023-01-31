@@ -13,6 +13,7 @@ import {
   FormControl,
   FormLabel
 } from '@chakra-ui/react'
+import { Helmet } from 'react-helmet-async'
 import useEmail from '../../hooks/useEmail'
 
 export default function Contact() {
@@ -20,6 +21,9 @@ export default function Contact() {
 
   return (
     <>
+      <Helmet>
+        <title>Contact | Homepage</title>
+      </Helmet>
       <Layout delay="0.2">
         <Text
           fontSize="xl"

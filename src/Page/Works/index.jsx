@@ -5,10 +5,14 @@ import { SimpleGrid, Text } from '@chakra-ui/react'
 import Card from '../../components/Card'
 import thumbnail1 from '../../assets/giffy.png'
 import thumbnail2 from '../../assets/football.png'
+import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
   return (
     <>
+      <Helmet>
+        <title>Works | Homepage</title>
+      </Helmet>
       <Layout delay="0.2">
         <Text
           fontSize="xl"
