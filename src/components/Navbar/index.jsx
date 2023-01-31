@@ -12,10 +12,9 @@ import {
   MenuList,
   IconButton
 } from '@chakra-ui/react'
-import { NavLink } from 'react-router-dom'
 import { IoLogoGithub } from 'react-icons/io5'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Link as ReactLink } from 'react-router-dom'
+import { Link as ReactLink, NavLink } from 'react-router-dom'
 
 const MenuLink = (props, to) => (
   <Link
@@ -29,6 +28,10 @@ const MenuLink = (props, to) => (
 )
 
 export default function Navbar() {
+  let activeLink = {
+    backgroundColor: useColorModeValue('#00abb280', '#00f5ff90')
+  }
+
   return (
     <Box
       position="fixed"
@@ -62,16 +65,7 @@ export default function Navbar() {
               to="/works"
               p="2"
               rounded="sm"
-              style={({ isActive }) =>
-                isActive
-                  ? {
-                      backgroundColor: useColorModeValue(
-                        '#00abb280',
-                        '#00f5ff90'
-                      )
-                    }
-                  : null
-              }
+              _activeLink={activeLink}
             >
               Works
             </Link>
@@ -80,16 +74,7 @@ export default function Navbar() {
               to="/contact"
               p="2"
               rounded="sm"
-              style={({ isActive }) =>
-                isActive
-                  ? {
-                      backgroundColor: useColorModeValue(
-                        '#00abb280',
-                        '#00f5ff90'
-                      )
-                    }
-                  : null
-              }
+              _activeLink={activeLink}
             >
               Contact
             </Link>

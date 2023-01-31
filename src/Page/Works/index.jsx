@@ -3,16 +3,12 @@ import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import Card from '../../components/Card'
-import { Helmet } from 'react-helmet'
 import thumbnail1 from '../../assets/giffy.png'
 import thumbnail2 from '../../assets/football.png'
 
 export default function Works() {
   return (
     <>
-      <Helmet>
-        <title>Works | Homepage</title>
-      </Helmet>
       <Layout delay="0.2">
         <Text
           fontSize="xl"
