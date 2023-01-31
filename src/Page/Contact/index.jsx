@@ -11,13 +11,15 @@ import {
   Button,
   useColorModeValue,
   FormControl,
-  FormLabel
+  FormLabel,
+  Alert,
+  AlertIcon
 } from '@chakra-ui/react'
 import { Helmet } from 'react-helmet-async'
 import useEmail from '../../hooks/useEmail'
 
 export default function Contact() {
-  const { sendEmail, form } = useEmail()
+  const { sendEmail, form, isSent } = useEmail()
 
   return (
     <>
@@ -105,6 +107,11 @@ export default function Contact() {
                 >
                   Send!
                 </Button>
+                {isSent ? (
+                  <Alert status="success">
+                    <AlertIcon /> Your message has been delivered correctly!
+                  </Alert>
+                ) : null}
               </FormControl>
             </CardBody>
           </Card>

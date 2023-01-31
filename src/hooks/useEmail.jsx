@@ -1,8 +1,9 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function useEmail() {
   const form = useRef()
+  const [isSent, setSent] = useState(false)
 
   const sendEmail = e => {
     e.preventDefault()
@@ -14,12 +15,18 @@ export default function useEmail() {
     emailjs.sendForm(serviceID, templateID, form.current, publicKEY).then(
       result => {
         console.log(result.text)
+        setSent(true)
       },
       error => {
         console.log(error.text)
+        setSent(false)
       }
     )
+    e.target.reset()
+    setTimeout(() => {
+      setSent(false)
+    }, 5000)
   }
 
-  return { sendEmail, form }
+  return { sendEmail, form, isSent }
 }
