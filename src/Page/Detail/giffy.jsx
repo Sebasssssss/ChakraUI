@@ -12,7 +12,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 import thumbnail from '../../assets/giffy.png'
 import thumbnail2 from '../../assets/giffy2.png'
@@ -59,17 +59,32 @@ export default function GiffyApp() {
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
-          <Highlight
-            query={['most', 'search', 'popular']}
-            styles={{ color: useColorModeValue('black', '#ea047e') }}
-          >
-            Web app where you'll be able to search for wherever gif or sticker
-            you want. You can sort them by ranking or look for the most popular
-            ones. If you feel like looking whats the most search things by
-            people, you can do it too by heading up to the footer section!
-          </Highlight>
+          Web app where you'll be able to search for wherever gif or sticker you
+          want. You can sort them by ranking or look for the most popular ones.
+          If you feel like looking whats the most search things by people, you
+          can do it too by heading up to the footer section!
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
+          <Flex alignItems="center" gap="2">
+            <Text
+              fontSize="xs"
+              fontWeight="bold"
+              textTransform="uppercase"
+              w="max"
+              px="1"
+              rounded="sm"
+              bg={useColorModeValue('#ff6d2850', '#ea047e50')}
+              color={useColorModeValue('#ff6d28', '#ea047e')}
+            >
+              website
+            </Text>
+            <Link
+              href="https://giffys-sebasssssss.vercel.app/"
+              color={useColorModeValue('#ff6d28', '#ea047e')}
+            >
+              https://giffys-sebasssssss.vercel.app/ <ExternalLinkIcon />
+            </Link>
+          </Flex>
           <Flex alignItems="center" gap="2">
             <Text
               fontSize="xs"
