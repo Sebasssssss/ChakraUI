@@ -46,7 +46,7 @@ export default function Navbar() {
         maxW={'container.md'}
         mx={'auto'}
       >
-        <Flex alignItems="center" gap="4">
+        <Flex alignItems="center" gap="2">
           <Link
             as={NavLink}
             _hover={{ textDecoration: 'none' }}
@@ -56,7 +56,7 @@ export default function Navbar() {
             <Footprint />
             Sebass
           </Link>
-          <Box gap="4" display={{ base: 'none', md: 'flex' }}>
+          <Box gap="2" display={{ base: 'none', md: 'flex' }}>
             <Link
               as={NavLink}
               to="/works"

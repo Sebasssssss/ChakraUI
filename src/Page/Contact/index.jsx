@@ -14,8 +14,11 @@ import {
   FormLabel
 } from '@chakra-ui/react'
 import { Helmet } from 'react-helmet'
+import useEmail from '../../hooks/useEmail'
 
 export default function Contact() {
+  const { sendEmail, form } = useEmail()
+
   return (
     <>
       <Helmet>
@@ -41,8 +44,11 @@ export default function Contact() {
           <Card w="full" bg="transparent" shadow="none">
             <CardBody>
               <FormControl
+                as="form"
+                ref={form}
+                onSubmit={sendEmail}
                 display="flex"
-                flexDirection="column"
+                flexDir="column"
                 gap="4"
                 alignItems="center"
               >
@@ -57,6 +63,8 @@ export default function Contact() {
                       w="52"
                       borderColor={useColorModeValue('#16161b', null)}
                       focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                      isRequired
+                      name="from_name"
                     />
                   </Box>
                   <Box>
@@ -65,6 +73,8 @@ export default function Contact() {
                       w="52"
                       borderColor={useColorModeValue('#16161b', null)}
                       focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                      isRequired
+                      name="lastName"
                     />
                   </Box>
                 </Box>
@@ -74,6 +84,8 @@ export default function Contact() {
                     type="email"
                     borderColor={useColorModeValue('#16161b', null)}
                     focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                    isRequired
+                    name="email"
                   />
                 </Box>
                 <Box w="full">
@@ -82,6 +94,8 @@ export default function Contact() {
                     resize="none"
                     borderColor={useColorModeValue('#16161b', null)}
                     focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+                    isRequired
+                    name="message"
                   />
                 </Box>
                 <Button
