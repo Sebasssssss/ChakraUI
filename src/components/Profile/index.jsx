@@ -98,7 +98,7 @@ export default function Profile() {
               got a high relish for all the process of building projects, from
               planning, inspiring and designing all the way to solving real-life
               problems with code. During free-time, he loves playing open world
-              games like Dying light 2 or Elden Ring. He is currently working on
+              games like Dying light 2 or Elden Ring. Currently he is working on
               projects and learning javascript in order to code React.
             </Highlight>
           </Text>
@@ -108,13 +108,14 @@ export default function Profile() {
             <Image src={pandaLookingCV} />
           </Box>
           <Button
+            as="a"
+            href={avatar}
+            download
             bg={useColorModeValue('#85586f', '#ea047e90')}
             textColor="#fff"
             _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
           >
-            <Link as="a" href={avatar} download>
-              Download CV
-            </Link>
+            Download CV
             <ArrowDownIcon ml="1" />
           </Button>
         </Box>
