@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../model'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { PawdaSpinner, PawdaContainer } from '../voxel-pawda-loader'
 
 function easeOutCirc(x) {
@@ -12,7 +12,7 @@ const VoxelPawda = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlPawdaGLB = '../../../public/pawdaa.glb'
+  const urlPawdaGLB = '../../../../public/pawdaa.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
