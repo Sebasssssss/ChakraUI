@@ -1,5 +1,7 @@
 # Sebass's Homepage
 
+![j_BCwugvR-MMxIJsRaw-opMerlwBw-darklight](https://raw.githubusercontent.com/Sebasssssss/sebass-homepage/main/src/assets/readme.png)
+
 ## Stack
 
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
