@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import ToggleColorMode from '../ToggleThemeButton'
 import Footprint from '../icons/footprint'
 import {
@@ -16,16 +16,9 @@ import { IoLogoGithub } from 'react-icons/io5'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { Link as ReactLink, NavLink } from 'react-router-dom'
 
-const MenuLink = (props, to) => (
-  <Link
-    as={ReactLink}
-    display="inline-flex"
-    alignItems="center"
-    gap="1"
-    to={to}
-    {...props}
-  />
-)
+const MenuLink = forwardRef((props, ref) => (
+  <Link as={ReactLink} ref={ref} {...props} />
+))
 
 export default function Navbar() {
   let activeLink = {
@@ -110,7 +103,13 @@ export default function Navbar() {
                 <MenuItem as={MenuLink} to="/contact">
                   Contact
                 </MenuItem>
-                <MenuItem as={MenuLink} to="https://github.com/Sebasssssss">
+                <MenuItem
+                  as={MenuLink}
+                  to="https://github.com/Sebasssssss"
+                  display="inline-flex"
+                  alignItems="center"
+                  gap="1"
+                >
                   <IoLogoGithub /> Source
                 </MenuItem>
               </MenuList>
