@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { loadGLTFModel } from '../Model'
+import { loadGLTFModel } from '../model'
 import { PawdaSpinner, PawdaContainer } from '../voxel-pawda-loader'
 
 function easeOutCirc(x) {
