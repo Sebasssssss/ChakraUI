@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Image,
-  Link,
   Button,
   Highlight,
   Text,
