@@ -12,7 +12,7 @@ const VoxelPawda = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlPawdaGLB = '../../../../public/pawdaa.glb'
+  const urlPawdaGLB = '/pawdaa.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
