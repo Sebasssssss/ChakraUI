@@ -46,7 +46,7 @@ export default function MyPortfolioSection() {
         as={ReactLink}
         to="/works"
       >
-        See more <ChevronRightIcon />
+        See more <ChevronRightIcon mt="1" />
       </Button>
     </>
   )
