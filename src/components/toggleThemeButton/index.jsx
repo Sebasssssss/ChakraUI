@@ -6,9 +6,10 @@ const ToggleColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Button
-      bg={useColorModeValue('#85586f', '#FFECEF')}
-      _hover={{ bg: useColorModeValue('#774f63', '#FFCACA') }}
-      textColor={useColorModeValue('#f8ede3', 'black')}
+      bg={useColorModeValue('#85586f', null)}
+      _hover={{ bg: useColorModeValue('#774f63', null) }}
+      textColor={useColorModeValue('#f8ede3', null)}
+      colorScheme={useColorModeValue(null, 'orange')}
       p={1}
       onClick={() => toggleColorMode()}
     >
