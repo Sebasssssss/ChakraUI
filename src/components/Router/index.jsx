@@ -7,6 +7,7 @@ import Works from '../../Page/Works'
 import { AnimatePresence } from 'framer-motion'
 import { Routes, Route, useLocation } from 'react-router'
 import Contact from '../../Page/Contact'
+import NotFound from '../../Page/Error'
 
 export default function Router() {
   const location = useLocation()
@@ -15,6 +16,7 @@ export default function Router() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="/works" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/work/personalBlog" element={<PersonalBlog />} />
