@@ -20,7 +20,7 @@ export default function Profile() {
       <Section>
         <Flex gap="2" alignItems="center">
           <Image
-            src={avatar}
+            src="https://i.pinimg.com/564x/84/88/6b/84886b93d55fdaaed4e8042349b1a7a1.jpg"
             borderRadius="1rem"
             w="100px"
             h="100px"
