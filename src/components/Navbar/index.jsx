@@ -72,7 +72,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="https://github.com/Sebasssssss/Portfolio"
+              href="https://github.com/Sebasssssss/sebass-homepage"
               p="2"
               rounded="sm"
               display="inline-flex"
