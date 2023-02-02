@@ -4,7 +4,6 @@ import {
   Text,
   Flex,
   useColorModeValue,
-  Tag,
   List,
   ListItem,
   Heading,

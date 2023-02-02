@@ -5,10 +5,8 @@ import {
   Box,
   Flex,
   Link,
-  Highlight,
   Image,
   SimpleGrid,
-  Tag,
   Text,
   useColorModeValue,
   Badge

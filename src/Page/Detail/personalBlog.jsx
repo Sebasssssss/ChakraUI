@@ -8,7 +8,6 @@ import {
   Highlight,
   Image,
   SimpleGrid,
-  Tag,
   Text,
   useColorModeValue,
   Badge
