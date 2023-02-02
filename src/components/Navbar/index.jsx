@@ -97,6 +97,9 @@ export default function Navbar() {
                 borderColor="#334155"
               />
               <MenuList>
+                <MenuItem as={MenuLink} to="/">
+                  About
+                </MenuItem>
                 <MenuItem as={MenuLink} to="/works">
                   Works
                 </MenuItem>

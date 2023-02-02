@@ -24,11 +24,15 @@ export default function ContacForm() {
         gap="4"
         alignItems="center"
       >
-        <Box display="inline-flex" justifyContent="space-between" w="full">
+        <Box
+          display={{ base: 'block', md: 'inline-flex' }}
+          justifyContent="space-between"
+          w="full"
+        >
           <Box>
             <FormLabel>Name</FormLabel>
             <Input
-              w="52"
+              w={{ base: 'full', md: '52' }}
               borderColor={useColorModeValue('#16161b', null)}
               focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
               isRequired
@@ -38,7 +42,7 @@ export default function ContacForm() {
           <Box>
             <FormLabel>Last Name</FormLabel>
             <Input
-              w="52"
+              w={{ base: 'full', md: '52' }}
               borderColor={useColorModeValue('#16161b', null)}
               focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
               isRequired

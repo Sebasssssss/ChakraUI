@@ -10,7 +10,8 @@ import {
   SimpleGrid,
   Tag,
   Text,
-  useColorModeValue
+  useColorModeValue,
+  Badge
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
@@ -73,39 +74,23 @@ export default function PersonalBlog() {
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
-          <Box></Box>
           <Flex alignItems="center" gap="2">
-            <Text
-              fontSize="xs"
-              fontWeight="bold"
-              textTransform="uppercase"
-              w="max"
-              px="1"
-              rounded="sm"
+            <Badge
               bg={useColorModeValue('#ff6d2850', '#ea047e50')}
               color={useColorModeValue('#ff6d28', '#ea047e')}
             >
               Stack
-            </Text>
+            </Badge>
             <Text>Php / Mysql / Javscript / Tailwindcss</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Tag
-                fontSize="xs"
-                fontWeight="bold"
-                textTransform="uppercase"
-                w="max"
-                h="max"
-                px="1"
-                size="sm"
-                mt="1"
-                rounded="sm"
+              <Badge
                 bg={useColorModeValue('#ff6d2850', '#ea047e50')}
                 color={useColorModeValue('#ff6d28', '#ea047e')}
               >
                 learning
-              </Tag>
+              </Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
               In this website i learned a a lot of tricks with php that helped
