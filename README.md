@@ -1,6 +1,7 @@
 # Sebass's Homepage
 
-![j_BCwugvR-MMxIJsRaw-opMerlwBw-darklight](https://raw.githubusercontent.com/Sebasssssss/sebass-homepage/main/src/assets/readme.png)
+![imagen](https://user-images.githubusercontent.com/105828786/216289897-fb7cb2af-5329-4393-9dc7-568b272451e7.png)
+
 
 ## Stack
 
