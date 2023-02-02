@@ -3,9 +3,9 @@ import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import Card from '../../components/Card'
-import thumbnail from '../../assets/personalBlog.png'
-import thumbnail1 from '../../assets/giffy.png'
-import thumbnail2 from '../../assets/football.png'
+import thumbnail1 from '/personalBlog.png'
+import thumbnail2 from '/giffy.png'
+import thumbnail3 from '/football.png'
 import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
@@ -30,19 +30,19 @@ export default function Works() {
               id="personalBlog"
               title="Personal Blog"
               subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
-              thumbnail={thumbnail}
+              thumbnail={thumbnail1}
             />
             <Card
               id="footballWeb"
               title="Manchester United web"
               subtitle="Web about Manchester United football team with backend"
-              thumbnail={thumbnail2}
+              thumbnail={thumbnail3}
             />
             <Card
               id="giffyapp"
               title="Giffy App"
               subtitle="Gifs web app created with Giphy's API"
-              thumbnail={thumbnail1}
+              thumbnail={thumbnail2}
             />
           </SimpleGrid>
         </Section>

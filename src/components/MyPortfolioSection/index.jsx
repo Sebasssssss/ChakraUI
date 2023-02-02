@@ -8,8 +8,8 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
 import Card from '../Card'
-import thumbnail1 from '../../assets/personalBlog.png'
-import thumbnail2 from '../../assets/giffy.png'
+import thumbnail1 from '/personalBlog.png'
+import thumbnail2 from '/giffy.png'
 
 export default function MyPortfolioSection() {
   return (

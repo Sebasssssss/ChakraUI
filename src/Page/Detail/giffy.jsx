@@ -13,9 +13,9 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '../../assets/giffy.png'
-import thumbnail2 from '../../assets/giffy2.png'
-import thumbnail3 from '../../assets/giffy3.png'
+import thumbnail from '/giffy.png'
+import thumbnail2 from '/giffy2.png'
+import thumbnail3 from '/giffy3.png'
 
 export default function GiffyApp() {
   return (

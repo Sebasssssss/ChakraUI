@@ -14,12 +14,12 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail1 from '../../assets/football.png'
-import thumbnail2 from '../../assets/football2.png'
-import thumbnail3 from '../../assets/football3.png'
-import thumbnail4 from '../../assets/football4.png'
-import thumbnail5 from '../../assets/football5.png'
-import thumbnail6 from '../../assets/football6.png'
+import thumbnail1 from '/football.png'
+import thumbnail2 from '/football2.png'
+import thumbnail3 from '/football3.png'
+import thumbnail4 from '/football4.png'
+import thumbnail5 from '/football5.png'
+import thumbnail6 from '/football6.png'
 
 export default function FootballWeb() {
   return (

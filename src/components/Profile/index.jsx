@@ -10,9 +10,9 @@ import {
 import React from 'react'
 import Dot from '../Dots'
 import { ArrowDownIcon } from '@chakra-ui/icons'
-import pandaLookingCV from '../../assets/pawdaPORT.png'
+import pandaLookingCV from '/pawdaPORT.png'
 import Section from '../Section'
-import avatar from '../../assets/avatar.jpg'
+import avatar from '/avatar.jpg'
 
 export default function Profile() {
   return (

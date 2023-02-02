@@ -14,11 +14,11 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail1 from '../../assets/personalBlog.png'
-import thumbnail2 from '../../assets/personalblog2.png'
-import thumbnail3 from '../../assets/personalblog3.png'
-import thumbnail4 from '../../assets/personalblog4.png'
-import thumbnail5 from '../../assets/personalblog5.png'
+import thumbnail1 from '/personalBlog.png'
+import thumbnail2 from '/personalblog2.png'
+import thumbnail3 from '/personalblog3.png'
+import thumbnail4 from '/personalblog4.png'
+import thumbnail5 from '/personalblog5.png'
 
 export default function PersonalBlog() {
   return (
