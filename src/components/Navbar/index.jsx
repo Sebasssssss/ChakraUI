@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import ToggleColorMode from '../ToggleThemeButton'
+import ToggleColorMode from './ToggleThemeButton'
 import Footprint from '../icons/footprint'
 import {
   Box,
