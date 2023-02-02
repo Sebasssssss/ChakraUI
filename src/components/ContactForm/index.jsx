@@ -39,7 +39,7 @@ export default function ContacForm() {
               name="from_name"
             />
           </Box>
-          <Box>
+          <Box mt={{ base: '4', md: '0' }}>
             <FormLabel>Last Name</FormLabel>
             <Input
               w={{ base: 'full', md: '52' }}
