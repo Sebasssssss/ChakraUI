@@ -20,7 +20,7 @@ $PROJECT_ROOT
 │   # Services
 ├── emailjs
 │   # Static files for images and 3d model file
-└── assets
+└── public
 ```
 
 ## License
