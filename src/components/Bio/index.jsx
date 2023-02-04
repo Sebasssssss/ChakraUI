@@ -47,7 +47,7 @@ export default function Bio() {
       </Flex>
       <Flex gap="3" flexDir={{ base: 'column', md: 'row' }}>
         <Text fontWeight="bold" whiteSpace="nowrap">
-          2022 JUN - To present
+          2022 To present
         </Text>
         <Text>
           Began studying from official documentation and others ways. Since then
