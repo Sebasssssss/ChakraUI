@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { serviceID, templateID, publicKEY } from './settings'
 
 export default function useEmail() {
   const form = useRef()
@@ -8,10 +9,6 @@ export default function useEmail() {
 
   const sendEmail = e => {
     e.preventDefault()
-
-    const serviceID = 'service_5l3d1p7'
-    const templateID = 'template_y1u1a6b'
-    const publicKEY = '8g8oXLF8T_3RQc43g'
     setLoading(true)
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKEY).then(

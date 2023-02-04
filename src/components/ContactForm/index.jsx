@@ -11,7 +11,7 @@ import {
   Box,
   Spinner
 } from '@chakra-ui/react'
-import useEmail from '../../services/emailjs'
+import useEmail from '../../hooks/useEmail'
 
 export default function ContacForm() {
   const { sendEmail, form, isSent, loading } = useEmail()
