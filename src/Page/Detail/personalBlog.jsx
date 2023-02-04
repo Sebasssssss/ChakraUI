@@ -75,8 +75,6 @@ export default function PersonalBlog() {
         <SimpleGrid row="2" gap="2" p="4">
           <Flex alignItems="center" gap="2">
             <Badge
-              bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-              color={useColorModeValue('#ff6d28', '#ea047e')}
             >
               Stack
             </Badge>
@@ -85,8 +83,6 @@ export default function PersonalBlog() {
           <Flex alignItems="flex-start">
             <Text>
               <Badge
-                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-                color={useColorModeValue('#ff6d28', '#ea047e')}
               >
                 learning
               </Badge>

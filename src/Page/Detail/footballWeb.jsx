@@ -74,22 +74,12 @@ export default function FootballWeb() {
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
           <Flex alignItems="center" gap="2">
-            <Badge
-              bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-              color={useColorModeValue('#ff6d28', '#ea047e')}
-            >
-              Stack
-            </Badge>
+            <Badge>Stack</Badge>
             <Text>Php / Mysql / Javscript </Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Badge
-                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-                color={useColorModeValue('#ff6d28', '#ea047e')}
-              >
-                libraries
-              </Badge>
+              <Badge>libraries</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
               Materializecss
@@ -97,12 +87,7 @@ export default function FootballWeb() {
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Badge
-                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-                color={useColorModeValue('#ff6d28', '#ea047e')}
-              >
-                learning
-              </Badge>
+              <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
               <Highlight

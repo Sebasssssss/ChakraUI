@@ -65,12 +65,7 @@ export default function GiffyApp() {
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
           <Flex alignItems="center" gap="2">
-            <Badge
-              bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-              color={useColorModeValue('#ff6d28', '#ea047e')}
-            >
-              website
-            </Badge>
+            <Badge>website</Badge>
             <Link
               href="https://giffys-sebasssssss.vercel.app/"
               color={useColorModeValue('#ff6d28', '#ea047e')}
@@ -79,22 +74,12 @@ export default function GiffyApp() {
             </Link>
           </Flex>
           <Flex alignItems="center" gap="2">
-            <Badge
-              bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-              color={useColorModeValue('#ff6d28', '#ea047e')}
-            >
-              Stack
-            </Badge>
+            <Badge>Stack</Badge>
             <Text>Javscript / Tailwindcss</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Badge
-                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-                color={useColorModeValue('#ff6d28', '#ea047e')}
-              >
-                libraries
-              </Badge>
+              <Badge>libraries</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
               React / Wouter / Intersection-observer / just-debounce-it

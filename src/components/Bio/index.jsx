@@ -67,30 +67,15 @@ export default function Bio() {
       </Heading>
       <List textAlign="left" px="4">
         <ListItem display="flex" alignItems="center" gap="2">
-          <Badge
-            bg={useColorModeValue('#d0b8a8', '#ea047e50')}
-            color={useColorModeValue('black', '#ea047e')}
-          >
-            Language
-          </Badge>
+          <Badge>Language</Badge>
           Php / javascript
         </ListItem>
         <ListItem display="flex" alignItems="center" gap="2">
-          <Badge
-            bg={useColorModeValue('#d0b8a8', '#ea047e50')}
-            color={useColorModeValue('black', '#ea047e')}
-          >
-            framework
-          </Badge>
+          <Badge>framework</Badge>
           React / tailwindcss
         </ListItem>
         <ListItem display="flex" alignItems="center" gap="2">
-          <Badge
-            bg={useColorModeValue('#d0b8a8', '#ea047e50')}
-            color={useColorModeValue('black', '#ea047e')}
-          >
-            other tecs
-          </Badge>
+          <Badge>other tecs</Badge>
           Html / Css / Git / Npm / Mysql
         </ListItem>
       </List>
