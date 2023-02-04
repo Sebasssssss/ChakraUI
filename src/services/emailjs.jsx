@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 export default function useEmail() {
   const form = useRef()
   const [isSent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const sendEmail = e => {
     e.preventDefault()
@@ -11,11 +12,13 @@ export default function useEmail() {
     const serviceID = 'service_5l3d1p7'
     const templateID = 'template_y1u1a6b'
     const publicKEY = '8g8oXLF8T_3RQc43g'
+    setLoading(true)
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKEY).then(
       result => {
         console.log(result.text)
         setSent(true)
+        setLoading(false)
       },
       error => {
         console.log(error.text)
@@ -28,5 +31,5 @@ export default function useEmail() {
     }, 5000)
   }
 
-  return { sendEmail, form, isSent }
+  return { sendEmail, form, isSent, loading }
 }

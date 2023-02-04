@@ -8,12 +8,13 @@ import {
   Alert,
   AlertIcon,
   useColorModeValue,
-  Box
+  Box,
+  Spinner
 } from '@chakra-ui/react'
 import useEmail from '../../services/emailjs'
 
 export default function ContacForm() {
-  const { sendEmail, form, isSent } = useEmail()
+  const { sendEmail, form, isSent, loading } = useEmail()
   return (
     <Box w="full" px="5">
       <FormControl
@@ -76,7 +77,7 @@ export default function ContacForm() {
           colorScheme="pink"
           _hover={{ boxShadow: '0 0 0 5px #ea047e5f' }}
         >
-          Send!
+          {loading ? <Spinner /> : 'Send!'}
         </Button>
         {isSent ? (
           <Alert status="success">
