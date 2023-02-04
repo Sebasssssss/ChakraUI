@@ -33,19 +33,11 @@ const components = {
   }
 }
 
-const fonts = {
-  heading: "'M PLUS Rounded 1c'"
-}
-
-const colors = {
-  grassTeal: '#88ccca'
-}
-
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: true,
   disableTransitionOnChange: false
 }
 
-const theme = extendTheme({ config, styles, components, fonts, colors })
+const theme = extendTheme({ config, styles, components })
 export default theme
