@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layouts/article'
 import { Link as ReactLink } from 'react-router-dom'
 import {
   Box,
@@ -74,18 +74,12 @@ export default function PersonalBlog() {
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
           <Flex alignItems="center" gap="2">
-            <Badge
-            >
-              Stack
-            </Badge>
+            <Badge>Stack</Badge>
             <Text>Php / Mysql / Javscript / Tailwindcss</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Badge
-              >
-                learning
-              </Badge>
+              <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
               In this website i learned a a lot of tricks with php that helped

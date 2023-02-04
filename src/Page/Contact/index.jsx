@@ -1,4 +1,5 @@
-import Layout from '../../components/Layout'
+import React from 'react'
+import Layout from '../../components/layouts/article'
 import Section from '../../components/Section'
 import ContacForm from '../../components/ContactForm'
 import { Text } from '@chakra-ui/react'

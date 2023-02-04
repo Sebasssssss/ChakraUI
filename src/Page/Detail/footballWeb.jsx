@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layouts/article'
 import { Link as ReactLink } from 'react-router-dom'
 import {
   Box,

@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layouts/article'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import Card from '../../components/Card'

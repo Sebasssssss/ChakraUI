@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layouts/article'
 import Profile from '../../components/Profile'
 import Bio from '../../components/Bio'
 import MyPortfolioSection from '../../components/MyPortfolioSection'
