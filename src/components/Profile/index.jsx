@@ -33,7 +33,7 @@ export default function Profile() {
               canCopy={true}
               toCopy="sebastian.rodriguez9714@gmail.com"
             />
-            <Dot title="Instagram" />
+            <Dot title="Linkedin" />
           </Flex>
         </Flex>
       </Section>
