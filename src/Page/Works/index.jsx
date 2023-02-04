@@ -18,6 +18,7 @@ export default function Works() {
         <Text
           fontSize="xl"
           textAlign="left"
+          mt="6"
           mb="4"
           fontWeight="bold"
           className="font-mplus"

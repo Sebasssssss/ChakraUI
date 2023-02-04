@@ -23,7 +23,7 @@ import thumbnail5 from '/personalblog5.png'
 export default function PersonalBlog() {
   return (
     <Layout delay="0.2">
-      <Box>
+      <Box mt="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
             <Link

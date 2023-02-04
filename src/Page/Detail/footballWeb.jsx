@@ -24,7 +24,7 @@ import thumbnail6 from '/football6.png'
 export default function FootballWeb() {
   return (
     <Layout delay="0.2">
-      <Box>
+      <Box mt="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
             <Link

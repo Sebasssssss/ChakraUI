@@ -20,7 +20,7 @@ import thumbnail3 from '/giffy3.png'
 export default function GiffyApp() {
   return (
     <Layout delay="0.2">
-      <Box>
+      <Box mt="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
             <Link

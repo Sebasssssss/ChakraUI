@@ -15,7 +15,7 @@ export default function Contact() {
         <Text
           fontSize="xl"
           mb="4"
-          mt="8"
+          mt="6"
           fontWeight="bold"
           className="font-mplus"
         >
