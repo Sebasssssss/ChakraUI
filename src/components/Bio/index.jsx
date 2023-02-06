@@ -9,7 +9,6 @@ import {
   Heading,
   Badge
 } from '@chakra-ui/react'
-import Heart from '../icons/heart'
 
 export default function Bio() {
   return (
@@ -88,7 +87,7 @@ export default function Bio() {
         textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}
         className="section-title"
       >
-        I <Heart />
+        I ♥
       </Heading>
       <Text textIndent="1em">
         Music, Drawing, Photography, Chess, Movies, Sports, Minimalism.

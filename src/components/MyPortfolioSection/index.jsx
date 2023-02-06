@@ -28,7 +28,7 @@ export default function MyPortfolioSection() {
         <Card
           id="personalBlog"
           title="Personal Blog"
-          subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
+          subtitle="Web based on devaslife WhatIuse web but in php and with a backend included"
           thumbnail={thumbnail1}
         />
 
