@@ -57,7 +57,7 @@ export default function VercelWeb() {
             </Text>
           </Flex>
           <Box textAlign="right">
-            <Dot to="https://github.com/Sebasssssss/Football-Wbsite-Frontend-Backend" />
+            <Dot to="https://github.com/Sebasssssss/Vercel-Mirror" />
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
