@@ -65,6 +65,7 @@ export default function PersonalBlog() {
           <Link
             href="https://uses.craftz.dog/"
             color={useColorModeValue('black', '#ea047e')}
+            isExternal
           >
             devaslife's WhatIUse
           </Link>{' '}

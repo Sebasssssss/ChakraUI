@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
-import Card from '../../components/Card'
+import { Card, VercelCard } from '../../components/Card'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/giffy.png'
 import thumbnail3 from '/football.png'
@@ -45,6 +45,7 @@ export default function Works() {
               subtitle="Gifs web app created with Giphy's API"
               thumbnail={thumbnail2}
             />
+            <VercelCard />
           </SimpleGrid>
         </Section>
       </Layout>

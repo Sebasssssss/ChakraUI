@@ -1,13 +1,9 @@
 import React from 'react'
-import { Link, Text, Image } from '@chakra-ui/react'
+import { Link, Text, Image, useColorModeValue, Box } from '@chakra-ui/react'
 import { Link as ReactLink } from 'react-router-dom'
+import VercelIcon from '../icons/vercel'
 
-export default function Card({
-  id,
-  title = 'Example',
-  thumbnail,
-  subtitle = 'Card'
-}) {
+export function Card({ id, title = 'Example', thumbnail, subtitle = 'Card' }) {
   return (
     <Link
       textDecorationLine="none"
@@ -22,11 +18,41 @@ export default function Card({
         rounded="xl"
         objectFit="cover"
       />
-      <Text fontSize="md" mt="2" fontWeight="bold" className="font-mplus">
+      <Text fontSize="md" mt="2" fontWeight="semibold">
         {title}
       </Text>
       <Text fontSize="sm" opacity={0.7}>
         {subtitle}
+      </Text>
+    </Link>
+  )
+}
+
+export function VercelCard() {
+  return (
+    <Link
+      textDecorationLine="none"
+      as={ReactLink}
+      to="/work/vercelmirror"
+      _hover={{ textDecorationLine: 'none' }}
+    >
+      <Box
+        w="230px"
+        h="120px"
+        rounded="xl"
+        bg={useColorModeValue('white', 'black')}
+        textAlign="center"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <VercelIcon />
+      </Box>
+      <Text fontSize="md" mt="2" fontWeight="semibold">
+        Vercel mirror
+      </Text>
+      <Text fontSize="sm" opacity={0.7}>
+        Vercel Mirrro
       </Text>
     </Link>
   )

@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion'
 import { Routes, Route, useLocation } from 'react-router'
 import Contact from '../../Page/Contact'
 import NotFound from '../../Page/Error'
+import VercelWeb from '../../Page/Detail/vercelMirror'
 
 export default function Router() {
   const location = useLocation()
@@ -22,6 +23,7 @@ export default function Router() {
           <Route path="/work/personalBlog" element={<PersonalBlog />} />
           <Route path="/work/footballWeb" element={<FootballWeb />} />
           <Route path="/work/giffyapp" element={<GiffyApp />} />
+          <Route path="/work/vercelmirror" element={<VercelWeb />} />
         </Routes>
       </AnimatePresence>
     </>

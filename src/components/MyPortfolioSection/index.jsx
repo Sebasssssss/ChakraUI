@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
-import Card from '../Card'
+import { Card } from '../Card'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/giffy.png'
 

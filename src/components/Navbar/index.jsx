@@ -50,7 +50,7 @@ export default function Navbar() {
             className="group text-lg p-2 font-semibold inline-flex font-mplus items-center gap-1.5 tracking-tighter"
           >
             <Footprint />
-            Sebass
+            Sebass Rodriguez
           </Link>
           <Box gap="2" display={{ base: 'none', md: 'flex' }}>
             <Link

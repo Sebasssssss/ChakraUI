@@ -5,19 +5,22 @@ import {
   Box,
   Flex,
   Link,
+  Highlight,
   Image,
   SimpleGrid,
   Text,
   useColorModeValue,
   Badge
 } from '@chakra-ui/react'
-import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '/giffy.png'
-import thumbnail2 from '/giffy2.png'
-import thumbnail3 from '/giffy3.png'
+import thumbnail1 from '/vercel.png'
+import thumbnail2 from '/vercel2.png'
+import thumbnail3 from '/vercel3.png'
+import thumbnail4 from '/vercel4.png'
+import thumbnail5 from '/vercel5.png'
 
-export default function GiffyApp() {
+export default function VercelWeb() {
   return (
     <Layout delay="0.2">
       <Box mt="6">
@@ -39,7 +42,7 @@ export default function GiffyApp() {
               fontWeight="bold"
               className="font-mplus"
             >
-              Giffy App
+              Vercel Mirror
             </Text>
             <Text
               fontSize="xs"
@@ -54,77 +57,94 @@ export default function GiffyApp() {
             </Text>
           </Flex>
           <Box textAlign="right">
-            <Dot to="https://github.com/Sebasssssss/Giffy.app" />
+            <Dot to="https://github.com/Sebasssssss/Football-Wbsite-Frontend-Backend" />
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
-          Web app where you'll be able to search for wherever gif or sticker you
-          want. You can sort them by ranking or look for the most popular ones.
-          If you feel like looking whats the most search things by people, you
-          can do it too by heading up to the footer section!
+          This web was made to practice and learn{' '}
+          <Link
+            href="https://nextjs.org/"
+            textColor={useColorModeValue('black', '#ea047e')}
+            isExternal
+          >
+            Next.js 13
+          </Link>{' '}
+          with the new{' '}
+          <Link
+            href="https://beta.nextjs.org/docs/app-directory-roadmap"
+            textColor={useColorModeValue('black', '#ea047e')}
+            isExternal
+          >
+            {' '}
+            app experimental dir
+          </Link>{' '}
+          and it does not have any functionalities like the original one. This
+          was an experimental project therefore it's not ready even for deploy
+          because it still has some things to get done.
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
           <Flex alignItems="center" gap="2">
-            <Badge>website</Badge>
-            <Link
-              href="https://giffys-sebasssssss.vercel.app/"
-              color={useColorModeValue('#ff6d28', '#ea047e')}
-              isExternal
-            >
-              https://giffys-sebasssssss.vercel.app/ <ExternalLinkIcon />
-            </Link>
-          </Flex>
-          <Flex alignItems="center" gap="2">
             <Badge>Stack</Badge>
-            <Text>Javscript / Tailwindcss</Text>
+            <Text>Next.js / Javscript / Tailwindcss </Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
               <Badge>libraries</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              React / Wouter / Intersection-observer / just-debounce-it
+              React / Geist UI
             </Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Badge
-                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-                color={useColorModeValue('#ff6d28', '#ea047e')}
-              >
-                learning
-              </Badge>
+              <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              With this web app i learned and understand a lot of how Javascript
-              and React works. Learned how to do simples fetch of api's data,
-              many react hooks and how to deploy a web with{' '}
-              <Link
-                href="https://vercel.com/"
-                color={useColorModeValue('#ff6d28', '#ea047e')}
-                isExternal
+              <Highlight
+                query={['tailwindcss', 'dark mode', 'javascript']}
+                styles={{ color: useColorModeValue('black', '#ea047e') }}
               >
-                Vercel
-              </Link>
-              .
+                Learned the basics of Nextjs and server side rendering
+                components.
+              </Highlight>
             </Text>
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="6">
           <Image
+            src={thumbnail1}
             alt="MainImage"
-            src={thumbnail}
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
           />
           <Image
-            alt="MainImage"
             src={thumbnail2}
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+            alt="secondImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
           />
           <Image
-            alt="MainImage"
             src={thumbnail3}
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+            alt="thirdImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+          <Image
+            src={thumbnail4}
+            alt="forthImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
+          />
+          <Image
+            src={thumbnail5}
+            alt="fifthImage"
+            w="full"
+            rounded="xl"
+            objectFit="cover"
           />
         </SimpleGrid>
       </Box>
