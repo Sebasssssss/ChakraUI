@@ -3,7 +3,7 @@ export default function VercelIcon() {
   return (
     <svg
       aria-label="Vercel Logotype"
-      fill="currentColor"
+      fill="white"
       height="32"
       viewBox="0 0 283 64"
     >

@@ -40,7 +40,7 @@ export function VercelCard() {
         w="230px"
         h="120px"
         rounded="xl"
-        bg={useColorModeValue('white', 'black')}
+        bg="black"
         textAlign="center"
         display="flex"
         alignItems="center"

@@ -19,6 +19,7 @@ import thumbnail2 from '/personalblog2.png'
 import thumbnail3 from '/personalblog3.png'
 import thumbnail4 from '/personalblog4.png'
 import thumbnail5 from '/personalblog5.png'
+import personalBlogGif from '/personalBlogGif.mp4'
 
 export default function PersonalBlog() {
   return (
@@ -94,7 +95,7 @@ export default function PersonalBlog() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6">
+        <SimpleGrid gap="6" pt="5">
           <Image
             src={thumbnail1}
             alt="MainImage"
@@ -129,6 +130,15 @@ export default function PersonalBlog() {
             w="full"
             rounded="xl"
             objectFit="cover"
+          />
+          <video
+            alt="MainGif"
+            src={personalBlogGif}
+            className="w-full rounded-xl object-cover"
+            autoPlay
+            loop
+            playsInline
+            muted
           />
         </SimpleGrid>
       </Box>

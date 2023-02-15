@@ -20,6 +20,7 @@ import thumbnail3 from '/football3.png'
 import thumbnail4 from '/football4.png'
 import thumbnail5 from '/football5.png'
 import thumbnail6 from '/football6.png'
+import footballWebGif from '/footballWebGif.mp4'
 
 export default function FootballWeb() {
   return (
@@ -101,7 +102,7 @@ export default function FootballWeb() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6">
+        <SimpleGrid gap="6" pt="5">
           <Image
             src={thumbnail1}
             alt="MainImage"
@@ -143,6 +144,15 @@ export default function FootballWeb() {
             w="full"
             rounded="xl"
             objectFit="cover"
+          />
+          <video
+            alt="MainGif"
+            src={footballWebGif}
+            className="w-full rounded-xl object-cover"
+            autoPlay
+            loop
+            playsInline
+            muted
           />
         </SimpleGrid>
       </Box>

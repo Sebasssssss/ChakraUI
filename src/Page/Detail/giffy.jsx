@@ -16,6 +16,7 @@ import Dot from '../../components/Dots'
 import thumbnail from '/giffy.png'
 import thumbnail2 from '/giffy2.png'
 import thumbnail3 from '/giffy3.png'
+import giffyGif from '/giffyGif.mp4'
 
 export default function GiffyApp() {
   return (
@@ -88,12 +89,7 @@ export default function GiffyApp() {
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
-              <Badge
-                bg={useColorModeValue('#ff6d2850', '#ea047e50')}
-                color={useColorModeValue('#ff6d28', '#ea047e')}
-              >
-                learning
-              </Badge>
+              <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
               With this web app i learned and understand a lot of how Javascript
@@ -110,21 +106,30 @@ export default function GiffyApp() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6">
+        <SimpleGrid gap="6" pt="5">
           <Image
             alt="MainImage"
             src={thumbnail}
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+            className="w-full rounded-xl object-cover"
           />
           <Image
             alt="MainImage"
             src={thumbnail2}
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+            className="w-full rounded-xl object-cover"
           />
           <Image
             alt="MainImage"
             src={thumbnail3}
-            className="w-full border border-slate-300 dark:border-slate-700 rounded-xl object-cover"
+            className="w-full rounded-xl object-cover"
+          />
+          <video
+            alt="MainGif"
+            src={giffyGif}
+            className="w-full rounded-xl object-cover"
+            autoPlay
+            loop
+            playsInline
+            muted
           />
         </SimpleGrid>
       </Box>
