@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail1 from '/football.png'
+import thumbnail1 from '/football1.png'
 import thumbnail2 from '/football2.png'
 import thumbnail3 from '/football3.png'
 import thumbnail4 from '/football4.png'

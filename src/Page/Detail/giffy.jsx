@@ -14,6 +14,7 @@ import {
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 import thumbnail from '/giffy.png'
+import thumbnail1 from '/giffy1.png'
 import thumbnail2 from '/giffy2.png'
 import thumbnail3 from '/giffy3.png'
 import giffyGif from '/giffyGif.mp4'
@@ -109,16 +110,21 @@ export default function GiffyApp() {
         <SimpleGrid gap="6" pt="5">
           <Image
             alt="MainImage"
+            src={thumbnail1}
+            className="w-full rounded-xl object-cover"
+          />
+          <Image
+            alt="Giffy1Image"
             src={thumbnail}
             className="w-full rounded-xl object-cover"
           />
           <Image
-            alt="MainImage"
+            alt="Giffy2Image"
             src={thumbnail2}
             className="w-full rounded-xl object-cover"
           />
           <Image
-            alt="MainImage"
+            alt="Giffy3Image"
             src={thumbnail3}
             className="w-full rounded-xl object-cover"
           />
