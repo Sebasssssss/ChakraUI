@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Image, useColorModeValue, Box } from '@chakra-ui/react'
+import { Link, Text, Image, Box } from '@chakra-ui/react'
 import { Link as ReactLink } from 'react-router-dom'
 import VercelIcon from '../icons/vercel'
 
