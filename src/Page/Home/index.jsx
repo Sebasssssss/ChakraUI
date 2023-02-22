@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/layouts/article'
 import Profile from '../../components/Profile'
 import Bio from '../../components/Bio'
-import MyPortfolioSection from '../../components/MyPortfolioSection'
+import PopularPosts from '../../components/PopularPosts'
 import { Center } from '@chakra-ui/react'
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         </Center>
         <Profile />
         <Bio />
-        <MyPortfolioSection />
+        <PopularPosts />
       </Layout>
     </>
   )

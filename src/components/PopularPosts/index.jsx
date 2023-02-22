@@ -11,7 +11,7 @@ import { Card } from '../Card'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/giffy.png'
 
-export default function MyPortfolioSection() {
+export default function PopularPosts() {
   return (
     <>
       <Heading
@@ -43,6 +43,7 @@ export default function MyPortfolioSection() {
         bg={useColorModeValue('#85586f', '#ea047e90')}
         textColor="#fff"
         _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
+        _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
         as={ReactLink}
         to="/works"
       >
