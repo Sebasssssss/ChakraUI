@@ -2,10 +2,11 @@ import React from 'react'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
-import { Card, VercelCard } from '../../components/Card'
+import { Card } from '../../components/Card'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/giffy.png'
 import thumbnail3 from '/football.png'
+import thumbnail4 from '/vercelCard.png'
 import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
@@ -45,7 +46,12 @@ export default function Works() {
               subtitle="Gifs web app created with Giphy's API"
               thumbnail={thumbnail2}
             />
-            <VercelCard />
+            <Card
+              id="vercelmirror"
+              title="Giffy App"
+              subtitle="Gifs web app created with Giphy's API"
+              thumbnail={thumbnail4}
+            />
           </SimpleGrid>
         </Section>
       </Layout>

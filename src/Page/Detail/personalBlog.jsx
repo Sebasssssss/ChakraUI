@@ -80,8 +80,8 @@ export default function PersonalBlog() {
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" p="4">
-          <Flex alignItems="center" gap="2">
-            <Badge>Stack</Badge>
+          <Flex gap="2" alignItems={['start', 'center']}>
+            <Badge h="max">Stack</Badge>
             <Text>Php / Mysql / Javscript / Tailwindcss</Text>
           </Flex>
           <Flex alignItems="flex-start">
