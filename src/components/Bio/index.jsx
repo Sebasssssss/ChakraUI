@@ -12,11 +12,11 @@ import {
 
 export default function Bio() {
   return (
-    <SimpleGrid textAlign="left" gap="5" py="5">
+    <SimpleGrid textAlign="left" gap="5" py="6">
       <Heading
         fontSize="xl"
         fontWeight="bold"
-        my="4"
+        my="2"
         textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}
         className="section-title"
       >
@@ -55,7 +55,7 @@ export default function Bio() {
         </Text>
       </Flex>
       <Heading
-        pt="4"
+        py="2"
         fontSize="xl"
         fontWeight="bold"
         textAlign="left"
@@ -82,6 +82,7 @@ export default function Bio() {
         display="inline-flex"
         alignItems="center"
         gap="1"
+        py="2"
         fontSize="2xl"
         fontWeight="bold"
         textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}

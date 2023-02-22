@@ -22,7 +22,7 @@ const MenuLink = forwardRef((props, ref) => (
 
 export default function Navbar() {
   let activeLink = {
-    backgroundColor: useColorModeValue('#00abb280', '#00f5ff90')
+    backgroundColor: useColorModeValue('#00abb280', '#ea047e90')
   }
 
   return (
@@ -36,7 +36,7 @@ export default function Navbar() {
       zIndex={2}
     >
       <Flex
-        p="1.5"
+        p="2"
         alignItems={'center'}
         justifyContent={'space-between'}
         maxW={'container.md'}
@@ -74,7 +74,6 @@ export default function Navbar() {
             <Link
               href="https://github.com/Sebasssssss/sebass-homepage"
               p="2"
-              rounded="sm"
               display="inline-flex"
               gap="1"
               alignItems="center"
@@ -84,7 +83,7 @@ export default function Navbar() {
             </Link>
           </Box>
         </Flex>
-        <Flex gap="3">
+        <Flex gap="2">
           <ToggleColorMode />
           <Box display={{ base: 'inline-block', md: 'none' }}>
             <Menu>

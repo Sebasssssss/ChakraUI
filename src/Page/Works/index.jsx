@@ -3,10 +3,10 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import { Card } from '../../components/Card'
-import thumbnail1 from '/personalBlog.png'
-import thumbnail2 from '/giffy.png'
-import thumbnail3 from '/football.png'
-import thumbnail4 from '/vercelCard.png'
+import blogThumbnail from '/personalBlog.png'
+import gifThumbnail from '/giffy.png'
+import footThumbnail from '/football.png'
+import vercelThumbnail from '/vercelCard.png'
 import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
@@ -19,8 +19,7 @@ export default function Works() {
         <Text
           fontSize="xl"
           textAlign="left"
-          mt="6"
-          mb="4"
+          my="4"
           fontWeight="bold"
           className="font-mplus"
         >
@@ -32,25 +31,25 @@ export default function Works() {
               id="personalBlog"
               title="Personal Blog"
               subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
-              thumbnail={thumbnail1}
+              thumbnail={blogThumbnail}
             />
             <Card
               id="footballWeb"
               title="Manchester United web"
               subtitle="Web about Manchester United football team with backend"
-              thumbnail={thumbnail3}
+              thumbnail={footThumbnail}
             />
             <Card
               id="giffyapp"
               title="Giffy App"
               subtitle="Gifs web app created with Giphy's API"
-              thumbnail={thumbnail2}
+              thumbnail={gifThumbnail}
             />
             <Card
               id="vercelmirror"
               title="Giffy App"
               subtitle="Gifs web app created with Giphy's API"
-              thumbnail={thumbnail4}
+              thumbnail={vercelThumbnail}
             />
           </SimpleGrid>
         </Section>

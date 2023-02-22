@@ -22,7 +22,7 @@ import giffyGif from '/giffyGif.mp4'
 export default function GiffyApp() {
   return (
     <Layout delay="0.2">
-      <Box mt="6">
+      <Box my="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
             <Link
@@ -65,7 +65,7 @@ export default function GiffyApp() {
           If you feel like looking whats the most search things by people, you
           can do it too by heading up to the footer section!
         </Text>
-        <SimpleGrid row="2" gap="2" p="4">
+        <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex alignItems="center" gap="2">
             <Badge>website</Badge>
             <Link
@@ -107,7 +107,7 @@ export default function GiffyApp() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6" pt="5">
+        <SimpleGrid gap="8" py="6">
           <Image
             alt="MainImage"
             src={thumbnail1}

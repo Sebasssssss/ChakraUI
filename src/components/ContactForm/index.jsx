@@ -79,6 +79,7 @@ export default function ContacForm() {
             boxShadow: '0 0 0 5px #ea047e5f'
           }}
           _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
+          my="8"
         >
           {loading ? <Spinner /> : 'Send!'}
         </Button>

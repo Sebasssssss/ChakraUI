@@ -21,7 +21,7 @@ export default function Profile() {
         <Flex gap="2" alignItems="center">
           <Image
             src={avatar}
-            borderRadius="1rem"
+            borderRadius="8px"
             w="100px"
             h="100px"
             objectFit="cover"
@@ -41,7 +41,7 @@ export default function Profile() {
         <Box
           textAlign="left"
           bg={useColorModeValue('#dfd3c3', '#111111')}
-          borderRadius="0.8rem"
+          borderRadius="8px"
           mt="15px"
           p="25px"
           pos="relative"

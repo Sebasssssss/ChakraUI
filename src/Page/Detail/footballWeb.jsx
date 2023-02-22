@@ -25,7 +25,7 @@ import footballWebGif from '/footballWebGif.mp4'
 export default function FootballWeb() {
   return (
     <Layout delay="0.2">
-      <Box mt="6">
+      <Box my="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
             <Link
@@ -73,7 +73,7 @@ export default function FootballWeb() {
             information, and ready to use the web!
           </Highlight>
         </Text>
-        <SimpleGrid row="2" gap="2" p="4">
+        <SimpleGrid row="2" gap="2" px="4" py='1'>
           <Flex alignItems="center" gap="2">
             <Badge>Stack</Badge>
             <Text>Php / Mysql / Javscript </Text>
@@ -102,7 +102,7 @@ export default function FootballWeb() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6" pt="5">
+        <SimpleGrid gap="8" py="6">
           <Image
             src={thumbnail1}
             alt="MainImage"

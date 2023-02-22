@@ -23,7 +23,7 @@ import thumbnail5 from '/vercel5.png'
 export default function VercelWeb() {
   return (
     <Layout delay="0.2">
-      <Box mt="6">
+      <Box my="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
             <Link
@@ -82,7 +82,7 @@ export default function VercelWeb() {
           was an experimental project therefore it's not ready even for deploy
           because it still has some things to get done.
         </Text>
-        <SimpleGrid row="2" gap="2" p="4">
+        <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex alignItems="center" gap="2">
             <Badge>Stack</Badge>
             <Text>Next.js / Javscript / Tailwindcss </Text>
@@ -110,7 +110,7 @@ export default function VercelWeb() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6">
+        <SimpleGrid gap="8" py="6">
           <Image
             src={thumbnail1}
             alt="MainImage"

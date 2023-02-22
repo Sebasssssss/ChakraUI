@@ -79,7 +79,7 @@ export default function PersonalBlog() {
             completely in Php, with a backend included!
           </Highlight>
         </Text>
-        <SimpleGrid row="2" gap="2" p="4">
+        <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex gap="2" alignItems={['start', 'center']}>
             <Badge h="max">Stack</Badge>
             <Text>Php / Mysql / Javscript / Tailwindcss</Text>
@@ -95,7 +95,7 @@ export default function PersonalBlog() {
             </Text>
           </Flex>
         </SimpleGrid>
-        <SimpleGrid gap="6" pt="5">
+        <SimpleGrid gap="8" py="6">
           <Image
             src={thumbnail1}
             alt="MainImage"

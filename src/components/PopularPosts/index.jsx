@@ -17,7 +17,6 @@ export default function PopularPosts() {
       <Heading
         textAlign="left"
         fontSize="xl"
-        mt="4"
         fontWeight="bold"
         textDecorationColor={useColorModeValue('#a1a1aa', '#3f3f46')}
         className="section-title"

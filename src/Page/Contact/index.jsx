@@ -12,17 +12,11 @@ export default function Contact() {
         <title>Contact | Homepage</title>
       </Helmet>
       <Layout delay="0.2">
-        <Text
-          fontSize="xl"
-          mb="4"
-          mt="6"
-          fontWeight="bold"
-          className="font-mplus"
-        >
+        <Text fontSize="xl" fontWeight="bold" className="font-mplus" my='4'>
           Contact
         </Text>
         <Section>
-          <Text my="4">
+          <Text my="1" mb="4">
             Feel free to contact me anytime you want, i will be pleased to
             answer you. Send me a message down here 😁
           </Text>
