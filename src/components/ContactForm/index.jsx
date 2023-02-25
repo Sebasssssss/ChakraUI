@@ -12,8 +12,6 @@ import {
   Spinner
 } from '@chakra-ui/react'
 import useEmail from '../../hooks/useEmail'
-import Dot from '../Dots'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export default function ContacForm() {
   const { sendEmail, form, isSent, loading } = useEmail()
@@ -39,6 +37,7 @@ export default function ContacForm() {
               w={{ base: 'full', md: '52' }}
               borderColor={useColorModeValue('#16161b', null)}
               focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+              errorBorderColor="crimson"
               isRequired
               name="from_name"
             />
@@ -49,6 +48,7 @@ export default function ContacForm() {
               w={{ base: 'full', md: '52' }}
               borderColor={useColorModeValue('#16161b', null)}
               focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+              errorBorderColor="crimson"
               name="phoneNumber"
             />
           </Box>
@@ -59,6 +59,7 @@ export default function ContacForm() {
             type="email"
             borderColor={useColorModeValue('#16161b', null)}
             focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+            errorBorderColor="crimson"
             isRequired
             name="email"
           />
@@ -69,23 +70,9 @@ export default function ContacForm() {
             resize="none"
             borderColor={useColorModeValue('#16161b', null)}
             focusBorderColor={useColorModeValue('#ab718e', '#ea047e')}
+            errorBorderColor="crimson"
             isRequired
             name="message"
-          />
-        </Box>
-        <Box
-          display="inline-flex"
-          alignItems="center"
-          gap="2"
-          fontSize="14px"
-          textAlign="left"
-          opacity={0.8}
-        >
-          In case you want to send an email manually, here is my email:
-          <Dot
-            title="Email"
-            canCopy={true}
-            toCopy="sebastian.rodriguez9714@gmail.com"
           />
         </Box>
         <Button
@@ -96,7 +83,7 @@ export default function ContacForm() {
           }}
           _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
           textColor="white"
-          my="4"
+          my="8"
         >
           {loading ? <Spinner /> : 'Send!'}
         </Button>
