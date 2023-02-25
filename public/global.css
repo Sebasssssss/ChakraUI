@@ -15,3 +15,8 @@
     @apply underline underline-offset-4 decoration-4;
   }
 }
+
+[data-rmiz-modal-overlay='visible'] {
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}

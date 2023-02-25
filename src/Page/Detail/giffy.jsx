@@ -18,6 +18,7 @@ import thumbnail1 from '/giffy1.png'
 import thumbnail2 from '/giffy2.png'
 import thumbnail3 from '/giffy3.png'
 import giffyGif from '/giffyGif.mp4'
+import ZoomIn from '../../components/ZoomIn'
 
 export default function GiffyApp() {
   return (
@@ -108,26 +109,34 @@ export default function GiffyApp() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <Image
-            alt="MainImage"
-            src={thumbnail1}
-            className="w-full rounded-xl object-cover"
-          />
-          <Image
-            alt="Giffy1Image"
-            src={thumbnail}
-            className="w-full rounded-xl object-cover"
-          />
-          <Image
-            alt="Giffy2Image"
-            src={thumbnail2}
-            className="w-full rounded-xl object-cover"
-          />
-          <Image
-            alt="Giffy3Image"
-            src={thumbnail3}
-            className="w-full rounded-xl object-cover"
-          />
+          <ZoomIn>
+            <Image
+              alt="MainImage"
+              src={thumbnail1}
+              className="w-full rounded-xl object-cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              alt="Giffy1Image"
+              src={thumbnail}
+              className="w-full rounded-xl object-cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              alt="Giffy2Image"
+              src={thumbnail2}
+              className="w-full rounded-xl object-cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              alt="Giffy3Image"
+              src={thumbnail3}
+              className="w-full rounded-xl object-cover"
+            />
+          </ZoomIn>
           <video
             alt="MainGif"
             src={giffyGif}

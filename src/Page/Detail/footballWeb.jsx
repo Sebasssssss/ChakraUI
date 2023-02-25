@@ -21,6 +21,7 @@ import thumbnail4 from '/football4.png'
 import thumbnail5 from '/football5.png'
 import thumbnail6 from '/football6.png'
 import footballWebGif from '/footballWebGif.mp4'
+import ZoomIn from '../../components/ZoomIn'
 
 export default function FootballWeb() {
   return (
@@ -73,7 +74,7 @@ export default function FootballWeb() {
             information, and ready to use the web!
           </Highlight>
         </Text>
-        <SimpleGrid row="2" gap="2" px="4" py='1'>
+        <SimpleGrid row="2" gap="2" px="4" py="1">
           <Flex alignItems="center" gap="2">
             <Badge>Stack</Badge>
             <Text>Php / Mysql / Javscript </Text>
@@ -103,48 +104,60 @@ export default function FootballWeb() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <Image
-            src={thumbnail1}
-            alt="MainImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail2}
-            alt="secondImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail3}
-            alt="thirdImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail4}
-            alt="forthImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail5}
-            alt="fifthImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail6}
-            alt="sixthImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
+          <ZoomIn>
+            <Image
+              src={thumbnail1}
+              alt="MainImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail2}
+              alt="secondImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail3}
+              alt="thirdImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail4}
+              alt="forthImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail5}
+              alt="fifthImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail6}
+              alt="sixthImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
           <video
             alt="MainGif"
             src={footballWebGif}

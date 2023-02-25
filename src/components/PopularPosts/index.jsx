@@ -5,11 +5,11 @@ import {
   SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Link as ReactLink } from 'react-router-dom'
+import { ArrowDownIcon } from '@chakra-ui/icons'
 import { Card } from '../Card'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/giffy.png'
+import avatar from '/avatar.jpg'
 
 export default function PopularPosts() {
   return (
@@ -39,14 +39,16 @@ export default function PopularPosts() {
         />
       </SimpleGrid>
       <Button
+        as="a"
+        href={avatar}
+        download
         bg={useColorModeValue('#85586f', '#ea047e90')}
-        textColor="#fff"
         _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
         _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
-        as={ReactLink}
-        to="/works"
+        textColor="#fff"
       >
-        See more <ChevronRightIcon mt="1" />
+        Download CV
+        <ArrowDownIcon ml="1" />
       </Button>
     </>
   )

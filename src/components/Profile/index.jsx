@@ -2,17 +2,17 @@ import {
   Box,
   Flex,
   Image,
-  Button,
   Highlight,
   Text,
-  useColorModeValue
+  useColorModeValue,
+  Button
 } from '@chakra-ui/react'
 import React from 'react'
 import Dot from '../Dots'
-import { ArrowDownIcon } from '@chakra-ui/icons'
-import pandaLookingCV from '/pawdaPORT.png'
 import Section from '../Section'
 import avatar from '/avatar.jpg'
+import { Link } from 'react-router-dom'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export default function Profile() {
   return (
@@ -97,26 +97,25 @@ export default function Profile() {
               got a high relish for all the process of building projects, from
               planning, inspiring and designing all the way to solving real-life
               problems with code. During free-time, he loves playing open world
-              games like Dying light 2 or Elden Ring. Currently he is working on
-              projects and learning javascript in order to code React.
+              games and listening to music. Currently he is working on projects
+              and learning javascript in order to code React.
             </Highlight>
           </Text>
         </Box>
-        <Box>
-          <Box h="212px" w="full" overflow="hidden">
-            <Image src={pandaLookingCV} />
-          </Box>
+        <Box pt="10">
           <Button
-            as="a"
-            href={avatar}
-            download
+            as={Link}
+            to="/works"
             bg={useColorModeValue('#85586f', '#ea047e90')}
             _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
             _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
             textColor="#fff"
+            display="inline-flex"
+            alignItems="center"
+            gap="2"
           >
-            Download CV
-            <ArrowDownIcon ml="1" />
+            My portofolio
+            <ChevronRightIcon className="mt-0.5" />
           </Button>
         </Box>
       </Section>

@@ -12,6 +12,8 @@ import {
   Spinner
 } from '@chakra-ui/react'
 import useEmail from '../../hooks/useEmail'
+import Dot from '../Dots'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export default function ContacForm() {
   const { sendEmail, form, isSent, loading } = useEmail()
@@ -71,15 +73,30 @@ export default function ContacForm() {
             name="message"
           />
         </Box>
+        <Box
+          display="inline-flex"
+          alignItems="center"
+          gap="2"
+          fontSize="14px"
+          textAlign="left"
+          opacity={0.8}
+        >
+          In case you want to send an email manually, here is my email:
+          <Dot
+            title="Email"
+            canCopy={true}
+            toCopy="sebastian.rodriguez9714@gmail.com"
+          />
+        </Box>
         <Button
           type="submit"
           bg={useColorModeValue('#85586f', '#ea047e90')}
           _hover={{
-            bg: useColorModeValue('#ab718e', '#ea047e'),
-            boxShadow: '0 0 0 5px #ea047e5f'
+            bg: useColorModeValue('#ab718e', '#ea047e')
           }}
           _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
-          my="8"
+          textColor="white"
+          my="4"
         >
           {loading ? <Spinner /> : 'Send!'}
         </Button>

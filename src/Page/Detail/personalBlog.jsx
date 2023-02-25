@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
+import ZoomIn from '../../components/ZoomIn'
 import thumbnail1 from '/personalblog1.png'
 import thumbnail2 from '/personalblog2.png'
 import thumbnail3 from '/personalblog3.png'
@@ -96,41 +97,51 @@ export default function PersonalBlog() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <Image
-            src={thumbnail1}
-            alt="MainImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail2}
-            alt="secondImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail3}
-            alt="thirdImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail4}
-            alt="forthImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
-          <Image
-            src={thumbnail5}
-            alt="fifthImage"
-            w="full"
-            rounded="xl"
-            objectFit="cover"
-          />
+          <ZoomIn>
+            <Image
+              src={thumbnail1}
+              alt="MainImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail2}
+              alt="secondImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail3}
+              alt="thirdImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail4}
+              alt="forthImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
+          <ZoomIn>
+            <Image
+              src={thumbnail5}
+              alt="fifthImage"
+              w="full"
+              rounded="xl"
+              objectFit="cover"
+            />
+          </ZoomIn>
           <video
             alt="MainGif"
             src={personalBlogGif}
