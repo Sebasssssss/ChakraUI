@@ -28,8 +28,9 @@ $PROJECT_ROOT
 
 MIT License.
 
-You can create your own homepage for free without notifying me by forking this project under the following conditions:
+This project is not originally mine, it's a copy of devaslife portfolio homepage, so you can create your own without notifying me under the following conditions:
 
+- Delete the images used in this project
 - Do not use the 3d panda model
 
 Check out [LICENSE](./LICENSE) for more detail.
