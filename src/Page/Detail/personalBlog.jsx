@@ -15,7 +15,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 import ZoomIn from '../../components/ZoomIn'
-import thumbnail1 from '/personalblog1.png'
+import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/personalblog2.png'
 import thumbnail3 from '/personalblog3.png'
 import thumbnail4 from '/personalblog4.png'

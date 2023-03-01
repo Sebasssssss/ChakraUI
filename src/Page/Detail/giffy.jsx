@@ -13,8 +13,8 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '/giffy.png'
-import thumbnail1 from '/giffy1.png'
+import thumbnail from '/giffycard.png'
+import thumbnail1 from '/giffy.png'
 import thumbnail2 from '/giffy2.png'
 import thumbnail3 from '/giffy3.png'
 import giffyGif from '/giffyGif.mp4'
@@ -112,14 +112,14 @@ export default function GiffyApp() {
           <ZoomIn>
             <Image
               alt="MainImage"
-              src={thumbnail1}
+              src={thumbnail}
               className="w-full rounded-xl object-cover"
             />
           </ZoomIn>
           <ZoomIn>
             <Image
-              alt="Giffy1Image"
-              src={thumbnail}
+              alt="MainImage"
+              src={thumbnail1}
               className="w-full rounded-xl object-cover"
             />
           </ZoomIn>

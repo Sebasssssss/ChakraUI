@@ -8,7 +8,7 @@ import {
 import { ArrowDownIcon } from '@chakra-ui/icons'
 import { Card } from '../Card'
 import thumbnail1 from '/personalBlog.png'
-import thumbnail2 from '/giffy.png'
+import thumbnail2 from '/giffycard.png'
 import avatar from '/avatar.jpg'
 
 export default function PopularPosts() {

@@ -4,8 +4,8 @@ import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import { Card } from '../../components/Card'
 import blogThumbnail from '/personalBlog.png'
-import gifThumbnail from '/giffy.png'
-import footThumbnail from '/football.png'
+import gifThumbnail from '/giffycard.png'
+import footThumbnail from '/footballcard.png'
 import vercelThumbnail from '/vercelCard.png'
 import { Helmet } from 'react-helmet-async'
 
@@ -47,7 +47,7 @@ export default function Works() {
             />
             <Card
               id="vercelmirror"
-              title="Giffy App"
+              title="Vercel mirror"
               subtitle="Gifs web app created with Giphy's API"
               thumbnail={vercelThumbnail}
             />
