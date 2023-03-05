@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 const animations = {
   hidden: { opacity: 0, y: '-20px' },
-  animate: {
+  show: {
     opacity: 1,
     y: 0
   },
@@ -23,7 +23,7 @@ const AnimatedItem = ({ children, key }) => {
       key={key}
       variants={animations}
       initial="hidden"
-      animate="animate"
+      animate="show"
       exit="exit"
       whileTap="tap"
     >
@@ -34,10 +34,11 @@ const AnimatedItem = ({ children, key }) => {
 
 const ToggleColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <AnimatedItem key="toggle">
-        {colorMode === 'dark' ? (
+      {colorMode === 'dark' ? (
+        <AnimatedItem key="sun">
           <Button
             bg={useColorModeValue('#85586f', null)}
             _hover={{ bg: useColorModeValue('#774f63', null) }}
@@ -48,7 +49,9 @@ const ToggleColorMode = () => {
           >
             <SunIcon />
           </Button>
-        ) : (
+        </AnimatedItem>
+      ) : (
+        <AnimatedItem key="moon">
           <Button
             bg={useColorModeValue('#85586f', null)}
             _hover={{ bg: useColorModeValue('#774f63', null) }}
@@ -59,8 +62,8 @@ const ToggleColorMode = () => {
           >
             <MoonIcon />
           </Button>
-        )}
-      </AnimatedItem>
+        </AnimatedItem>
+      )}
     </AnimatePresence>
   )
 }
