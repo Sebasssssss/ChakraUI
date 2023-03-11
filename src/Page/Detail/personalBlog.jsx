@@ -66,14 +66,14 @@ export default function PersonalBlog() {
           Website completely based on{' '}
           <Link
             href="https://uses.craftz.dog/"
-            color={useColorModeValue('black', '#ea047e')}
+            color={useColorModeValue('#ff6d28', '#ea047e')}
             isExternal
           >
             devaslife's WhatIUse
           </Link>{' '}
           <Highlight
             query={['php', 'backend']}
-            styles={{ color: useColorModeValue('black', '#ea047e') }}
+            styles={{ color: useColorModeValue('#ff6d28', '#ea047e') }}
           >
             web! I tried to replicate the web Takuya's did because I really like
             how it looked in almost every aspect. In this case, I've made it

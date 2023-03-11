@@ -7,6 +7,7 @@ import blogThumbnail from '/personalBlog.png'
 import gifThumbnail from '/giffycard.png'
 import footThumbnail from '/footballcard.png'
 import vercelThumbnail from '/vercelCard.png'
+import movieCard from '/movieCard.png'
 import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
@@ -50,6 +51,12 @@ export default function Works() {
               title="Vercel mirror"
               subtitle="Gifs web app created with Giphy's API"
               thumbnail={vercelThumbnail}
+            />
+            <Card
+              id="cinema"
+              title="Cinema web app"
+              subtitle="Cinema site for searching for movies and tv shows"
+              thumbnail={movieCard}
             />
           </SimpleGrid>
         </Section>

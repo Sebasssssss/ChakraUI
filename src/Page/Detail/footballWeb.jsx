@@ -67,7 +67,7 @@ export default function FootballWeb() {
         <Text textAlign="justify" py="4" textIndent="1em">
           <Highlight
             query={['php', 'backend', 'cron']}
-            styles={{ color: useColorModeValue('black', '#ea047e') }}
+            styles={{ color: useColorModeValue('#ff6d28', '#ea047e') }}
           >
             Manchester United web concept with backend included! This is my
             first full website in php. It includes a cron that it's porpuse is

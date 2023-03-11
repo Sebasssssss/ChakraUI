@@ -5,24 +5,23 @@ import {
   Box,
   Flex,
   Link,
-  Highlight,
   Image,
   SimpleGrid,
+  Highlight,
   Text,
   useColorModeValue,
   Badge
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '/vercel.png'
-import thumbnail1 from '/vercel1.png'
-import thumbnail2 from '/vercel2.png'
-import thumbnail3 from '/vercel3.png'
-import thumbnail4 from '/vercel4.png'
-import thumbnail5 from '/vercel5.png'
+import thumbnail from '/cinema.png'
+import thumbnail1 from '/cinema2.png'
+import thumbnail2 from '/cinema3.png'
+import thumbnail3 from '/cinema4.png'
+import thumbnail4 from '/cinema5.png'
 import ZoomIn from '../../components/ZoomIn'
 
-export default function VercelWeb() {
+export default function CinemaApp() {
   return (
     <Layout delay="0.2">
       <Box my="6">
@@ -44,7 +43,7 @@ export default function VercelWeb() {
               fontWeight="bold"
               className="font-mplus"
             >
-              Vercel Mirror
+              Cinema web app
             </Text>
             <Text
               fontSize="xs"
@@ -59,42 +58,36 @@ export default function VercelWeb() {
             </Text>
           </Flex>
           <Box textAlign="right">
-            <Dot to="https://github.com/Sebasssssss/Vercel-Mirror" />
+            <Dot to="https://github.com/Sebasssssss/Movies.app" />
           </Box>
         </Flex>
-        <Text textAlign="justify" py="4" textIndent="1em">
-          This web was made to practice and learn{' '}
-          <Link
-            href="https://nextjs.org/"
-            textColor={useColorModeValue('#ff6d28', '#ea047e')}
-            isExternal
-          >
-            Next.js 13
-          </Link>{' '}
-          with the new{' '}
-          <Link
-            href="https://beta.nextjs.org/docs/app-directory-roadmap"
-            textColor={useColorModeValue('#ff6d28', '#ea047e')}
-            isExternal
-          >
-            {' '}
-            app experimental dir
-          </Link>{' '}
-          and it does not have any functionalities like the original one. This
-          was an experimental project therefore it's not ready even for deploy
-          because it still has some things to get done.
-        </Text>
+        <Flex alignItems="flex-start">
+          <Text textAlign="left" textIndent="1em">
+            Cinema web app made with{' '}
+            <Link
+              href="https://www.themoviedb.org/"
+              color={useColorModeValue('#ff6d28', '#ea047e')}
+              isExternal
+            >
+              tmdb's api
+            </Link>
+            . You'll find a lot of carousels with a lot of movies and tv shows,
+            and you will be able to sort them by your preferences. Based on the
+            movie you're looking for, we're going to recommend some to you in
+            relation to the movie/show!
+          </Text>
+        </Flex>
         <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex alignItems="center" gap="2">
             <Badge>Stack</Badge>
-            <Text>Next.js / Javscript / Tailwindcss </Text>
+            <Text>Next.js 13 / Tailwindcss / Typescript</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>
               <Badge>libraries</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              React / Geist UI
+              React / Swiper
             </Text>
           </Flex>
           <Flex alignItems="flex-start">
@@ -103,11 +96,12 @@ export default function VercelWeb() {
             </Text>
             <Text textAlign="left" textIndent="1em">
               <Highlight
-                query={['tailwindcss', 'dark mode', 'javascript']}
+                query={['typecript', 'Next js']}
                 styles={{ color: useColorModeValue('#ff6d28', '#ea047e') }}
               >
-                Learned the basics of Nextjs and server side rendering
-                components.
+                Creating this project helped me to learn the basic concepts of
+                typecript, how it works and how helpfull can be, and made me
+                understand much more Next js
               </Highlight>
             </Text>
           </Flex>
@@ -115,56 +109,37 @@ export default function VercelWeb() {
         <SimpleGrid gap="8" py="6">
           <ZoomIn>
             <Image
+              alt="MainImage"
               src={thumbnail}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
+              className="w-full rounded-xl object-cover"
             />
           </ZoomIn>
           <ZoomIn>
             <Image
+              alt="MainImage"
               src={thumbnail1}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
+              className="w-full rounded-xl object-cover"
             />
           </ZoomIn>
           <ZoomIn>
             <Image
+              alt="Giffy2Image"
               src={thumbnail2}
-              alt="secondImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
+              className="w-full rounded-xl object-cover"
             />
           </ZoomIn>
           <ZoomIn>
             <Image
+              alt="Giffy3Image"
               src={thumbnail3}
-              alt="thirdImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
+              className="w-full rounded-xl object-cover"
             />
           </ZoomIn>
           <ZoomIn>
             <Image
+              alt="Giffy3Image"
               src={thumbnail4}
-              alt="forthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail5}
-              alt="fifthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
+              className="w-full rounded-xl object-cover"
             />
           </ZoomIn>
         </SimpleGrid>
