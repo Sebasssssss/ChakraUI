@@ -28,7 +28,14 @@ export default function Contact() {
         <Section>
           <Text my="1" mb="4">
             Feel free to contact me anytime you want, i will be pleased to
-            answer you. Send me a message down here or email me manually by{' '}
+            answer you. Send me a message down here or email me{' '}
+            <Link
+              color={useColorModeValue('#ff6d28', '#ea047e')}
+              href={`mailto:${email}`}
+            >
+              manually
+            </Link>
+            . Or if you do not want to do it now, you can save it by{' '}
             <Link
               href="#"
               onClick={handleCopy}
@@ -38,7 +45,7 @@ export default function Contact() {
               textColor={
                 copy
                   ? useColorModeValue('#ea047e', '#00abb2')
-                  : useColorModeValue('#00abb2', '#ea047e')
+                  : useColorModeValue('#ff6d28', '#ea047e')
               }
             >
               copying my email
