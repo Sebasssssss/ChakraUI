@@ -7,7 +7,7 @@ import blogThumbnail from '/personalBlog.png'
 import gifThumbnail from '/giffycard.png'
 import footThumbnail from '/footballcard.png'
 import vercelThumbnail from '/vercelCard.png'
-import movieCard from '/movieCard.png'
+import movieCard from '/cinemaCard.png'
 import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
