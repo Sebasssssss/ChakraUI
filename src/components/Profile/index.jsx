@@ -93,12 +93,10 @@ export default function Profile() {
               Sebass is a self-taught frontend developer based in Uruguay with
               high enthusiasm in web development and web performance. He's got
               additional knowledge on backend with php and mysql to help his way
-              through on real world projects, problems, and future ideas. He has
-              got a high relish for all the process of building projects, from
-              planning, inspiring and designing all the way to solving real-life
-              problems with code. During free-time, he loves playing open world
-              games and listening to music. Currently he is working on projects
-              and learning javascript in order to code React.
+              through on real world projects, problems, and future ideas. During
+              free-time, he loves playing open world games and listening to
+              music. Currently he is working on projects and learning javascript
+              in order to code React.
             </Highlight>
           </Text>
         </Box>

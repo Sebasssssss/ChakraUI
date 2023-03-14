@@ -55,7 +55,7 @@ export default function VercelWeb() {
               bg={useColorModeValue('#ff6d2850', '#00f5ff30')}
               color={useColorModeValue('#ff6d28', '#00f5ff50')}
             >
-              2022
+              2023
             </Text>
           </Flex>
           <Box textAlign="right">

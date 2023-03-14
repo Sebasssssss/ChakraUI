@@ -5,7 +5,7 @@ import {
   SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ArrowDownIcon } from '@chakra-ui/icons'
+import { DownloadIcon } from '@chakra-ui/icons'
 import { Card } from '../Card'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/giffycard.png'
@@ -46,9 +46,12 @@ export default function PopularPosts() {
         _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
         _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}
         textColor="#fff"
+        display="inline-flex"
+        alignItems="center"
+        gap="8px"
       >
-        Download CV
-        <ArrowDownIcon ml="1" />
+        Resume
+        <DownloadIcon mt="1" fontSize="sm" />
       </Button>
     </>
   )
