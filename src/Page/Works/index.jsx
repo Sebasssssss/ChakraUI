@@ -49,7 +49,7 @@ export default function Works() {
             <Card
               id="vercelmirror"
               title="Vercel mirror"
-              subtitle="Gifs web app created with Giphy's API"
+              subtitle="Replica of vercel website with Next.js"
               thumbnail={vercelThumbnail}
             />
             <Card
