@@ -10,6 +10,7 @@ import Contact from '../../Page/Contact'
 import NotFound from '../../Page/Error'
 import VercelWeb from '../../Page/Detail/vercelMirror'
 import CinemaApp from '../../Page/Detail/moviesapp'
+import GTranslate from '../../Page/Detail/GTranslate'
 
 export default function Router() {
   const location = useLocation()
@@ -26,6 +27,7 @@ export default function Router() {
           <Route path="/work/giffyapp" element={<GiffyApp />} />
           <Route path="/work/vercelmirror" element={<VercelWeb />} />
           <Route path="/work/cinema" element={<CinemaApp />} />
+          <Route path="/work/translate" element={<GTranslate />} />
         </Routes>
       </AnimatePresence>
     </>

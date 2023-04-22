@@ -8,6 +8,7 @@ import gifThumbnail from '/giffycard.png'
 import footThumbnail from '/footballcard.png'
 import vercelThumbnail from '/vercelCard.png'
 import movieCard from '/cinemaCard.png'
+import translateCard from '/translateCard.png'
 import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
@@ -57,6 +58,12 @@ export default function Works() {
               title="Cinema web app"
               subtitle="Cinema site for searching for movies and tv shows"
               thumbnail={movieCard}
+            />
+            <Card
+              id="translate"
+              title="Google Translate"
+              subtitle="Translate app made with Chat GPT"
+              thumbnail={translateCard}
             />
           </SimpleGrid>
         </Section>
