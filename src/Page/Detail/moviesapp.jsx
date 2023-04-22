@@ -61,17 +61,17 @@ export default function CinemaApp() {
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
-          Cinema web app made with{' '}
+          This is a cinema web app made with{' '}
           <Link
             href="https://www.themoviedb.org/"
             color={useColorModeValue('#ff6d28', '#ea047e')}
           >
-            tmdb's api
+            TMDB's API
           </Link>
-          . You'll find a lot of carousels with a lot of movies and tv shows,
-          and you will be able to sort them by your personal preferences. Based
-          on the movie you're looking for, we're going to recommend some to you
-          in relation to that same movie/show!
+          . You'll find a lot of carousels with many movies and TV shows, and
+          you will be able to sort them according to your personal preferences.
+          Based on the movie you're looking for, we'll recommend some related
+          movies/shows to you!{' '}
         </Text>
         <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex alignItems="center" gap="2">
@@ -101,9 +101,9 @@ export default function CinemaApp() {
               <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              Creating this project helped me to learn the basic concepts of
-              typecript, how it works and how helpfull can be, and made me
-              understand much more Next js{' '}
+              Creating this project helped me learn the basic concepts of
+              TypeScript, how it works, how helpful it can be, and made me
+              understand Next.js much more.
             </Text>
           </Flex>
         </SimpleGrid>

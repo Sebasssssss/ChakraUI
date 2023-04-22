@@ -69,10 +69,10 @@ export default function FootballWeb() {
             query={['php', 'backend', 'cron']}
             styles={{ color: useColorModeValue('#ff6d28', '#ea047e') }}
           >
-            Manchester United web concept with backend included! This is my
-            first full website in php. It includes a cron that it's porpuse is
-            to automatically install the database with simple example
-            information, and ready to use the web!
+            Manchester United website concept with backend included! This is my
+            first full website in PHP. It includes a cron which purpose is to
+            automatically install the database with simple example information
+            and make the website ready to use!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" px="4" py="1">
@@ -94,12 +94,12 @@ export default function FootballWeb() {
             </Text>
             <Text textAlign="left" textIndent="1em">
               <Highlight
-                query={['tailwindcss', 'dark mode', 'javascript']}
+                query={['backend']}
                 styles={{ color: useColorModeValue('black', '#ea047e') }}
               >
-                In this website i learned a lot in terms of how backend works,
-                how to use databases, get the data from database and display it
-                on the web and a lot more!
+                On this website, I learned a lot in terms of how the backend
+                works, how to use databases, how to retrieve data from a
+                database and display it on the web, and much more!
               </Highlight>
             </Text>
           </Flex>

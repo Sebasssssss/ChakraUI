@@ -61,10 +61,10 @@ export default function GiffyApp() {
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
-          Web app where you'll be able to search for wherever gif or sticker you
-          want. You can sort them by ranking or look for the most popular ones.
-          If you feel like looking whats the most search things by people, you
-          can do it too by heading up to the footer section!
+          This is a web app where you'll be able to search for whatever GIF or
+          sticker you want. You can sort them by ranking or look for the most
+          popular ones. If you feel like finding out what the most searched
+          things are by people, you can do so by heading to the footer section!{' '}
         </Text>
         <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex alignItems="center" gap="2">
@@ -94,9 +94,9 @@ export default function GiffyApp() {
               <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              With this web app i learned and understand a lot of how Javascript
-              and React works. Learned how to do simples fetch of api's data,
-              many react hooks and how to deploy a web with{' '}
+              With this web app, I learned and understood a lot about how
+              JavaScript and React work. I learned how to do simple API data
+              fetches, many React hooks, and how to deploy a web app with{' '}
               <Link
                 href="https://vercel.com/"
                 color={useColorModeValue('#ff6d28', '#ea047e')}

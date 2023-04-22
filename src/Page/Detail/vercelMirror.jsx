@@ -63,7 +63,7 @@ export default function VercelWeb() {
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
-          This web was made to practice and learn{' '}
+          This web app was made to practice and learn{' '}
           <Link
             href="https://nextjs.org/"
             textColor={useColorModeValue('#ff6d28', '#ea047e')}
@@ -77,12 +77,11 @@ export default function VercelWeb() {
             textColor={useColorModeValue('#ff6d28', '#ea047e')}
             isExternal
           >
-            {' '}
-            app experimental dir
+            "app experimental dir"
           </Link>{' '}
-          and it does not have any functionalities like the original one. This
-          was an experimental project therefore it's not ready even for deploy
-          because it still has some things to get done.
+          and does not have any of the functionalities of the original one. This
+          was an experimental project, so it's not ready for deployment yet
+          because there are still some things to be done.{' '}
         </Text>
         <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex alignItems="center" gap="2">

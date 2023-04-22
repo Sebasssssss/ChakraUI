@@ -27,7 +27,7 @@ export default function PopularPosts() {
         <Card
           id="personalBlog"
           title="Personal Blog"
-          subtitle="Web based on devaslife WhatIuse web but in php and with a backend included"
+          subtitle="Website based on devaslife's WhatIUse web, but built in PHP with a backend included"
           thumbnail={thumbnail1}
         />
 

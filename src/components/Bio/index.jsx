@@ -49,9 +49,9 @@ export default function Bio() {
           2022 To present
         </Text>
         <Text>
-          Began studying from official documentation and others ways. Since then
-          i've been making projects in order to improve my skills based on
-          differents challenges.
+          Began studying from official documentation and other sources. Since
+          then, he has been making projects in order to improve his skills based
+          on different challenges.
         </Text>
       </Flex>
       <Heading

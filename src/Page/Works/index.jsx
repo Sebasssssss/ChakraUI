@@ -32,7 +32,7 @@ export default function Works() {
             <Card
               id="personalBlog"
               title="Personal Blog"
-              subtitle="Web based on devaslife WhatIuse but in php and with a backend included"
+              subtitle="Website based on devaslife's WhatIUse web, but built in PHP with a backend included"
               thumbnail={blogThumbnail}
             />
             <Card

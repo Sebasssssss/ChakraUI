@@ -90,13 +90,13 @@ export default function Profile() {
                 color: useColorModeValue('#ff6d28', '#ea047e')
               }}
             >
-              Sebass is a self-taught frontend developer based in Uruguay with
-              high enthusiasm in web development and web performance. He's got
-              additional knowledge on backend with php and mysql to help his way
-              through on real world projects, problems, and future ideas. During
-              free-time, he loves playing open world games and listening to
-              music. Currently he is working on projects and learning javascript
-              in order to code React.
+              Sebass is a self-taught frontend developer based in Uruguay with a
+              high enthusiasm for web development and web performance. He has
+              additional knowledge in backend development with PHP and MySQL to
+              help him work through real-world projects, problems, and future
+              ideas. During his free time, he loves playing open-world games and
+              listening to music. Currently, he is working on projects and
+              learning JavaScript in order to code in React.
             </Highlight>
           </Text>
         </Box>

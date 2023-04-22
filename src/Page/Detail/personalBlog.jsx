@@ -63,21 +63,21 @@ export default function PersonalBlog() {
           </Box>
         </Flex>
         <Text textAlign="justify" py="4" textIndent="1em">
-          Website completely based on{' '}
+          This website is completely based on{' '}
           <Link
             href="https://uses.craftz.dog/"
             color={useColorModeValue('#ff6d28', '#ea047e')}
             isExternal
           >
-            devaslife's WhatIUse
+            Devaslife's WhatIUse
           </Link>{' '}
           <Highlight
             query={['php', 'backend']}
             styles={{ color: useColorModeValue('#ff6d28', '#ea047e') }}
           >
-            web! I tried to replicate the web Takuya's did because I really like
-            how it looked in almost every aspect. In this case, I've made it
-            completely in Php, with a backend included!
+            webpage! I tried to replicate the webpage Takuya created because I
+            really liked how it looked in almost every aspect. In this case, I
+            have made it completely in PHP, with a backend included!
           </Highlight>
         </Text>
         <SimpleGrid row="2" gap="2" px="4" py="2">
@@ -90,9 +90,9 @@ export default function PersonalBlog() {
               <Badge>learning</Badge>
             </Text>
             <Text textAlign="left" textIndent="1em">
-              In this website i learned a a lot of tricks with php that helped
-              me simplify many details, pulled a lot of tailwindcss skills, and
-              helped me understand how dark mode and responsive works!
+              On this website, I learned a lot of tricks with PHP that helped me
+              simplify many details, pulled a lot of Tailwind CSS skills, and
+              helped me understand how dark mode and responsive design works!
             </Text>
           </Flex>
         </SimpleGrid>
