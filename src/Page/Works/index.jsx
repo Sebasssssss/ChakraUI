@@ -3,13 +3,13 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import { Card } from '../../components/Card'
+import { Helmet } from 'react-helmet-async'
 import blogThumbnail from '/personalBlog.png'
 import gifThumbnail from '/giffycard.png'
 import footThumbnail from '/footballcard.png'
 import vercelThumbnail from '/vercelCard.png'
 import movieCard from '/cinemaCard.png'
 import translateCard from '/translateCard.png'
-import { Helmet } from 'react-helmet-async'
 
 export default function Works() {
   return (
