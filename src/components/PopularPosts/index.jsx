@@ -31,6 +31,7 @@ export default function PopularPosts() {
             title="Personal Blog"
             subtitle="Website based on devaslife's WhatIUse web, but built in PHP with a backend included"
             thumbnail={thumbnail1}
+            hash="L25O1-bb01i_oJWCNGoe0eWC^kt6"
           />
 
           <Card
@@ -38,6 +39,7 @@ export default function PopularPosts() {
             title="Giffy App"
             subtitle="Gifs web app created with Giphy's API"
             thumbnail={thumbnail2}
+            hash="L655LRNG9Zof~qM{D%t8?bM{IU%M"
           />
         </SimpleGrid>
         <Button

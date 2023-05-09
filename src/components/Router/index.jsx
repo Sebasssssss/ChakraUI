@@ -1,16 +1,16 @@
 import React from 'react'
-import PersonalBlog from '../../Page/Detail/personalBlog'
-import FootballWeb from '../../Page/Detail/footballWeb'
-import GiffyApp from '../../Page/Detail/giffy'
-import Home from '../../Page/Home'
-import Works from '../../Page/Works'
 import { AnimatePresence } from 'framer-motion'
 import { Routes, Route, useLocation } from 'react-router'
-import Contact from '../../Page/Contact'
-import NotFound from '../../Page/Error'
-import VercelWeb from '../../Page/Detail/vercelMirror'
-import CinemaApp from '../../Page/Detail/moviesapp'
-import GTranslate from '../../Page/Detail/GTranslate'
+const PersonalBlog = React.lazy(() => import('../../Page/Detail/personalBlog'))
+const FootballWeb = React.lazy(() => import('../../Page/Detail/footballWeb'))
+const GiffyApp = React.lazy(() => import('../../Page/Detail/giffy'))
+const Home = React.lazy(() => import('../../Page/Home'))
+const Works = React.lazy(() => import('../../Page/Works'))
+const Contact = React.lazy(() => import('../../Page/Contact'))
+const NotFound = React.lazy(() => import('../../Page/Error'))
+const VercelWeb = React.lazy(() => import('../../Page/Detail/vercelMirror'))
+const GTranslate = React.lazy(() => import('../../Page/Detail/GTranslate'))
+const CinemaApp = React.lazy(() => import('../../Page/Detail/moviesapp'))
 
 export default function Router() {
   const location = useLocation()

@@ -35,12 +35,14 @@ export default function Works() {
                 title="Personal Blog"
                 subtitle="Website based on devaslife's WhatIUse web, but built in PHP with a backend included"
                 thumbnail={blogThumbnail}
+                hash="L25O1-bb01i_oJWCNGoe0eWC^kt6"
               />
               <Card
                 id="footballWeb"
                 title="Manchester United web"
                 subtitle="Web about Manchester United football team with backend"
                 thumbnail={footThumbnail}
+                hash="L35qCd}sRP0}5+1cn,$j#8S4xuSz"
               />
             </SimpleGrid>
           </Section>
@@ -51,12 +53,14 @@ export default function Works() {
                 title="Giffy App"
                 subtitle="Gifs web app created with Giphy's API"
                 thumbnail={gifThumbnail}
+                hash="L655LRNG9Zof~qM{D%t8?bM{IU%M"
               />
               <Card
                 id="vercelmirror"
                 title="Vercel mirror"
                 subtitle="Replica of vercel website with Next.js"
                 thumbnail={vercelThumbnail}
+                hash="L55#hSt700M{WBWBofof00Rj~qxu"
               />
             </SimpleGrid>
           </Section>
@@ -67,12 +71,14 @@ export default function Works() {
                 title="Cinema web app"
                 subtitle="Cinema site for searching for movies and tv shows"
                 thumbnail={movieCard}
+                hash="L25X=PR-0KWB%~WVrqj?00o0}[oM"
               />
               <Card
                 id="translate"
                 title="Google Translate"
                 subtitle="Translate app made with Chat GPT"
                 thumbnail={translateCard}
+                hash="L04Lar?wRj9EoIM_ofogxuoJxuRk"
               />
             </SimpleGrid>
           </Section>

@@ -17,6 +17,11 @@ const animations = {
   }
 }
 
+const themes = {
+  sun: 'sun',
+  moon: 'moon'
+}
+
 const AnimatedItem = ({ children, key }) => {
   return (
     <motion.div
@@ -38,7 +43,7 @@ const ToggleColorMode = () => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       {colorMode === 'dark' ? (
-        <AnimatedItem key="sun">
+        <AnimatedItem key={themes.sun}>
           <Button
             bg={useColorModeValue('#85586f', null)}
             _hover={{ bg: useColorModeValue('#774f63', null) }}
@@ -51,7 +56,7 @@ const ToggleColorMode = () => {
           </Button>
         </AnimatedItem>
       ) : (
-        <AnimatedItem key="moon">
+        <AnimatedItem key={themes.moon}>
           <Button
             bg={useColorModeValue('#85586f', null)}
             _hover={{ bg: useColorModeValue('#774f63', null) }}
