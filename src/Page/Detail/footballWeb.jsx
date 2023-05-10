@@ -6,7 +6,6 @@ import {
   Flex,
   Link,
   Highlight,
-  Image,
   SimpleGrid,
   Text,
   useColorModeValue,
@@ -14,6 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
+import DetailImage from '../../components/BlurImage'
 import thumbnail from '/footballcard.png'
 import thumbnail1 from '/football.png'
 import thumbnail2 from '/football2.png'
@@ -22,7 +22,6 @@ import thumbnail4 from '/football4.png'
 import thumbnail5 from '/football5.png'
 import thumbnail6 from '/football6.png'
 import footballWebGif from '/footballWebGif.mp4'
-import ZoomIn from '../../components/ZoomIn'
 
 export default function FootballWeb() {
   return (
@@ -105,69 +104,42 @@ export default function FootballWeb() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <ZoomIn>
-            <Image
-              src={thumbnail}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail1}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail2}
-              alt="secondImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail3}
-              alt="thirdImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail4}
-              alt="forthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail5}
-              alt="fifthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail6}
-              alt="sixthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
+          <DetailImage
+            hash="LwI#ZDoz~ps:xtt7RkWVxuofM{WA"
+            src={thumbnail}
+            alt="MainImage"
+          />
+          <DetailImage
+            hash="L35qCd}sRP0}5+1cn,$j#8S4xuSz"
+            src={thumbnail1}
+            alt="secondImage"
+          />
+          <DetailImage
+            hash="L16tgy%g0N~C}@5kIVtk009@$|0y"
+            src={thumbnail2}
+            alt="thirdImage"
+          />
+          <DetailImage
+            hash="L26*Ez~V0g0#009ZE1NG.TJ7=e-p"
+            src={thumbnail3}
+            alt="fourthImage"
+          />
+
+          <DetailImage
+            hash="L26aq^x]R6M_~qtSxtRj4oxu-:kC"
+            src={thumbnail4}
+            alt="fifthImage"
+          />
+          <DetailImage
+            hash="LpF}~9j[jZj[DifQf6fQ~qfkbHj["
+            src={thumbnail5}
+            alt="sixthImage"
+          />
+          <DetailImage
+            hash="LiGRbvayjFayDijsjZf6_NoJfRo0"
+            src={thumbnail6}
+            alt="MainImage"
+          />
           <video
             alt="MainGif"
             src={footballWebGif}

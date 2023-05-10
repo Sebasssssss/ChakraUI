@@ -6,7 +6,6 @@ import {
   Flex,
   Link,
   Highlight,
-  Image,
   SimpleGrid,
   Text,
   useColorModeValue,
@@ -16,7 +15,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
 import thumbnail from '/translateCard.png'
 import thumbnail2 from '/translate.png'
-import ZoomIn from '../../components/ZoomIn'
+import DetailImage from '../../components/BlurImage'
 
 export default function GTranslate() {
   return (
@@ -99,24 +98,16 @@ export default function GTranslate() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <ZoomIn>
-            <Image
-              src={thumbnail}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail2}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
+          <DetailImage
+            hash="LxJG{E~C^k%2?HNGRjWB?HNGRjWB"
+            src={thumbnail}
+            alt="MainImage"
+          />
+          <DetailImage
+            hash="L04Lar?wRj9EoIM_ofogxuoJxuRk"
+            src={thumbnail2}
+            alt="secondImage"
+          />
         </SimpleGrid>
       </Box>
     </Layout>

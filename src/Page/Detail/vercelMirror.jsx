@@ -6,7 +6,6 @@ import {
   Flex,
   Link,
   Highlight,
-  Image,
   SimpleGrid,
   Text,
   useColorModeValue,
@@ -20,7 +19,7 @@ import thumbnail2 from '/vercel2.png'
 import thumbnail3 from '/vercel3.png'
 import thumbnail4 from '/vercel4.png'
 import thumbnail5 from '/vercel5.png'
-import ZoomIn from '../../components/ZoomIn'
+import DetailImage from '../../components/BlurImage'
 
 export default function VercelWeb() {
   return (
@@ -112,60 +111,36 @@ export default function VercelWeb() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <ZoomIn>
-            <Image
-              src={thumbnail}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail1}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail2}
-              alt="secondImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail3}
-              alt="thirdImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail4}
-              alt="forthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail5}
-              alt="fifthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
+          <DetailImage
+            hash="LdDcXTxufQof%Mt7WBof~q%MM{t7"
+            src={thumbnail}
+            alt="MainImage"
+          />
+          <DetailImage
+            hash="L02O|r%Lt7xu%Kxbxtt7xaxuxut7"
+            src={thumbnail1}
+            alt="vercel1"
+          />
+          <DetailImage
+            hash="L11{TtRjRi?b_2RjWA-;%Mj[ofxu"
+            src={thumbnail2}
+            alt="vercel2"
+          />
+          <DetailImage
+            hash="L01{Qm~qs.9Fxtxu-pxtM{M{-p?b"
+            src={thumbnail3}
+            alt="vercel3"
+          />
+          <DetailImage
+            hash="L00l#Z%M%2s:-:xu%Lt6%Mxu%Lt7"
+            src={thumbnail4}
+            alt="vercel4"
+          />
+          <DetailImage
+            hash="L02rpwM{9Fx]_3RP_3x]niWB~qxu"
+            src={thumbnail5}
+            alt="vercel5"
+          />
         </SimpleGrid>
       </Box>
     </Layout>

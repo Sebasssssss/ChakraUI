@@ -5,7 +5,6 @@ import {
   Box,
   Flex,
   Link,
-  Image,
   SimpleGrid,
   Text,
   useColorModeValue,
@@ -18,7 +17,7 @@ import thumbnail2 from '/cinema2.png'
 import thumbnail3 from '/cinema3.png'
 import thumbnail4 from '/cinema4.png'
 import thumbnail5 from '/cinema5.png'
-import ZoomIn from '../../components/ZoomIn'
+import DetailImage from '../../components/BlurImage'
 
 export default function CinemaApp() {
   return (
@@ -108,41 +107,31 @@ export default function CinemaApp() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <ZoomIn>
-            <Image
-              alt="cinema1"
-              src={thumbnail1}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="cinema2"
-              src={thumbnail2}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="cinema3"
-              src={thumbnail3}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="cinema4"
-              src={thumbnail4}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="cinema5"
-              src={thumbnail5}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
+          <DetailImage
+            hash="L25X=PR-0KWB%~WVrqj?00o0}[oM"
+            src={thumbnail1}
+            alt="cinema1"
+          />
+          <DetailImage
+            hash="L4Bftr0$Uv_M^lF}9h$J9s#6^dES"
+            src={thumbnail2}
+            alt="cinema2"
+          />
+          <DetailImage
+            hash="L6AvXw?GJ-9|00D%9Zoy?]?a?GRQ"
+            src={thumbnail3}
+            alt="cinema3"
+          />
+          <DetailImage
+            hash="L39%k$+um$O=0vD#Vf%P02.TKHis"
+            src={thumbnail4}
+            alt="cinema4"
+          />
+          <DetailImage
+            hash="L2AJm11800~n00=FXjIW00}Q~o0N"
+            src={thumbnail5}
+            alt="cinema5"
+          />
         </SimpleGrid>
       </Box>
     </Layout>

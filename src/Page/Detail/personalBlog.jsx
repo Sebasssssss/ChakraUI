@@ -6,7 +6,6 @@ import {
   Flex,
   Link,
   Highlight,
-  Image,
   SimpleGrid,
   Text,
   useColorModeValue,
@@ -14,13 +13,13 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import ZoomIn from '../../components/ZoomIn'
 import thumbnail1 from '/personalBlog.png'
 import thumbnail2 from '/personalblog2.png'
 import thumbnail3 from '/personalblog3.png'
 import thumbnail4 from '/personalblog4.png'
 import thumbnail5 from '/personalblog5.png'
 import personalBlogGif from '/personalBlogGif.mp4'
+import DetailImage from '../../components/BlurImage'
 
 export default function PersonalBlog() {
   return (
@@ -97,51 +96,31 @@ export default function PersonalBlog() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <ZoomIn>
-            <Image
-              src={thumbnail1}
-              alt="MainImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail2}
-              alt="secondImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail3}
-              alt="thirdImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail4}
-              alt="forthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              src={thumbnail5}
-              alt="fifthImage"
-              w="full"
-              rounded="xl"
-              objectFit="cover"
-            />
-          </ZoomIn>
+          <DetailImage
+            hash="LpGIcZ~q-;tQMxRjoKWVIVNHofjt"
+            src={thumbnail1}
+            alt="MainImage"
+          />
+          <DetailImage
+            hash="L26*L7%N008^sDJBX5=YPqofznRi"
+            src={thumbnail2}
+            alt="secondImage"
+          />
+          <DetailImage
+            hash="L25XrvIp01^%0fxt~A9a%2WBNGxa"
+            src={thumbnail3}
+            alt="thirdImage"
+          />
+          <DetailImage
+            hash="L35;{*s;00NGR$WVoOt601kB~pWC"
+            src={thumbnail4}
+            alt="fourthImage"
+          />
+          <DetailImage
+            hash="L25O1-bb01i_oJWCNGoe0eWC^kt6"
+            src={thumbnail5}
+            alt="FifthImage"
+          />
           <video
             alt="MainGif"
             src={personalBlogGif}

@@ -5,7 +5,6 @@ import {
   Box,
   Flex,
   Link,
-  Image,
   SimpleGrid,
   Text,
   useColorModeValue,
@@ -18,7 +17,7 @@ import thumbnail1 from '/giffy.png'
 import thumbnail2 from '/giffy2.png'
 import thumbnail3 from '/giffy3.png'
 import giffyGif from '/giffyGif.mp4'
-import ZoomIn from '../../components/ZoomIn'
+import DetailImage from '../../components/BlurImage'
 
 export default function GiffyApp() {
   return (
@@ -109,34 +108,26 @@ export default function GiffyApp() {
           </Flex>
         </SimpleGrid>
         <SimpleGrid gap="8" py="6">
-          <ZoomIn>
-            <Image
-              alt="MainImage"
-              src={thumbnail}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="MainImage"
-              src={thumbnail1}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="Giffy2Image"
-              src={thumbnail2}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
-          <ZoomIn>
-            <Image
-              alt="Giffy3Image"
-              src={thumbnail3}
-              className="w-full rounded-xl object-cover"
-            />
-          </ZoomIn>
+          <DetailImage
+            hash="L655LRNG9Zof~qM{D%t8?bM{IU%M"
+            src={thumbnail}
+            alt="MainImage"
+          />
+          <DetailImage
+            hash="L00vh$ayDiaxx^ayVsf6IVWB%Mj["
+            src={thumbnail1}
+            alt="firstImage"
+          />
+          <DetailImage
+            hash="L88||uE100^R}tR%E|xaF^smwJOE"
+            src={thumbnail2}
+            alt="secondImage"
+          />
+          <DetailImage
+            hash="LAAv%]9#00},%4oHELWG00-O^+9%"
+            src={thumbnail3}
+            alt="thirdImage"
+          />
           <video
             alt="MainGif"
             src={giffyGif}
