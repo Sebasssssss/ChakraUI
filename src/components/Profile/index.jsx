@@ -33,7 +33,10 @@ export default function Profile() {
               canCopy={true}
               toCopy="sebastian.rodriguez9714@gmail.com"
             />
-            <Dot title="Linkedin" />
+            <Dot
+              title="Linkedin"
+              to="https://www.linkedin.com/in/sebastian-rodr%C3%ADguez-2231b7250/"
+            />
           </Flex>
         </Flex>
       </Section>
