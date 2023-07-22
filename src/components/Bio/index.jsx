@@ -69,15 +69,15 @@ export default function Bio() {
         <List textAlign="left" px="4">
           <ListItem display="flex" alignItems="center" gap="2">
             <Badge>Language</Badge>
-            Php / javascript
+            PHP / JavaScript
           </ListItem>
           <ListItem display="flex" alignItems="center" gap="2">
             <Badge>framework</Badge>
-            React / tailwindcss
+            React / Tailwind CSS
           </ListItem>
           <ListItem display="flex" alignItems="center" gap="2">
-            <Badge>other tecs</Badge>
-            Html / Css / Git / Npm / Mysql
+            <Badge>other techs</Badge>
+            HTML / CSS / Git / NPM / MySQL
           </ListItem>
         </List>
         <Heading

@@ -63,7 +63,7 @@ export default function Profile() {
           }}
         >
           <Text fontWeight="bold" fontSize="20px" className="font-mplus">
-            Sebass Rodriguez
+            Sebastian Rodriguez
           </Text>
           <Text
             py="4px"

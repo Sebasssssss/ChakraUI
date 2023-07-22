@@ -82,7 +82,7 @@ export default function PersonalBlog() {
         <SimpleGrid row="2" gap="2" px="4" py="2">
           <Flex gap="2" alignItems={['start', 'center']}>
             <Badge h="max">Stack</Badge>
-            <Text>Php / Mysql / Javscript / Tailwindcss</Text>
+            <Text>PHP / MySQL / JavaScript / Tailwind CSS</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>

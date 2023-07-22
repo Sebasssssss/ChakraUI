@@ -8,7 +8,10 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
-  Badge
+  Badge,
+  Breadcrumb,
+  BreadcrumbLink,
+  BreadcrumbItem
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
@@ -25,29 +28,32 @@ export default function GiffyApp() {
       <Box my="6">
         <Flex w="full" justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
-            <Link
-              as={ReactLink}
-              to="/works"
-              pr="2"
-              color={useColorModeValue('#ff6d28', '#ea047e')}
+            <Breadcrumb
+              spacing="8px"
+              separator={<ChevronRightIcon color="gray.300" />}
             >
-              <Text fontWeight="semibold">Works</Text>
-            </Link>
-            <ChevronRightIcon />
-            <Text
-              fontSize="lg"
-              px="2"
-              textAlign="left"
-              fontWeight="bold"
-              className="font-mplus"
-            >
-              Giffy App
-            </Text>
+              <BreadcrumbItem>
+                <BreadcrumbLink
+                  as={ReactLink}
+                  to="/works"
+                  fontWeight="semibold"
+                  color={useColorModeValue('#ff6d28', '#ea047e')}
+                >
+                  Works
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbItem isCurrentPage>
+                <Text fontSize="lg" fontWeight="bold" className="font-mplus">
+                  Giffy App
+                </Text>
+              </BreadcrumbItem>
+            </Breadcrumb>
             <Text
               fontSize="xs"
               fontWeight="bold"
               w="max"
               px="1"
+              mx="2"
               rounded="sm"
               bg={useColorModeValue('#ff6d2850', '#00f5ff30')}
               color={useColorModeValue('#ff6d28', '#00f5ff50')}
@@ -78,7 +84,7 @@ export default function GiffyApp() {
           </Flex>
           <Flex alignItems="center" gap="2">
             <Badge>Stack</Badge>
-            <Text>Javscript / Tailwindcss</Text>
+            <Text>JavaScript / Tailwind CSS</Text>
           </Flex>
           <Flex alignItems="flex-start">
             <Text>

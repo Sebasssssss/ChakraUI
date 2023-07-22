@@ -6,7 +6,9 @@ export default function Footer() {
     <Box textAlign="center" pt="8" pb="4" opacity="0.5">
       <Text fontSize="sm">
         Web based on{' '}
-        <Link href="https://www.craftz.dog/">Takuya Matsuyama's work</Link>
+        <Link target="_blank" href="https://www.craftz.dog/">
+          devaslife's portfolio
+        </Link>
       </Text>
     </Box>
   )
