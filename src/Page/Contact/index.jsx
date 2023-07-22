@@ -27,8 +27,8 @@ export default function Contact() {
         </Text>
         <Section>
           <Text my="1" mb="4">
-            Feel free to contact me anytime you want, i will be pleased to
-            answer you. Send me a message down here or email me{' '}
+            Feel free to contact me anytime you want. Send me a message down
+            here or email me{' '}
             <Link
               color={useColorModeValue('#ff6d28', '#ea047e')}
               href={`mailto:${email}`}
