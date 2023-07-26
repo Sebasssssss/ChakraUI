@@ -15,11 +15,10 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '/giffycard.png'
-import thumbnail1 from '/giffy.png'
-import thumbnail2 from '/giffy2.png'
-import thumbnail3 from '/giffy3.png'
-import giffyGif from '/giffyGif.mp4'
+import thumbnail from '/giffycard.webp'
+import thumbnail1 from '/giffy.webp'
+import thumbnail2 from '/giffy2.webp'
+import thumbnail3 from '/giffy3.webp'
 import DetailImage from '../../components/BlurImage'
 
 export default function GiffyApp() {
@@ -133,15 +132,6 @@ export default function GiffyApp() {
             hash="LAAv%]9#00},%4oHELWG00-O^+9%"
             src={thumbnail3}
             alt="thirdImage"
-          />
-          <video
-            alt="MainGif"
-            src={giffyGif}
-            className="w-full rounded-xl object-cover"
-            autoPlay
-            loop
-            playsInline
-            muted
           />
         </SimpleGrid>
       </Box>

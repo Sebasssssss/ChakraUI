@@ -7,9 +7,9 @@ import {
 } from '@chakra-ui/react'
 import { DownloadIcon } from '@chakra-ui/icons'
 import { Card } from '../Card'
-import thumbnail1 from '/personalBlog.png'
-import thumbnail2 from '/giffycard.png'
-import avatar from '/avatar.jpg'
+import thumbnail1 from '/personalBlog.webp'
+import thumbnail2 from '/giffycard.webp'
+import resume from '/resume.pdf'
 import Section from '../Section'
 
 export default function PopularPosts() {
@@ -44,8 +44,9 @@ export default function PopularPosts() {
         </SimpleGrid>
         <Button
           as="a"
-          href={avatar}
+          href={resume}
           download
+          target="_blank"
           bg={useColorModeValue('#85586f', '#ea047e90')}
           _hover={{ bg: useColorModeValue('#ab718e', '#ea047e') }}
           _active={{ bg: useColorModeValue('#ab718e70', '#ea047e70') }}

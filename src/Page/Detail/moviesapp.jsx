@@ -15,11 +15,11 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail1 from '/cinema.png'
-import thumbnail2 from '/cinema2.png'
-import thumbnail3 from '/cinema3.png'
-import thumbnail4 from '/cinema4.png'
-import thumbnail5 from '/cinema5.png'
+import thumbnail1 from '/cinema.webp'
+import thumbnail2 from '/cinema2.webp'
+import thumbnail3 from '/cinema3.webp'
+import thumbnail4 from '/cinema4.webp'
+import thumbnail5 from '/cinema5.webp'
 import DetailImage from '../../components/BlurImage'
 
 export default function CinemaApp() {

@@ -4,12 +4,12 @@ import Section from '../../components/Section'
 import { SimpleGrid, Text } from '@chakra-ui/react'
 import { Card } from '../../components/Card'
 import { Helmet } from 'react-helmet-async'
-import blogThumbnail from '/personalBlog.png'
-import gifThumbnail from '/giffycard.png'
-import footThumbnail from '/footballcard.png'
-import vercelThumbnail from '/vercelCard.png'
-import movieCard from '/cinemaCard.png'
-import translateCard from '/translateCard.png'
+import blogThumbnail from '/personalBlog.webp'
+import gifThumbnail from '/giffycard.webp'
+import footThumbnail from '/footballcard.webp'
+import vercelThumbnail from '/vercelCard.webp'
+import movieCard from '/cinemaCard.webp'
+import translateCard from '/translateCard.webp'
 
 export default function Works() {
   return (

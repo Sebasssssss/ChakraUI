@@ -13,12 +13,11 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail1 from '/personalBlog.png'
-import thumbnail2 from '/personalblog2.png'
-import thumbnail3 from '/personalblog3.png'
-import thumbnail4 from '/personalblog4.png'
-import thumbnail5 from '/personalblog5.png'
-import personalBlogGif from '/personalBlogGif.mp4'
+import thumbnail1 from '/personalBlog.webp'
+import thumbnail2 from '/personalblog2.webp'
+import thumbnail3 from '/personalblog3.webp'
+import thumbnail4 from '/personalblog4.webp'
+import thumbnail5 from '/personalblog5.webp'
 import DetailImage from '../../components/BlurImage'
 
 export default function PersonalBlog() {
@@ -120,15 +119,6 @@ export default function PersonalBlog() {
             hash="L25O1-bb01i_oJWCNGoe0eWC^kt6"
             src={thumbnail5}
             alt="FifthImage"
-          />
-          <video
-            alt="MainGif"
-            src={personalBlogGif}
-            className="w-full rounded-xl object-cover"
-            autoPlay
-            loop
-            playsInline
-            muted
           />
         </SimpleGrid>
       </Box>

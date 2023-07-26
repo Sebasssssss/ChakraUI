@@ -16,8 +16,8 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '/translateCard.png'
-import thumbnail2 from '/translate.png'
+import thumbnail from '/translateCard.webp'
+import thumbnail2 from '/translate.webp'
 import DetailImage from '../../components/BlurImage'
 
 export default function GTranslate() {

@@ -16,12 +16,12 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Dot from '../../components/Dots'
-import thumbnail from '/vercel.png'
-import thumbnail1 from '/vercel1.png'
-import thumbnail2 from '/vercel2.png'
-import thumbnail3 from '/vercel3.png'
-import thumbnail4 from '/vercel4.png'
-import thumbnail5 from '/vercel5.png'
+import thumbnail from '/vercel.webp'
+import thumbnail1 from '/vercel1.webp'
+import thumbnail2 from '/vercel2.webp'
+import thumbnail3 from '/vercel3.webp'
+import thumbnail4 from '/vercel4.webp'
+import thumbnail5 from '/vercel5.webp'
 import DetailImage from '../../components/BlurImage'
 
 export default function VercelWeb() {
