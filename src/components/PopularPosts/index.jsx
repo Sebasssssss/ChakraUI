@@ -9,7 +9,7 @@ import { DownloadIcon } from '@chakra-ui/icons'
 import { Card } from '../Card'
 import thumbnail1 from '/personalBlog.webp'
 import thumbnail2 from '/giffycard.webp'
-import resume from '/resume.pdf'
+import resume from '/curriculum.pdf'
 import Section from '../Section'
 
 export default function PopularPosts() {
