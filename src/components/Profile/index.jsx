@@ -10,7 +10,7 @@ import {
 import React from 'react'
 import Dot from '../Dots'
 import Section from '../Section'
-import avatar from '/profile.jpg'
+import avatar from '/profile1.jpg'
 import { Link } from 'react-router-dom'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
