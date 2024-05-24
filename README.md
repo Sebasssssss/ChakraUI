@@ -28,7 +28,7 @@ $PROJECT_ROOT
 
 MIT License.
 
-This project is not originally mine, it's a copy of devaslife portfolio homepage, so you can create your own without notifying me under the following conditions:
+This project is not originally mine, it’s a copy of Devaslife’s portfolio homepage. You can create your own without notifying me under the following conditions:
 
 - Delete the images used in this project
 - Do not use the 3d panda model
